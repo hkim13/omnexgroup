@@ -1,9 +1,9 @@
 import Image from 'next/image'
 
-export default function GiromexPage() {
+export default function LeGoiPage() {
   return (
     <main>
-      <h1>GiromexPage</h1>
+      <h1>LeGoi Page</h1>
       <p>content</p>
     </main>
   )

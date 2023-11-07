@@ -1,9 +1,9 @@
 import Image from 'next/image'
 
-export default function UnoPage() {
+export default function GiromexPage() {
   return (
     <main>
-      <h1>UnoPage</h1>
+      <h1>Giromex Page</h1>
       <p>content</p>
     </main>
   )

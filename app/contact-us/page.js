@@ -1,9 +1,9 @@
 import Image from 'next/image'
 
-export default function LeGoiPage() {
+export default function ContactUsPage() {
   return (
     <main>
-      <h1>LeGoiPage</h1>
+      <h1>Contact Us Page</h1>
       <p>content</p>
     </main>
   )

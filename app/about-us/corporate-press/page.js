@@ -1,9 +1,9 @@
 import Image from 'next/image'
 
-export default function HomePage() {
+export default function CorporatePage() {
   return (
     <main>
-      <h1>Home Page</h1>
+      <h1>Corporate Page</h1>
       <p>content for the homepage</p>
     </main>
   )
