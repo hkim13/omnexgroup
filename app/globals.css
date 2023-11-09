@@ -4,26 +4,22 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-color: #FFFFFF; 
 }
 
+/*
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-color: #343541; 
   }
 }
+*/
 
 body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: var(--background-color); 
 }
 
 h1{
@@ -32,14 +28,7 @@ h1{
 
 
 /*temporary dropdown css*/
-.dropbtn {
-  background-color:transparent;
-  color: white;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  border: none;
-  cursor: pointer;
-}
+
 
 .dropdown {
   position: relative;
