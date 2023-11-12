@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function NavBar() {
     return(
         <nav>
-            <ul className='flex gap-3'>
+            <ul className='flex flex-wrap justify-between gap-3'>
                 <li>
                     <Link href="/">Home</Link>
                 </li>

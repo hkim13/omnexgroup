@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Heading from '../components/Heading'
+import Heading from '@/components/Heading'
 
 export default function CareersPage() {
   return (

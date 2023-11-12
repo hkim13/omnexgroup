@@ -1,14 +1,13 @@
 import Image from 'next/image'
-import LinkBar from './components/LinkBar'
-import NavBar from './components/NavBar';
+import LinkBar from '@/components/LinkBar'
+import NavBar from '@/components/NavBar';
+
+
 
 export default function HomePage() {
   return (
     <>
-     <div className='relative'>
-      <div className='absolute pb-5'>
-          <LinkBar />
-      </div>
+     <div>
       <main>
         <div>
           <h1 className="font-bold pb-3 text-5xl text-[#333333]">
