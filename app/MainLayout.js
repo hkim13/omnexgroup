@@ -12,7 +12,7 @@ export default function MainLayout({ showLinkBar, children }) {
       <html lang="en">
          <body className={`flex flex-col min-h-screen ${inter.className}`}>
             {showLinkBar && <LinkBar/>}
-            <NavBar />
+            <NavBar/>
           <main className='flex grow'>
             {children}
           </main>
