@@ -1,8 +1,6 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import LinkBar from '@/components/LinkBar'
-import NavBar from '@/components/NavBar';
 import Button from '@/components/Button';
 
 
@@ -13,7 +11,9 @@ export default function HomePage() {
       <main className='mt-28 w-full'>
         
         {/*First section*/}
-        <div className=' flex justify-between items-center px-10'>
+        <div className='flex justify-between items-center px-10'> {/**/}
+          
+          {/* Text Area */}
           <div>
             <h1 className="font-bold pb-3 text-5xl text-[#333333]">
               Financial technology <span className="text-[#52DB78]">empowering</span> <span className="text-[#253D84]">consumers and businesses</span>
@@ -30,42 +30,80 @@ export default function HomePage() {
               </Button>
             </div>
           </div>
-          <div className='flex items-center'>
-            <ul className='grid grid-cols-2 gap-3 '>
-              <li class="place-self-end">
-                <Image className='border-8 overflow-hidden rounded-3xl' 
-                src="/Webp/AdobeStock_280396247.webp"
-                alt=""
-                width={500}
-                height={500}
-                />
-              </li>
-              <li>
-                <Image className='border-8  rounded-3xl'
-                src="/Webp/B-AdobeStock_235833811.webp"
-                alt=""
-                width={500}
-                height={500}
-                />
-              </li>
-              <li>
-                <Image className='border-8 overflow-hidden rounded-3xl'
-                src="/Webp/AdobeStock_409017261.webp"
-                alt=""
-                width={500}
-                height={500}
-                />
-              </li>
-              <li>
-                <Image className='overflow-hidden rounded-3xl'
-                src="/Webp/AdobeStock_469533192.webp"
-                alt=""
-                width={500}
-                height={500}
-                />
-              </li>
-            </ul>
+          
+          {/* Image Area */}
+          <div className='flex gap-4'> {/*  */}
+
+            {/* left two images */} 
+            <div>
+              <div style={{ display: 'flex', justifyContent: 'flex-end', paddingBottom: '16px' }}> 
+                <div
+                    style={{
+                    width: '191px',
+                    height: '306.23px',
+                    overflow: 'hidden',
+                    borderRadius: '40px',
+                    backgroundImage: 'url("/Webp/AdobeStock_280396247.webp")',
+                    backgroundSize: '275%',
+                    backgroundPosition: '70%',
+                    backgroundRepeat: 'no-repeat',
+                    }}
+                >
+                </div>
+              </div>
+              <div style={{ display: 'flex', justifyContent: 'flex-end' }}> 
+                <div
+                  style={{
+                    width: '284px',
+                    height: '179.79px',
+                    overflow: 'hidden',
+                    borderRadius: '40px',
+                    backgroundImage: 'url("/Webp/AdobeStock_409017261.webp")',
+                    backgroundSize: 'cover',
+                    backgroundPosition: '0%',
+                    backgroundRepeat: 'no-repeat',
+                  }}
+                >
+                </div>
+              </div>
+            </div>  
+
+            {/* left two images */}   
+            <div>
+              <div style={{ display: 'flex', justifyContent: 'flex-start', paddingBottom: '16px' }}> 
+                <div
+                  style={{
+                    width: '307px',
+                    height: '228.88px',
+                    overflow: 'hidden',
+                    borderRadius: '40px',
+                    backgroundImage: 'url("/Webp/B-AdobeStock_235833811.webp")',
+                    backgroundSize: 'cover',
+                    backgroundPosition: '50%',
+                    backgroundRepeat: 'no-repeat',
+                  }}
+                >
+                </div>
+              </div>
+              <div style={{ display: 'flex', justifyContent: 'flex-start' }}> 
+                <div
+                  style={{
+                    width: '408px',
+                    height: '257.04px',
+                    overflow: 'hidden',
+                    borderRadius: '40px',
+                    backgroundImage: 'url("/Webp/AdobeStock_469533192.webp")',
+                    backgroundSize: 'cover',
+                    backgroundPosition: '0%',
+                    backgroundRepeat: 'no-repeat',
+                  }}
+                >
+                </div>
+              </div>
+            </div>  
+          
           </div>
+
         </div>
 
         {/*Second section: Explore - What We Do for You*/}
