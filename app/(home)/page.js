@@ -8,13 +8,13 @@ export default function HomePage() {
   return (
     <>
      <div>
-      <main className='mt-28 w-full'>
+      <main className='mt-28 w-auto'>
         
         {/*First section*/}
-        <div className='flex justify-between items-center px-10'> {/**/}
+        <div className='flex justify-between items-center px-10'>
           
           {/* Text Area */}
-          <div>
+          <div className='w-fit min-w-[500px]'>
             <h1 className="font-bold pb-3 text-5xl text-[#333333]">
               Financial technology <span className="text-[#52DB78]">empowering</span> <span className="text-[#253D84]">consumers and businesses</span>
             </h1>
@@ -32,7 +32,7 @@ export default function HomePage() {
           </div>
           
           {/* Image Area */}
-          <div className='flex gap-4'> {/*  */}
+          <div className='flex gap-4'>
 
             {/* left two images */} 
             <div>
@@ -68,7 +68,7 @@ export default function HomePage() {
               </div>
             </div>  
 
-            {/* left two images */}   
+            {/* right two images */}   
             <div>
               <div style={{ display: 'flex', justifyContent: 'flex-start', paddingBottom: '16px' }}> 
                 <div
