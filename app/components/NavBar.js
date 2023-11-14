@@ -1,8 +1,9 @@
 import Link from 'next/link'
+import GreenButton from './GreenButton';
 
 export default function NavBar() {
     return(
-        <nav className='flex justify-between p-5' width="1000px">
+        <nav className='flex justify-between p-5'>
             <div>
                 <ul className='flex flex-wrap gap-10'>
                     <li>
@@ -38,12 +39,14 @@ export default function NavBar() {
                     </li>
                 </ul>
             </div>
-            <div className='p'>
-                <select className="bg-white text-black px-2 rounded">
+            <div>
+                <select className=" bg-white text-black">
                     <option>EN</option>
                     <option>ES</option>
                 </select>
-                <Link href="link" className=" font-bold bg-green px-7 py-4 rounded-full">Send Money</Link>
+                <GreenButton>
+                    <Link href="link">Send Money</Link> 
+                </GreenButton>
             </div>
           
         </nav>
