@@ -10,11 +10,11 @@ const inter = Inter({ subsets: ['latin'] })
 export default function MainLayout({ showLinkBar, children }) {
     return (
       <html lang="en">
-         <body className={`bg-gray-200 flex flex-col min-h-screen ${inter.className}`}>
+         <body className={`flex flex-col min-h-screen ${inter.className}`}>
             {showLinkBar && <LinkBar/>}
               <NavBar/>
-          <main className='bg-gray-300 flex justify-center grow'>
-            <div className='bg-gray-400 w-full max-w-screen-2xl mx-auto p-6'>
+          <main className='flex grow'>
+            <div className='w-full max-w-screen-2xl mx-auto p-4'>
               {children}
             </div>
           </main>
