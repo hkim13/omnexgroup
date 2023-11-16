@@ -10,14 +10,18 @@ export default function NavBar() {
     const [showRegulatoryDropdown, setShowRegulatoryDropdown] = useState(false);
 
     return(
-        <nav className='p-10 pt-4'>
-            <div className='flex items-center justify-around'>
+        <nav className='p-4 pt-4'>
+            <div className='flex items-center justify-between'>
                 <div className='flex gap-14'>
+                    
+                    {/* OmnexGroup logo */}
                     <div>
                         <Link className="md:cursor-pointer h-9" href="/">
                             <img src="/SVG/OmnexLogo.svg" alt="Omnex Logo" width="200"/>
                         </Link>
                     </div>
+
+                    {/* About Us, Our Solutions, Careers, Regulatory */}
                     <ul className='lg:flex hidden font-bold items-center gap-14'>
                         <li>
                             <div className="min-w-max" 
@@ -57,14 +61,15 @@ export default function NavBar() {
                         </li>
                     </ul>
                 </div>
-             
+
+                {/* EN, Send Money */}                    
                 <div className='hidden lg:flex lg:flex-1 lg:justify-end gap-3'>
                     <select className=" bg-white text-black font-bold">
                         <option>EN</option>
                         <option>ES</option>
                     </select>
                     <div className="min-w-max">
-                        <Button class="btn-green ">
+                        <Button className="btn-green">
                             <Link href="link">Send Money</Link> 
                         </Button>
                     </div>

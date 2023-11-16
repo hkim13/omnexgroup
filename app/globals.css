@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer components {
   .btn-green{
     @apply bg-[#52DB78] text-[#253D84];
@@ -31,4 +32,5 @@ body {
 h1{
   font-size: 36px;
 }
+
 
