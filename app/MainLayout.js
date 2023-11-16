@@ -12,9 +12,11 @@ export default function MainLayout({ showLinkBar, children }) {
       <html lang="en">
          <body className={`flex flex-col min-h-screen ${inter.className}`}>
             {showLinkBar && <LinkBar/>}
-            <NavBar/>
+              <NavBar/>
           <main className='flex grow'>
-            {children}
+            <div className='w-full max-w-screen-2xl mx-auto p-4'>
+              {children}
+            </div>
           </main>
           <footer className='flex'>
             <Footer/>
