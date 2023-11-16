@@ -51,14 +51,14 @@ export default function HomePage() {
         <div className=''>
           {/* Title */}
           <div className=' text-center pb-xsm sm:pb-sm'>
-            <h3 className=' pb-2'>Explore</h3>
+            <h3 className='text-green pb-2'>Explore</h3>
             <h1>What We Do for You</h1>
           </div>
 
           {/* Image cards */}
-          <div className='flex flex-col gap-y-4 '>
+          <div className='flex flex-col items-center sm:flex-row sm:justify-center grow gap-4 '>
             {/* Image card 1 */}
-            <div className='border rounded-3xl flex flex-col gap-y-4'>
+            <div className='border rounded-3xl flex auto flex-col max-w-[460px] h-[615px] gap-y-4'>
               <div className='rounded-t-3xl w-full h-60 bg-cover bg-no-repeat bg-[center_right_-100px]' style={{backgroundImage: "url('/Webp/AdobeStock_259671750.webp')",  backgroundSize:"175%"}}/>
               <div className='flex flex-col gap-y-8 p-4'>
                 <div className='text-start'>
@@ -73,7 +73,7 @@ export default function HomePage() {
               </div>
             </div>
             {/* Image card 2 */}
-            <div className='border rounded-3xl flex flex-col gap-y-4'>
+            <div className='border rounded-3xl flex flex-col max-w-[460px] h-[615px] gap-y-4'>
               <div className='rounded-t-3xl w-full h-60 bg-cover bg-no-repeat bg-[center_right_-75px]' style={{backgroundImage: "url('/Webp/AdobeStock_263742652.webp')",  backgroundSize:"130%"}}/>
               <div className='flex flex-col gap-y-8 p-4'>
                 <div className='text-start'>
