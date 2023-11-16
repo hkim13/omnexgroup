@@ -48,7 +48,7 @@ export default function HomePage() {
         </div>
 
         {/*Second section: Explore - What We Do for You*/}
-        <div className=''>
+        <div className='pb-10 sm:pb-24'>
           {/* Title */}
           <div className=' text-center pb-xsm sm:pb-sm'>
             <h3 className='text-green pb-2'>Explore</h3>
@@ -88,6 +88,80 @@ export default function HomePage() {
             </div>
           </div>
 
+        </div>
+
+        {/*Third section: Our Brands*/}
+        <div className='pb-10 sm:pb-24'>
+          {/* Title */}
+          <div className='text-center pb-xsm sm:pb-sm'>
+            <h1>Our Brands</h1>
+          </div>
+
+          {/* grid logos & Download our Sharemoney App */}
+          <div className='flex flex-col items-center gap-y-6 sm:gap-y-10'>
+            {/* grid logos */}
+            <div className='grid grid-rows-2 grid-cols-2 gap-2 sm:gap-4 md:gap-6 lg:gap-8'>
+              <Link className='flex place-content-center border rounded-2xl sm:rounded-3xl p-4 min-w-[150px] min-h-[75px] max-w-[460px] max-h-[140px] ' href="https://www.unomoneytransfers.com/">
+                <img className='w-[100%] sm:w-[75%]' src="/SVG/UnoBIG.svg" alt="Uno" width="100%"/> 
+              </Link>
+              <Link className='flex place-content-center border rounded-2xl sm:rounded-3xl p-4 min-w-[150px] min-h-[75px] max-w-[460px] max-h-[140px] ' href="https://www.giromex.com/">
+                <img className='w-[100%] sm:w-[75%]' src="/SVG/GriromexBIG.svg" alt="Giromex" width="100%"/> 
+              </Link>
+              <Link className='flex place-content-center border rounded-2xl sm:rounded-3xl p-4 min-w-[150px] min-h-[75px] max-w-[460px] max-h-[140px] ' href="https://www.legoitienle.com/">
+                <img className='w-[100%] sm:w-[95%]' src="/SVG/LeGoiBIG.svg" alt="LeGoi" width="100%"/> 
+              </Link>
+              <Link className='flex place-content-center border rounded-2xl sm:rounded-3xl p-4 min-w-[150px] min-h-[75px] max-w-[460px] max-h-[140px] ' href="https://www.sharemoney.com/us/en/denmark">
+                <img className='w-[100%] sm:w-[95%]' src="/SVG/SharemoneyBIG.svg" alt="Sharemoney"/> 
+              </Link>
+            </div>
+
+            {/* Download our Sharemoney App */}
+            <div className='bg-gray-200 rounded-3xl min-w-[330px] min-h-[300px] max-w-[960px] max-h-[500px]'>
+              <div className='grid grid-cols-8'>
+                {/* Text + Links */}
+                <div className='bg-gray-300 col-span-5'>
+                  {/* Text */}
+                  <div>
+
+                  </div>
+                  {/* Links */}
+                  <div>
+
+                  </div>
+                </div>
+
+                {/* Phone */}
+                <div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+            
+
+        </div>
+
+        {/*Fourth section: Discover: Why Choose Us*/}
+        <div className='pb-10 sm:pb-24'>
+          {/* Title */}
+          <div className='text-center pb-xsm sm:pb-sm'>
+            <h3 className='text-green pb-2'>Discover</h3>
+            <h1>Why Choose Us</h1>
+          </div>
+
+       
+
+        </div>
+        
+        {/*Fifth section: Support: We Are Here for You*/}
+        <div className='pb-10 sm:pb-24'>
+          {/* Title */}
+          <div className='text-center pb-xsm sm:pb-sm'>
+            <h3 className='text-green pb-2'>Support</h3>
+            <h1>We Are Here for You</h1>
+          </div>
+
+        
 
         </div>
 
