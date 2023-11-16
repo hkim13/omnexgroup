@@ -56,7 +56,7 @@ export default function HomePage() {
           </div>
 
           {/* Image cards */}
-          <div className='flex flex-col items-center sm:flex-row sm:justify-center grow gap-4 '>
+          <div className='grid justify-center sm:grid-cols-2 sm:justify-center grow gap-4 '>
             {/* Image card 1 */}
             <div className='border rounded-3xl flex auto flex-col max-w-[460px] h-[615px] gap-y-4'>
               <div className='rounded-t-3xl w-full h-60 bg-cover bg-no-repeat bg-[center_right_-100px]' style={{backgroundImage: "url('/Webp/AdobeStock_259671750.webp')",  backgroundSize:"175%"}}/>
