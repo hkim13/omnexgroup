@@ -1,3 +1,5 @@
+/*import '@/globals.css'*/
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,7 +9,11 @@
     @apply bg-[#52DB78] text-[#253D84];
   }
 
+  .btn{
+    @apply bg-white text-[#253D84] border-2 border-[#253D84];
+  }
 }
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -29,8 +35,42 @@ body {
   background: var(--background-color); 
 }
 
-h1{
-  font-size: 36px;
+
+h1 {
+  font-size: 2.25rem; /* 36px */
+  line-height: 2.5rem; /* 40px */
+  font-weight: bold;
 }
 
+h2 {
+  font-size: 1.5rem; /* 24px */
+  line-height: 3rem; /* 32px */
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.375rem; /* 22px */
+  line-height: 1.75rem; /* 28px */
+  font-weight: bold;
+}
+
+p {
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
+}
+
+
+@media (min-width: 640px) { /* lg breakpoint in Tailwind by default */
+  h1 {
+    font-size: 46px; /*  */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  p {
+    font-size: 1.125rem; /* 18px */
+  }
+}
 

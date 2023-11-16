@@ -16,6 +16,12 @@ module.exports = {
       colors: {
         green: '#52DB78',
         white: '#FFFFFF',
+      },
+
+      padding: {
+        xsm: '2rem', //p-8 32px
+        sm: '4rem',  //p-16 64px
+        lg: '5rem', //p-20 80px
       }
     },
   },
