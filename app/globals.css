@@ -60,7 +60,7 @@ p {
 }
 
 
-@media (min-width: 640px) { /* lg breakpoint in Tailwind by default */
+@media (min-width: 640px) { /* sm breakpoint */
   h1 {
     font-size: 46px; /*  */
   }

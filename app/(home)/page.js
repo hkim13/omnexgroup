@@ -48,7 +48,7 @@ export default function HomePage() {
         </div>
 
         {/*Second section: Explore - What We Do for You*/}
-        <div className=''>
+        <div className='pb-10 sm:pb-24'>
           {/* Title */}
           <div className=' text-center pb-xsm sm:pb-sm'>
             <h3 className='text-green pb-2'>Explore</h3>
@@ -56,9 +56,9 @@ export default function HomePage() {
           </div>
 
           {/* Image cards */}
-          <div className='flex flex-col items-center sm:flex-row sm:justify-center grow gap-4 '>
+          <div className='grid justify-center sm:grid-cols-2 sm:justify-center grow gap-4 '>
             {/* Image card 1 */}
-            <div className='border rounded-3xl flex auto flex-col max-w-[460px] h-[615px] gap-y-4'>
+            <div className='border sm:place-self-end rounded-3xl flex auto flex-col max-w-[460px] h-[615px] gap-y-4'>
               <div className='rounded-t-3xl w-full h-60 bg-cover bg-no-repeat bg-[center_right_-100px]' style={{backgroundImage: "url('/Webp/AdobeStock_259671750.webp')",  backgroundSize:"175%"}}/>
               <div className='flex flex-col gap-y-8 p-4'>
                 <div className='text-start'>
@@ -73,7 +73,7 @@ export default function HomePage() {
               </div>
             </div>
             {/* Image card 2 */}
-            <div className='border rounded-3xl flex flex-col max-w-[460px] h-[615px] gap-y-4'>
+            <div className='border sm:place-self-start rounded-3xl flex flex-col max-w-[460px] h-[615px] gap-y-4'>
               <div className='rounded-t-3xl w-full h-60 bg-cover bg-no-repeat bg-[center_right_-75px]' style={{backgroundImage: "url('/Webp/AdobeStock_263742652.webp')",  backgroundSize:"130%"}}/>
               <div className='flex flex-col gap-y-8 p-4'>
                 <div className='text-start'>
@@ -88,6 +88,91 @@ export default function HomePage() {
             </div>
           </div>
 
+        </div>
+
+        {/*Third section: Our Brands*/}
+        <div className='pb-10 sm:pb-24'>
+          {/* Title */}
+          <div className='text-center pb-xsm sm:pb-sm'>
+            <h1>Our Brands</h1>
+          </div>
+
+          {/* grid logos & Download our Sharemoney App */}
+          <div className='flex flex-col items-center gap-y-6 sm:gap-y-10'>
+            {/* grid logos */}
+            <div className='grid grid-rows-2 grid-cols-2 gap-2 sm:gap-4 md:gap-6 lg:gap-8'>
+              <Link className='flex place-content-center border rounded-2xl sm:rounded-3xl p-4 min-w-[150px] min-h-[75px] max-w-[460px] max-h-[140px] ' href="https://www.unomoneytransfers.com/">
+                <img className='w-[100%] sm:w-[75%]' src="/SVG/UnoBIG.svg" alt="Uno" width="100%"/> 
+              </Link>
+              <Link className='flex place-content-center border rounded-2xl sm:rounded-3xl p-4 min-w-[150px] min-h-[75px] max-w-[460px] max-h-[140px] ' href="https://www.giromex.com/">
+                <img className='w-[100%] sm:w-[75%]' src="/SVG/GriromexBIG.svg" alt="Giromex" width="100%"/> 
+              </Link>
+              <Link className='flex place-content-center border rounded-2xl sm:rounded-3xl p-4 min-w-[150px] min-h-[75px] max-w-[460px] max-h-[140px] ' href="https://www.legoitienle.com/">
+                <img className='w-[100%] sm:w-[95%]' src="/SVG/LeGoiBIG.svg" alt="LeGoi" width="100%"/> 
+              </Link>
+              <Link className='flex place-content-center border rounded-2xl sm:rounded-3xl p-4 min-w-[150px] min-h-[75px] max-w-[460px] max-h-[140px] ' href="https://www.sharemoney.com/us/en/denmark">
+                <img className='w-[100%] sm:w-[95%]' src="/SVG/SharemoneyBIG.svg" alt="Sharemoney"/> 
+              </Link>
+            </div>
+
+            {/* Download our Sharemoney App */}
+            <div className='bg-[#F7F7F7] rounded-3xl min-w-[330px] min-h-[300px] max-w-[960px] max-h-[500px] px-5 sm:px-12 py-8 sm:py-14'>
+              <div className='flex'>  {/* I dont tihnk i have to do grids. I think all you need to do is just use flex and set a min-w-max for the two links after sizebreak or set a min-w for */}
+                {/* Text + Links */}
+                <div className=' flex flex-col max-w-[66.67%] gap-4'>
+                  {/* Text */}
+                  <div className='pb-6'>
+                    <h2 className='text-[#0066CC] text-xl sm:text-[46px] sm:leading-[50px] font-bold pb-4'>Download our Sharemoney App</h2>
+                    <p className='text-xs sm:text-lg max-w-[300px]'>Download our app to transfer money anytime and anywhere.</p>
+                  </div>
+                  {/* Links */}
+                  <div className='flex flex-col sm:flex-row gap-2 sm:gap-6'>
+                    <Link className=' ' href="link">
+                      <img className='w-[125.64px] sm:w-[187.2px]' src="/SVG/AppStore.svg" alt="Giromex" width="100%"/> 
+                    </Link>
+                    <Link className=' ' href="link">
+                      <img className='w-[125.64px] sm:w-[187.2px]' src="/SVG/GooglePlay.svg" alt="Giromex" width="100%"/> 
+                    </Link>
+                  </div>
+                </div>
+
+                {/* Phone */}
+                <div>
+                  <div className='sm:hidden'>
+                    <img className='w-full' src="/SVG/Phone.svg" alt="Phone" />
+                  </div>
+                  <div className='hidden sm:block'>
+                    <img className='w-3/4' src="/SVG/Phone-Desktop.svg" alt="Phone" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+
+        </div>
+
+        {/*Fourth section: Discover: Why Choose Us*/}
+        <div className='pb-10 sm:pb-24'>
+          {/* Title */}
+          <div className='text-center pb-xsm sm:pb-sm'>
+            <h3 className='text-green pb-2'>Discover</h3>
+            <h1>Why Choose Us</h1>
+          </div>
+
+       
+
+        </div>
+        
+        {/*Fifth section: Support: We Are Here for You*/}
+        <div className='pb-10 sm:pb-24'>
+          {/* Title */}
+          <div className='text-center pb-xsm sm:pb-sm'>
+            <h3 className='text-green pb-2'>Support</h3>
+            <h1>We Are Here for You</h1>
+          </div>
+
+        
 
         </div>
 
