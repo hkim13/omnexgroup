@@ -116,23 +116,34 @@ export default function HomePage() {
             </div>
 
             {/* Download our Sharemoney App */}
-            <div className='bg-gray-200 rounded-3xl min-w-[330px] min-h-[300px] max-w-[960px] max-h-[500px]'>
-              <div className='grid grid-cols-8'>  {/* I dont tihnk i have to do grids. I think all you need to do is just use flex and set a min-w-max for the two links after sizebreak or set a min-w for */}
+            <div className='bg-[#F7F7F7] rounded-3xl min-w-[330px] min-h-[300px] max-w-[960px] max-h-[500px] px-5 sm:px-12 py-8 sm:py-14'>
+              <div className='flex'>  {/* I dont tihnk i have to do grids. I think all you need to do is just use flex and set a min-w-max for the two links after sizebreak or set a min-w for */}
                 {/* Text + Links */}
-                <div className='bg-gray-300 col-span-5'>
+                <div className=' flex flex-col max-w-[66.67%] gap-4'>
                   {/* Text */}
-                  <div>
-
+                  <div className='pb-6'>
+                    <h2 className='text-[#0066CC] text-xl sm:text-[46px] sm:leading-[50px] font-bold pb-4'>Download our Sharemoney App</h2>
+                    <p className='text-xs sm:text-lg max-w-[300px]'>Download our app to transfer money anytime and anywhere.</p>
                   </div>
                   {/* Links */}
-                  <div>
-
+                  <div className='flex flex-col sm:flex-row gap-2 sm:gap-6'>
+                    <Link className=' ' href="link">
+                      <img className='w-[125.64px] sm:w-[187.2px]' src="/SVG/AppStore.svg" alt="Giromex" width="100%"/> 
+                    </Link>
+                    <Link className=' ' href="link">
+                      <img className='w-[125.64px] sm:w-[187.2px]' src="/SVG/GooglePlay.svg" alt="Giromex" width="100%"/> 
+                    </Link>
                   </div>
                 </div>
 
                 {/* Phone */}
                 <div>
-
+                  <div className='sm:hidden'>
+                    <img className='w-full' src="/SVG/Phone.svg" alt="Phone" />
+                  </div>
+                  <div className='hidden sm:block'>
+                    <img className='w-3/4' src="/SVG/Phone-Desktop.svg" alt="Phone" />
+                  </div>
                 </div>
               </div>
             </div>
