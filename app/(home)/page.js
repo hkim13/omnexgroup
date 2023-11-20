@@ -58,7 +58,7 @@ export default function HomePage() {
           {/* Image cards */}
           <div className='grid justify-center sm:grid-cols-2 sm:justify-center grow gap-4 '>
             {/* Image card 1 */}
-            <div className='border rounded-3xl flex auto flex-col max-w-[460px] h-[615px] gap-y-4'>
+            <div className='border sm:place-self-end rounded-3xl flex auto flex-col max-w-[460px] h-[615px] gap-y-4'>
               <div className='rounded-t-3xl w-full h-60 bg-cover bg-no-repeat bg-[center_right_-100px]' style={{backgroundImage: "url('/Webp/AdobeStock_259671750.webp')",  backgroundSize:"175%"}}/>
               <div className='flex flex-col gap-y-8 p-4'>
                 <div className='text-start'>
@@ -73,7 +73,7 @@ export default function HomePage() {
               </div>
             </div>
             {/* Image card 2 */}
-            <div className='border rounded-3xl flex flex-col max-w-[460px] h-[615px] gap-y-4'>
+            <div className='border sm:place-self-start rounded-3xl flex flex-col max-w-[460px] h-[615px] gap-y-4'>
               <div className='rounded-t-3xl w-full h-60 bg-cover bg-no-repeat bg-[center_right_-75px]' style={{backgroundImage: "url('/Webp/AdobeStock_263742652.webp')",  backgroundSize:"130%"}}/>
               <div className='flex flex-col gap-y-8 p-4'>
                 <div className='text-start'>
@@ -117,7 +117,7 @@ export default function HomePage() {
 
             {/* Download our Sharemoney App */}
             <div className='bg-gray-200 rounded-3xl min-w-[330px] min-h-[300px] max-w-[960px] max-h-[500px]'>
-              <div className='grid grid-cols-8'>
+              <div className='grid grid-cols-8'>  {/* I dont tihnk i have to do grids. I think all you need to do is just use flex and set a min-w-max for the two links after sizebreak or set a min-w for */}
                 {/* Text + Links */}
                 <div className='bg-gray-300 col-span-5'>
                   {/* Text */}
