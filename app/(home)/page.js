@@ -13,7 +13,7 @@ export default function HomePage() {
       <main className='mt-0 lg:mt-14 mx-auto w-auto max-w-max'>
         
         {/*First section*/}
-        <div className=' flex flex-col-reverse lg:flex-row lg:justify-between items-center w-full pb-10 sm:pb-24'>
+        <div className=' flex flex-col-reverse lg:flex-row lg:justify-between items-center w-full pb-8 sm:pb-24'>
           
           {/* Text Area */}
           <div className=' flex-1'>
@@ -101,16 +101,16 @@ export default function HomePage() {
           <div className='flex flex-col items-center gap-y-6 sm:gap-y-10'>
             {/* grid logos */}
             <div className='grid grid-rows-2 grid-cols-2 gap-2 sm:gap-4 md:gap-6 lg:gap-8'>
-              <Link className='flex place-content-center border rounded-2xl sm:rounded-3xl p-4 min-w-[150px] min-h-[75px] max-w-[460px] max-h-[140px] ' href="https://www.unomoneytransfers.com/">
-                <img className='w-[100%] sm:w-[75%]' src="/SVG/UnoBIG.svg" alt="Uno" width="100%"/> 
+              <Link className='flex place-content-center border rounded-2xl sm:rounded-3xl p-4 min-w-[150px] min-h-[75px] max-w-[463px] max-h-[140px]' href="https://www.unomoneytransfers.com/">
+                <img className='w-[100%] sm sm:w-[75%]' src="/SVG/UnoBIG.svg" alt="Uno" width="100%"/> 
               </Link>
-              <Link className='flex place-content-center border rounded-2xl sm:rounded-3xl p-4 min-w-[150px] min-h-[75px] max-w-[460px] max-h-[140px] ' href="https://www.giromex.com/">
+              <Link className='flex place-content-center border rounded-2xl sm:rounded-3xl p-4 min-w-[150px] min-h-[75px] max-w-[463px] max-h-[140px]' href="https://www.giromex.com/">
                 <img className='w-[100%] sm:w-[75%]' src="/SVG/GriromexBIG.svg" alt="Giromex" width="100%"/> 
               </Link>
-              <Link className='flex place-content-center border rounded-2xl sm:rounded-3xl p-4 min-w-[150px] min-h-[75px] max-w-[460px] max-h-[140px] ' href="https://www.legoitienle.com/">
+              <Link className='flex place-content-center border rounded-2xl sm:rounded-3xl p-4 min-w-[150px] min-h-[75px] max-w-[463px] max-h-[140px]' href="https://www.legoitienle.com/">
                 <img className='w-[100%] sm:w-[95%]' src="/SVG/LeGoiBIG.svg" alt="LeGoi" width="100%"/> 
               </Link>
-              <Link className='flex place-content-center border rounded-2xl sm:rounded-3xl p-4 min-w-[150px] min-h-[75px] max-w-[460px] max-h-[140px] ' href="https://www.sharemoney.com/us/en/denmark">
+              <Link className='flex place-content-center border rounded-2xl sm:rounded-3xl p-4 min-w-[150px] min-h-[75px] max-w-[463px] max-h-[140px]' href="https://www.sharemoney.com/us/en/denmark">
                 <img className='w-[100%] sm:w-[95%]' src="/SVG/SharemoneyBIG.svg" alt="Sharemoney"/> 
               </Link>
             </div>
@@ -128,10 +128,10 @@ export default function HomePage() {
                   {/* Links */}
                   <div className='flex flex-col sm:flex-row gap-2 sm:gap-6'>
                     <Link className=' ' href="link">
-                      <img className='w-[125.64px] sm:w-[187.2px]' src="/SVG/AppStore.svg" alt="Giromex" width="100%"/> 
+                      <img className='w-[125.64px] sm:w-[187.2px]' src="/SVG/AppStore.svg" alt="" width="100%"/> 
                     </Link>
                     <Link className=' ' href="link">
-                      <img className='w-[125.64px] sm:w-[187.2px]' src="/SVG/GooglePlay.svg" alt="Giromex" width="100%"/> 
+                      <img className='w-[125.64px] sm:w-[187.2px]' src="/SVG/GooglePlay.svg" alt="" width="100%"/> 
                     </Link>
                   </div>
                 </div>
@@ -155,9 +155,31 @@ export default function HomePage() {
         {/*Fourth section: Discover: Why Choose Us*/}
         <div className='pb-10 sm:pb-24'>
           {/* Title */}
-          <div className='text-center pb-xsm sm:pb-sm'>
+          <div className='flex flex-col text-center pb-xsm sm:pb-sm'>
             <h3 className='text-green pb-2'>Discover</h3>
-            <h1>Why Choose Us</h1>
+            <h1 className='pb-12'>Why Choose Us</h1>
+            <p className='place-self-center max-w-[726px]'>We helped consumers successfully send over twenty billion dollars home. With a team of service professionals standing by to ensure your satisfaction every step of the way!</p>
+          </div>
+
+          {/* Three icons */}
+          <div className='mx-auto grid sm:grid-cols-3 gap-4 max-w-[964px]'>
+            {/* icon1 */}
+            <div className='flex sm:flex-col-reverse sm:text-center items-center sm:place-content-between border rounded-xl p-7 gap-8 sm:max-w-[305px]'>
+              <img className='w-[96px] sm:w-[179.42px]' src="/Webp/Webpage-Illustrations-HELP.webp" alt="" width="100%"/>
+              <p className='text-[#253D84] font-bold text-base sm:text-[22px]'>Helped consumers successfully send over twenty billion home</p>
+            </div>
+            
+            {/* icon2 */}
+            <div className='flex sm:flex-col-reverse sm:text-center items-center sm:place-content-between border rounded-xl p-7 gap-8 sm:max-w-[305px]'>
+              <img className='w-[96px] sm:w-[179.42px]' src="/Webp/Webpage-Illustrations-MULTILINGUAL.webp" alt="" width="100%"/>
+              <p className='text-[#253D84] font-bold text-base sm:text-[22px]'>A team of multi-lingual service professionals standing by</p>
+            </div>
+            
+            {/* icon3 */}
+            <div className='flex sm:flex-col-reverse sm:text-center items-center sm:place-content-between border rounded-xl p-7 gap-8 sm:max-w-[305px]'>
+              <img className='w-[96px] sm:w-[179.42px]' src="/Webp/Webpage-Illustrations-AWARD.webp" alt="" width="100%"/>
+              <p className='text-[#253D84] font-bold text-base sm:text-[22px]'>Awarded fastest transfer by the Finder Money Transfer Awards</p>
+            </div>
           </div>
 
        
