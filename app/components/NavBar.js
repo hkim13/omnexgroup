@@ -27,7 +27,7 @@ export default function NavBar() {
                             <div className="min-w-max" 
                                 onMouseEnter={() => setShowAboutDropdown(true)}
                                 onMouseLeave={() => setShowAboutDropdown(false)}>
-                                <button>About Us</button>
+                                <Link href="/about-us/our-brands">About Us</Link>
                                 {showAboutDropdown && (
                                     <ul className="absolute bg-white shadow-md rounded font-normal">
                                         <li><Link href="/about-us/our-brands">Our Brands</Link></li>
@@ -49,7 +49,7 @@ export default function NavBar() {
                             <div  
                                 onMouseEnter={() => setShowRegulatoryDropdown(true)}
                                 onMouseLeave={() => setShowRegulatoryDropdown(false)}>
-                                <button>Regulatory</button>
+                                <Link href="/regulatory/state-licenses">Regulatory</Link>
                                 {showRegulatoryDropdown && (
                                     <ul className="absolute bg-white shadow-md rounded font-normal">
                                         <li><Link href="/regulatory/state-licenses">State Licenses</Link></li>
@@ -70,7 +70,7 @@ export default function NavBar() {
                     </select>
                     <div className="min-w-max">
                         <Button className="btn-green">
-                            <Link href="link">Send Money</Link> 
+                            <Link href="https://www.sharemoney.com/us/en/denmark">Send Money</Link> 
                         </Button>
                     </div>
                 </div>

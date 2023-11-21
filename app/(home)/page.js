@@ -25,10 +25,10 @@ export default function HomePage() {
             </p>
             <div className='flex justify-center sm:justify-start gap-4 pt-5'>
               <Button className="btn">
-                <Link href="link">About Us</Link>
+                <Link href="/about-us/our-brands">About Us</Link>
               </Button>
               <Button className="btn-green">
-                <Link href="link">Send Money</Link> 
+                <Link href="https://www.sharemoney.com/us/en/denmark">Send Money</Link> 
               </Button>
             </div>
           </div>
@@ -50,23 +50,23 @@ export default function HomePage() {
         {/*Second section: Explore - What We Do for You*/}
         <div className='pb-10 sm:pb-24'>
           {/* Title */}
-          <div className=' text-center pb-xsm sm:pb-sm'>
+          <div className='text-center pb-xsm sm:pb-sm'>
             <h3 className='text-green pb-2'>Explore</h3>
             <h1>What We Do for You</h1>
           </div>
 
           {/* Image cards */}
-          <div className='grid justify-center sm:grid-cols-2 sm:justify-center grow gap-4 '>
+          <div className='grid justify-center sm:grid-cols-2 gap-4 '>
             {/* Image card 1 */}
             <div className='border sm:place-self-end rounded-3xl flex auto flex-col max-w-[460px] h-[615px] gap-y-4'>
               <div className='rounded-t-3xl w-full h-60 bg-cover bg-no-repeat bg-[center_right_-100px]' style={{backgroundImage: "url('/Webp/AdobeStock_259671750.webp')",  backgroundSize:"175%"}}/>
-              <div className='flex flex-col gap-y-8 p-4'>
+              <div className='flex flex-col gap-y-8 px-7 py-4'>
                 <div className='text-start'>
                   <h2>For Consumers</h2>
                   <p>Send money to your friends and family anytime, anywhere through our app, our website, or at one of our retail locations.</p>
                 </div>
                 <div className='flex flex-col gap-y-4 text-start text-[#253D84] font-bold'>
-                  <Link className='flex gap-3' href="link">Visit Sharemoney.com <img className='w-4' src='/SVG/GreenArrow.svg'/></Link>
+                  <Link className='flex gap-3' href="https://www.sharemoney.com/us/en/denmark">Visit Sharemoney.com <img className='w-4' src='/SVG/GreenArrow.svg'/></Link>
                   <Link className='flex gap-3' href="link">Download our App <img className='w-4' src='/SVG/GreenArrow.svg'/></Link>
                   <Link className='flex gap-3' href="link">Call Us Now <img className='w-4' src='/SVG/GreenArrow.svg'/></Link>
                 </div>
@@ -75,13 +75,13 @@ export default function HomePage() {
             {/* Image card 2 */}
             <div className='border sm:place-self-start rounded-3xl flex flex-col max-w-[460px] h-[615px] gap-y-4'>
               <div className='rounded-t-3xl w-full h-60 bg-cover bg-no-repeat bg-[center_right_-75px]' style={{backgroundImage: "url('/Webp/AdobeStock_263742652.webp')",  backgroundSize:"130%"}}/>
-              <div className='flex flex-col gap-y-8 p-4'>
+              <div className='flex flex-col gap-y-8 px-7 py-4'>
                 <div className='text-start'>
                   <h2>For Businesses</h2>
                   <p>We enable businesses to integrate our remittance services into their systems, providing easy global access to agents, banks, and correspondents.</p>
                 </div>
                 <div className='flex flex-col gap-y-4 text-start text-[#253D84] font-bold'>
-                  <Link className='flex gap-3' href="link">Explore our Solutions <img className='w-4' src='/SVG/GreenArrow.svg'/></Link>
+                  <Link className='flex gap-3' href="/our-solutions">Explore our Solutions <img className='w-4' src='/SVG/GreenArrow.svg'/></Link>
                   <Link className='flex gap-3' href="link">Careers <img className='w-4' src='/SVG/GreenArrow.svg'/></Link>
                 </div>
               </div>
@@ -116,7 +116,7 @@ export default function HomePage() {
             </div>
 
             {/* Download our Sharemoney App */}
-            <div className='bg-[#F7F7F7] rounded-3xl min-w-[330px] min-h-[300px] max-w-[960px] max-h-[500px] px-5 sm:px-12 py-8 sm:py-14'>
+            <div className='bg-[#F7F7F7] rounded-3xl min-w-[330px] min-h-[300px] max-w-[960px] max-h-[500px] px-7 sm:px-12 py-8 sm:py-14'>
               <div className='flex'>  {/* I dont tihnk i have to do grids. I think all you need to do is just use flex and set a min-w-max for the two links after sizebreak or set a min-w for */}
                 {/* Text + Links */}
                 <div className=' flex flex-col max-w-[66.67%] gap-4'>
@@ -139,7 +139,7 @@ export default function HomePage() {
                 {/* Phone */}
                 <div>
                   <div className='sm:hidden'>
-                    <img className='w-full' src="/SVG/Phone.svg" alt="Phone" />
+                    <img className='w-[140px]' src="/SVG/Phone.svg" alt="Phone" />
                   </div>
                   <div className='hidden sm:block'>
                     <img className='w-3/4' src="/SVG/Phone-Desktop.svg" alt="Phone" />
@@ -194,6 +194,58 @@ export default function HomePage() {
             <h1>We Are Here for You</h1>
           </div>
 
+          {/* Two icons */}
+          <div className='grid justify-center mx-auto sm:grid-cols-2 gap-4 max-w-[964px]'>
+            
+            {/* icon1 */}
+            <div className='border bg-[#253D84] rounded-3xl h-[518px] sm:h-[617px] p-7 sm:p-12 flex flex-col justify-between'>
+              <div>
+                <h1 className='text-green pb-4'>Global Reach</h1>
+                <p className='text-[#FFFFFF] max-w-[356px]'>You can count on our company&apos;s growth, driven by our customers&apos; loyalty and trust.</p>
+              </div>
+              {/* This div is now a flex container that will justify its children with space between */}
+              <div className='flex flex-col justify-evenly flex-grow pl-4'>
+                <div className='flex flex-row gap-6'>
+                  <img className='w-[32.3px]' src="/SVG/GreenLocationPoint.svg" alt="" width="100%"/>
+                  <div className='flex flex-col'>
+                    <p className='text-green text-3xl font-bold'>586+</p>
+                    <p className='text-[#FFFFFF] text-2xl leading-none'>U.S. Locations</p>
+                  </div>
+                </div>
+                <div className='flex flex-row gap-6'>
+                  <img className='w-[32.3px]' src="/SVG/GreenWorldmap.svg" alt="" width="100%"/>
+                  <div className='flex flex-col'>
+                    <p className='text-green text-3xl font-bold'>83</p>
+                    <p className='text-[#FFFFFF] text-2xl leading-none'>Countries</p>
+                  </div>
+                </div>
+                <div className='flex flex-row gap-6'>
+                  <img className='w-[32.3px]' src="/SVG/GreenDollar.svg" alt="" width="100%"/>
+                  <div className='flex flex-col'>
+                    <p className='text-green text-3xl font-bold'>20 Billions</p>
+                    <p className='text-[#FFFFFF] text-2xl leading-none'>USD Transfer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* icon2 */}
+            <div>
+              <div className='border bg-[#333333] rounded-3xl h-[337px] sm:h-[617px] p-7 sm:p-12 flex flex-col justify-between min-w-[320px]'>
+                <div>
+                  <h1 className='text-green pb-4'>Get Support</h1>
+                  <p className='text-[#FFFFFF] max-w-[356px] sm:hidden'>If you need assistance or have any questions, you can easily reach us for support through our various contact channels.</p>
+                </div>
+                <div className='relative hidden sm:flex justify-center mx-auto max-w-min'>
+                  <div className='sm:w-[207px] sm:h-[207px] md:w-[247px] md:h-[247px] lg:w-[297px] lg:h-[297px] rounded-full bg-cover bg-no-repeat bg-center' style={{backgroundImage: "url('/Webp/AdobeStock_279786268.webp')"}}/>
+                  <div className='absolute sm:w-[80px] sm:h-[80px] md:w-[95px] md:h-[95px] lg:w-[122px] lg:h-[122px] rounded-full bg-cover bg-no-repeat bg-center bg-green' style={{backgroundImage: "url('/SVG/24-Worldmap.svg')", backgroundSize:"70%", top: '10%', right: '10%', transform: 'translate(50%, -50%)'}}/>
+                </div>
+                <Button className="btn-green max-w-min">
+                  <Link href="link">Contact our Support Team</Link>
+                </Button>
+              </div>
+            </div>
+          </div>
         
 
         </div>
@@ -204,3 +256,8 @@ export default function HomePage() {
     </>
   )
 }
+/*
+<div className='bg-gray-300 w-[364px] h-[364px] flex hidden sm:block pt-10 '>
+                    <div className='self-end w-[297px] h-[297px] rounded-full bg-cover bg-no-repeat bg-center' style={{backgroundImage: "url('/Webp/AdobeStock_279786268.webp')"}}/>
+                    <div className='self-start w-[122px] h-[122px] rounded-full bg-cover bg-no-repeat bg-center bg-green' style={{backgroundImage: "url('/SVG/24-Worldmap.svg')",  backgroundSize:"70%"}}/>
+                  </div> */
