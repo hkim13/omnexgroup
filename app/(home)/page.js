@@ -17,7 +17,7 @@ export default function HomePage() {
           
           {/* Text Area */}
           <div className=' flex-1'>
-            <h1 className="font-bold pb-3 text-[#333333]">
+            <h1 className="font-bold pb-3  text-[#333333]">
               Financial technology <span className="text-[#52DB78]">empowering</span> <span className="text-[#253D84]">consumers and businesses</span>
             </h1>
             <p className="text-[#333333]">
@@ -34,14 +34,14 @@ export default function HomePage() {
           </div>
        
           {/* Image Area */}
-          <div className='flex self-end  lg:self-center gap-4 pb-14'>
+          <div className='bg-gray-300 flex self-center  gap-4 pb-14'>
             <div className='flex flex-col items-end'>
-              <div className='w-36 h-56 sm:w-40 sm:h-60 lg:w-44 lg:h-64 xl:w-48 xl:h-72 shrink rounded-[48px] bg-cover bg-no-repeat bg-[center_right_-60px]' style={{backgroundImage: "url('/Webp/AdobeStock_280396247.webp')"}}/>
-              <div className='w-52 h-32 sm:w-60 sm:h-36 lg:w-64 lg:h-40 xl:w-72 xl:h-44 shrink rounded-[48px] bg-cover bg-no-repeat bg-left mt-4' style={{backgroundImage: "url('/Webp/AdobeStock_409017261.webp')"}}/>
+              <div className='w-36 h-56 sm:w-40 sm:h-60 md:w-44 md:h-64 lg:w-48 lg:h-72 shrink rounded-[48px] bg-cover bg-no-repeat bg-[center_right_-60px]' style={{backgroundImage: "url('/Webp/AdobeStock_280396247.webp')"}}/>
+              <div className='w-52 h-32 sm:w-60 sm:h-36 md:w-64 md:h-40 lg:w-72 lg:h-44 shrink rounded-[48px] bg-cover bg-no-repeat bg-left mt-4' style={{backgroundImage: "url('/Webp/AdobeStock_409017261.webp')"}}/>
             </div>
             <div className='flex flex-col items-start'>
-              <div className='w-40 h-40 sm:w-60 sm:h-48 lg:w-64 lg:h-52 xl:w-72 xl:h-56 shrink rounded-[48px] bg-cover bg-no-repeat bg-center' style={{backgroundImage: "url('/Webp/B-AdobeStock_235833811.webp')"}}/>
-              <div className='w-40 h-48 sm:w-72 sm:h-52 lg:w-80 lg:h-56 xl:w-96 xl:h-60 shrink rounded-[48px] bg-cover bg-no-repeat bg-center mt-4' style={{backgroundImage: "url('/Webp/AdobeStock_469533192.webp')"}}/>
+              <div className='w-40 h-40 sm:w-60 sm:h-48 md:w-64 md:h-52 lg:w-72 lg:h-56 shrink rounded-[48px] bg-cover bg-no-repeat bg-center' style={{backgroundImage: "url('/Webp/B-AdobeStock_235833811.webp')"}}/>
+              <div className='w-40 h-48 sm:w-72 sm:h-52 md:w-80 md:h-56 lg:w-96 lg:h-60 shrink rounded-[48px] bg-cover bg-no-repeat bg-center mt-4' style={{backgroundImage: "url('/Webp/AdobeStock_469533192.webp')"}}/>
             </div>
           </div> 
 
@@ -117,9 +117,9 @@ export default function HomePage() {
 
             {/* Download our Sharemoney App */}
             <div className='bg-[#F7F7F7] rounded-3xl min-w-[330px] min-h-[300px] max-w-[960px] max-h-[500px] px-7 sm:px-12 py-8 sm:py-14'>
-              <div className='flex'>  {/* I dont tihnk i have to do grids. I think all you need to do is just use flex and set a min-w-max for the two links after sizebreak or set a min-w for */}
+              <div className='flex flex-row justify-between'>  {/* I dont tihnk i have to do grids. I think all you need to do is just use flex and set a min-w-max for the two links after sizebreak or set a min-w for */}
                 {/* Text + Links */}
-                <div className=' flex flex-col max-w-[66.67%] gap-4'>
+                <div className=' flex flex-col max-w-[50%] gap-4'>
                   {/* Text */}
                   <div className='pb-6'>
                     <h2 className='text-[#0066CC] text-xl sm:text-[46px] sm:leading-[50px] font-bold pb-4'>Download our Sharemoney App</h2>
@@ -138,12 +138,8 @@ export default function HomePage() {
 
                 {/* Phone */}
                 <div>
-                  <div className='sm:hidden'>
-                    <img className='w-[140px]' src="/SVG/Phone.svg" alt="Phone" />
-                  </div>
-                  <div className='hidden sm:block'>
-                    <img className='w-3/4' src="/SVG/Phone-Desktop.svg" alt="Phone" />
-                  </div>
+                  <img className='w-[140px] sm:hidden' src="/Webp/Mobile-Phone.webp" alt="Phone" />
+                  <img className='w-[654px] hidden sm:block' src="/Webp/Desktop-Phone.webp" alt="Phone" />
                 </div>
               </div>
             </div>
