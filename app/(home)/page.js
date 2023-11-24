@@ -252,8 +252,3 @@ export default function HomePage() {
     </>
   )
 }
-/*
-<div className='bg-gray-300 w-[364px] h-[364px] flex hidden sm:block pt-10 '>
-                    <div className='self-end w-[297px] h-[297px] rounded-full bg-cover bg-no-repeat bg-center' style={{backgroundImage: "url('/Webp/AdobeStock_279786268.webp')"}}/>
-                    <div className='self-start w-[122px] h-[122px] rounded-full bg-cover bg-no-repeat bg-center bg-green' style={{backgroundImage: "url('/SVG/24-Worldmap.svg')",  backgroundSize:"70%"}}/>
-                  </div> */
