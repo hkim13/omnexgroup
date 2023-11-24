@@ -108,10 +108,10 @@ export default function HomePage() {
                 <img className='w-[132px] sm:w-[272.7px]' src="/SVG/GriromexBIG.svg" alt="Giromex" width="100%"/> 
               </Link>
               <Link className='flex place-content-center border rounded-2xl w-full' href="https://www.legoitienle.com/">
-                <img className='w-[157px] sm:w-[384.9px] sm:px-4' src="/SVG/LeGoiBIG.svg" alt="LeGoi" width="100%"/> 
+                <img className='w-[157px] sm:w-[384.9px] px-2 sm:px-4' src="/SVG/LeGoiBIG.svg" alt="LeGoi" width="100%"/> 
               </Link>
               <Link className='flex place-content-center border rounded-2xl w-full' href="https://www.sharemoney.com/us/en/denmark">
-                <img className='w-[149px] sm:w-[353.9px] sm:px-4' src="/SVG/SharemoneyBIG.svg" alt="Sharemoney"/> 
+                <img className='w-[149px] sm:w-[353.9px] px-2 sm:px-4' src="/SVG/SharemoneyBIG.svg" alt="Sharemoney"/> 
               </Link>
             </div>
      
