@@ -33,7 +33,7 @@ export default function HomePage() {
             </div>
           </div>
        
-          {/* Image Area */}
+         {/* Image Area 
           <div className='bg-gray-300 flex self-center  gap-4 pb-14'>
             <div className='flex flex-col items-end'>
               <div className='w-36 h-56 sm:w-40 sm:h-60 md:w-44 md:h-64 lg:w-48 lg:h-72 shrink rounded-[48px] bg-cover bg-no-repeat bg-[center_right_-60px]' style={{backgroundImage: "url('/Webp/AdobeStock_280396247.webp')"}}/>
@@ -44,7 +44,7 @@ export default function HomePage() {
               <div className='w-40 h-48 sm:w-72 sm:h-52 md:w-80 md:h-56 lg:w-96 lg:h-60 shrink rounded-[48px] bg-cover bg-no-repeat bg-center mt-4' style={{backgroundImage: "url('/Webp/AdobeStock_469533192.webp')"}}/>
             </div>
           </div> 
-
+        */}
         </div>
 
         {/*Second section: Explore - What We Do for You*/}

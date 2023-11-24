@@ -10,7 +10,7 @@ export default function NavBar() {
     const [showRegulatoryDropdown, setShowRegulatoryDropdown] = useState(false);
 
     return(
-        <nav className='p-4 pt-4'>
+        <nav className='p-7 pt-6'>
             <div className='flex items-center justify-between'>
                 <div className='flex gap-14'>
                     
