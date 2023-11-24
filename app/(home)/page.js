@@ -100,21 +100,21 @@ export default function HomePage() {
           {/* grid logos & Download our Sharemoney App */}
           <div className='flex flex-col items-center gap-y-6 sm:gap-y-10'>
             {/* grid logos */}
-            <div className='grid grid-rows-2 grid-cols-2 gap-2 sm:gap-4 md:gap-6 lg:gap-8'>
-              <Link className='flex place-content-center border rounded-2xl sm:rounded-3xl p-4 min-w-[150px] min-h-[75px] max-w-[463px] max-h-[140px]' href="https://www.unomoneytransfers.com/">
-                <img className='w-[100%] sm sm:w-[75%]' src="/SVG/UnoBIG.svg" alt="Uno" width="100%"/> 
+            <div className='grid grid-cols-2 justify-items-center w-screen gap-2 sm:gap-6 px-6 lg:px-0 h-[162px] sm:h-[311px] max-w-[960px]'>
+              <Link className='flex place-content-center border rounded-2xl w-full' href="https://www.unomoneytransfers.com/">
+                <img className='w-[117px] sm:w-[255.6px]' src="/SVG/UnoBIG.svg" alt="Uno" width="100%"/> 
               </Link>
-              <Link className='flex place-content-center border rounded-2xl sm:rounded-3xl p-4 min-w-[150px] min-h-[75px] max-w-[463px] max-h-[140px]' href="https://www.giromex.com/">
-                <img className='w-[100%] sm:w-[75%]' src="/SVG/GriromexBIG.svg" alt="Giromex" width="100%"/> 
+              <Link className='flex place-content-center border rounded-2xl w-full' href="https://www.giromex.com/">
+                <img className='w-[132px] sm:w-[272.7px]' src="/SVG/GriromexBIG.svg" alt="Giromex" width="100%"/> 
               </Link>
-              <Link className='flex place-content-center border rounded-2xl sm:rounded-3xl p-4 min-w-[150px] min-h-[75px] max-w-[463px] max-h-[140px]' href="https://www.legoitienle.com/">
-                <img className='w-[100%] sm:w-[95%]' src="/SVG/LeGoiBIG.svg" alt="LeGoi" width="100%"/> 
+              <Link className='flex place-content-center border rounded-2xl w-full' href="https://www.legoitienle.com/">
+                <img className='w-[157px] sm:w-[384.9px] sm:px-4' src="/SVG/LeGoiBIG.svg" alt="LeGoi" width="100%"/> 
               </Link>
-              <Link className='flex place-content-center border rounded-2xl sm:rounded-3xl p-4 min-w-[150px] min-h-[75px] max-w-[463px] max-h-[140px]' href="https://www.sharemoney.com/us/en/denmark">
-                <img className='w-[100%] sm:w-[95%]' src="/SVG/SharemoneyBIG.svg" alt="Sharemoney"/> 
+              <Link className='flex place-content-center border rounded-2xl w-full' href="https://www.sharemoney.com/us/en/denmark">
+                <img className='w-[149px] sm:w-[353.9px] sm:px-4' src="/SVG/SharemoneyBIG.svg" alt="Sharemoney"/> 
               </Link>
             </div>
-
+     
             {/* Download our Sharemoney App */}
             <div className='bg-[#F7F7F7] rounded-3xl min-w-[330px] min-h-[300px] max-w-[960px] max-h-[500px] px-7 sm:px-12 py-8 sm:py-14'>
               <div className='flex flex-row justify-between'>  {/* I dont tihnk i have to do grids. I think all you need to do is just use flex and set a min-w-max for the two links after sizebreak or set a min-w for */}
