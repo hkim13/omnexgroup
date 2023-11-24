@@ -119,14 +119,14 @@ export default function HomePage() {
             <div className='bg-[#F7F7F7] rounded-3xl min-w-[330px] min-h-[300px] max-w-[960px] max-h-[500px] px-7 sm:px-12 py-8 sm:py-14'>
               <div className='flex flex-row justify-between'>  {/* I dont tihnk i have to do grids. I think all you need to do is just use flex and set a min-w-max for the two links after sizebreak or set a min-w for */}
                 {/* Text + Links */}
-                <div className=' flex flex-col max-w-[50%] gap-4'>
+                <div className=' flex flex-col justify-between max-w-[50%] gap-4'>
                   {/* Text */}
                   <div className='pb-6'>
-                    <h2 className='text-[#0066CC] text-xl sm:text-[46px] sm:leading-[50px] font-bold pb-4'>Download our Sharemoney App</h2>
+                    <h2 className='text-[#0066CC] text-xl sm:text-[32px] sm:leading-[48px] md:text-[46px] md:leading-[54px] font-bold pb-4'>Download our Sharemoney App</h2>
                     <p className='text-xs sm:text-lg max-w-[300px]'>Download our app to transfer money anytime and anywhere.</p>
                   </div>
                   {/* Links */}
-                  <div className='flex flex-col sm:flex-row gap-2 sm:gap-6'>
+                  <div className='flex flex-col sm:flex-row gap-2 sm:gap-6 md:pb-10'>
                     <Link className=' ' href="link">
                       <img className='w-[125.64px] sm:w-[187.2px]' src="/SVG/AppStore.svg" alt="" width="100%"/> 
                     </Link>
@@ -137,7 +137,7 @@ export default function HomePage() {
                 </div>
 
                 {/* Phone */}
-                <div>
+                <div className='flex place-items-center'>
                   <img className='w-[140px] sm:hidden' src="/Webp/Mobile-Phone.webp" alt="Phone" />
                   <img className='w-[654px] hidden sm:block' src="/Webp/Desktop-Phone.webp" alt="Phone" />
                 </div>
