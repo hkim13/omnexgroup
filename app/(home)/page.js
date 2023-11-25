@@ -13,11 +13,11 @@ export default function HomePage() {
       <main className='mt-0 lg:mt-14 mx-auto w-auto max-w-max'>
         
         {/*First section*/}
-        <div className=' flex flex-col-reverse lg:flex-row lg:justify-between items-center w-full pb-8 sm:pb-24'>
+        <div className='flex flex-col-reverse lg:flex-row lg:justify-between items-center w-full pb-8 sm:pb-24'>
           
           {/* Text Area */}
           <div className=' flex-1'>
-            <h1 className="font-bold pb-3  text-[#333333]">
+            <h1 className="font-bold pb-3 sm:leading-[54px] text-[#333333]">
               Financial technology <span className="text-[#52DB78]">empowering</span> <span className="text-[#253D84]">consumers and businesses</span>
             </h1>
             <p className="text-[#333333]">
@@ -32,7 +32,9 @@ export default function HomePage() {
               </Button>
             </div>
           </div>
-       
+          <div className='pb-10'>
+            <img className='w-full' src="/Webp/Home-4pictures.webp" alt="Sharemoney"/>
+          </div>
          {/* Image Area 
           <div className='bg-gray-300 flex self-center  gap-4 pb-14'>
             <div className='flex flex-col items-end'>
