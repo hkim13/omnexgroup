@@ -5,14 +5,13 @@ import BigButton from '@/components/BigButton';
 import { useState } from 'react';
 
 export default function OurSolutionsPage() {
-  const [activeAccordion, setActiveAccordion] = useState('commercial');
+  const [activeAccordion, setActiveAccordion] = useState('unoKiosk');
 
   const handleAccordion = (id) => {
     if (activeAccordion === id) {
-      setActiveAccordion(null);
-    } else {
+     return;
+    } 
       setActiveAccordion(id);
-    }
   };
   
   const getOrder = (buttonName) => {
@@ -35,7 +34,7 @@ export default function OurSolutionsPage() {
         <div className='sm:hidden flex flex-col my-auto justify-between gap-4'>
           {activeAccordion === 'commercial' && (
             <div className='flex flex-col gap-4'>
-              <div className='flex flex-col h-[262px] justify-between p-7 border border-[#52DB78] rounded-3xl'>
+              <div className='flex flex-col gap-8 p-7 border border-[#52DB78] rounded-3xl'>
                 <h3>Commercial Payments</h3>
                 <hr className='-mx-2'/>
                 <p>Commercial Payments promotes financial inclusion and empower excluded small businesses by providing a secure cost effective solution for vendor payments.</p>
@@ -49,7 +48,7 @@ export default function OurSolutionsPage() {
           
           {activeAccordion === 'onlineAgent' && (
             <div className='flex flex-col gap-4'>
-              <div className='flex flex-col h-[262px] justify-between p-7 border border-[#52DB78] rounded-3xl'>
+              <div className='flex flex-col gap-8 p-7 border border-[#52DB78] rounded-3xl'>
                 <h3>Online Agent Platform</h3>
                 <hr className='-mx-2'/>
                 <p>Omnex agents have access to our superior online management software designed to help agents efficiently assist their customers in sending money back home.</p>
@@ -63,7 +62,7 @@ export default function OurSolutionsPage() {
           
           {activeAccordion === 'payLink' && (
             <div className='flex flex-col gap-4'>
-              <div className='flex flex-col h-[262px] justify-between p-7 border border-[#52DB78] rounded-3xl'>
+              <div className='flex flex-col gap-8 p-7 border border-[#52DB78] rounded-3xl'>
                 <h3>Pay by Link</h3>
                 <hr className='-mx-2'/>
                 <p>By offering convenient one-click money transfers through mobile phones, you can attract a larger customer base throughout your entire state and grow your business.</p>
@@ -77,7 +76,7 @@ export default function OurSolutionsPage() {
           
           {activeAccordion === 'unoKiosk' && (
             <div className='flex flex-col gap-4'>
-              <div className='flex flex-col h-[262px] justify-between p-7 border border-[#52DB78] rounded-3xl'>
+              <div className='flex flex-col gap-8 p-7 border border-[#52DB78] rounded-3xl'>
                 <h3>Uno Kiosk</h3>
                 <hr className='-mx-2'/>
                 <p>Uno Kiosk is a secure and hassle-free solution designed to help migrant workers easily send money to their loved ones, regardless of their physical location and transportation accessibility.</p>
@@ -93,9 +92,17 @@ export default function OurSolutionsPage() {
       
       
       {/* normal display */}
+      <div className='hidden sm:flex lg:hidden pb-8'>
+         <Heading
+          heading= "For Businesses"
+          title= "Explore our Solutions"
+          detail= "Discover how our innovative solutions can simplify and enhance money transfer transactions by exploring our range of services."
+        />
+      </div>
       <div className='hidden sm:flex flex-row gap-4 justify-center mx-auto'>
-        <div className='flex flex-col justify-between w-[612px]'>
-          <div className='flex pb-8'>
+        
+        <div className='flex flex-col sm:justify-end lg:justify-between w-[612px]'>
+          <div className='hidden lg:flex pb-8'>
             <Heading
               heading= "For Businesses"
               title= "Explore our Solutions"
@@ -104,7 +111,7 @@ export default function OurSolutionsPage() {
           </div>
           {activeAccordion === 'commercial' && (
             <div className='flex flex-col lg:flex-row-reverse gap-4 pb-4'>
-              <div className='flex flex-col min-h-max lg:max-w-[378px] justify-between p-7 border border-[#52DB78] rounded-3xl'>
+              <div className='flex flex-col min-h-max lg:max-w-[378px] gap-8 lg:gap-0 lg:justify-between p-7 border border-[#52DB78] rounded-3xl'>
                 <h3>Commercial Payments</h3>
                 <hr className='-mx-2'/>
                 <p>Commercial Payments promotes financial inclusion and empower excluded small businesses by providing a secure cost effective solution for vendor payments.</p>
@@ -116,7 +123,7 @@ export default function OurSolutionsPage() {
           )}
           {activeAccordion === 'onlineAgent' && (
             <div className='flex flex-col lg:flex-row-reverse gap-4 pb-4'>
-              <div className='flex flex-col min-h-max lg:max-w-[378px] justify-between p-7 border border-[#52DB78] rounded-3xl'>
+              <div className='flex flex-col min-h-max lg:max-w-[378px] gap-8 lg:gap-0 lg:justify-between p-7 border border-[#52DB78] rounded-3xl'>
                 <h3>Online Agent Platform</h3>
                 <hr className='-mx-2'/>
                 <p>Omnex agents have access to our superior online management software designed to help agents efficiently assist their customers in sending money back home.</p>
@@ -128,7 +135,7 @@ export default function OurSolutionsPage() {
           )}
           {activeAccordion === 'payLink' && (
             <div className='flex flex-col lg:flex-row-reverse gap-4 pb-4'>
-              <div className='flex flex-col min-h-max lg:max-w-[378px] justify-between p-7 border border-[#52DB78] rounded-3xl'>
+              <div className='flex flex-col min-h-max lg:max-w-[378px] gap-8 lg:gap-0 lg:justify-between p-7 border border-[#52DB78] rounded-3xl'>
                 <h3>Pay by Link</h3>
                 <hr className='-mx-2'/>
                 <p>By offering convenient one-click money transfers through mobile phones, you can attract a larger customer base throughout your entire state and grow your business.</p>
@@ -140,7 +147,7 @@ export default function OurSolutionsPage() {
           )}
           {activeAccordion === 'unoKiosk' && (
             <div className='flex flex-col lg:flex-row-reverse gap-4 pb-4'>
-              <div className='flex flex-col min-h-max lg:max-w-[378px] justify-between p-7 border border-[#52DB78] rounded-3xl'>
+              <div className='flex flex-col max-h-[283px] lg:max-w-[378px] gap-8 lg:gap-0 lg:justify-between p-7 border border-[#52DB78] rounded-3xl'>
                 <h3>Uno Kiosk</h3>
                 <hr className='-mx-2'/>
                 <p>Uno Kiosk is a secure and hassle-free solution designed to help migrant workers easily send money to their loved ones, regardless of their physical location and transportation accessibility.</p>

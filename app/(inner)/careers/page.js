@@ -26,7 +26,7 @@ export default function CareersPage() {
       </div>
       
       <div className='flex flex-col gap-4'>
-        <div className='flex flex-wrap justify-between gap-2'>
+        <div className='flex flex-wrap justify-between sm:justify-start gap-2'>
           <Button className={`btn-gray text-[15px] ${activeAccordion === 'frontEndDeveloper' ? 'bg-[#333333] text-white' : '' }`} onClick={() => handleAccordion('frontEndDeveloper')}>Front end Developer</Button>
           <Button className={`btn-gray text-[15px] ${activeAccordion === 'saleAssistant' ? 'bg-[#333333] text-white' : '' }`} onClick={() => handleAccordion('saleAssistant')}>Sale Assistant</Button>
           <Button className={`btn-gray text-[15px] ${activeAccordion === 'saleAnalytics' ? 'bg-[#333333] text-white' : '' }`} onClick={() => handleAccordion('saleAnalytics')}>Sale Analytics</Button>
