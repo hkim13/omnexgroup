@@ -1,6 +1,5 @@
 "use client"
 
-import Image from 'next/image'
 import Heading from '@/components/Heading'
 import BigButton from '@/components/BigButton';
 import { useState } from 'react';
@@ -14,6 +13,10 @@ export default function OurSolutionsPage() {
     } else {
       setActiveAccordion(id);
     }
+  };
+  
+  const getOrder = (buttonName) => {
+    return activeAccordion === buttonName ? 'order-last' : '';
   };
 
   return (
@@ -88,6 +91,7 @@ export default function OurSolutionsPage() {
         </div>
       </div>
       
+      
       {/* normal display */}
       <div className='hidden sm:flex flex-row gap-4 justify-center mx-auto'>
         <div className='flex flex-col justify-between w-[612px]'>
@@ -148,10 +152,10 @@ export default function OurSolutionsPage() {
           )}
         </div>
         <div className='flex flex-col justify-end gap-4 pb-4'>
-          <BigButton className='btn-blue h-[236px]' onClick={() => handleAccordion('commercial')}>Commercial Payments</BigButton>
-          <BigButton className='btn-gray h-[65px]' onClick={() => handleAccordion('onlineAgent')}>Online Agent Platform</BigButton>
-          <BigButton className='btn-black h-[140px]' onClick={() => handleAccordion('payLink')}>Pay by Link</BigButton>
-          <BigButton className='btn-green h-[65px]' onClick={() => handleAccordion('unoKiosk')}>Uno Kiosk</BigButton>
+          <BigButton className={`btn-blue h-[236px] ${getOrder('commercial')}`} onClick={() => handleAccordion('commercial')}>Commercial Payments</BigButton>
+          <BigButton className={`btn-gray h-[65px] ${getOrder('onlineAgent')}`} onClick={() => handleAccordion('onlineAgent')}>Online Agent Platform</BigButton>
+          <BigButton className={`btn-black h-[140px] ${getOrder('payLink')}`} onClick={() => handleAccordion('payLink')}>Pay by Link</BigButton>
+          <BigButton className={`btn-green h-[65px] ${getOrder('unoKiosk')}`} onClick={() => handleAccordion('unoKiosk')}>Uno Kiosk</BigButton>
         </div>
 
       </div>
