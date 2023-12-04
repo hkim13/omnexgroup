@@ -33,7 +33,7 @@ export default function CareersPage() {
           <Button className={`btn-gray text-[15px] ${activeAccordion === 'marketingDevelopment' ? 'bg-[#333333] text-white' : '' }`} onClick={() => handleAccordion('marketingDevelopment')}>Marketing Development</Button>
         </div>
         {activeAccordion === null && (
-        <div className='relative h-[239px]'>
+        <div className='relative h-[239px] sm:h-[402px]'>
           <img className='w-full h-full object-cover rounded-3xl' src="/Webp/AdobeStock_573681778.webp" alt="" width="100%"/>
         </div>
         )}
@@ -67,62 +67,88 @@ export default function CareersPage() {
           )}
 
           {activeAccordion === 'saleAssistant' && (
-          <div className='border rounded-3xl bg-[#413D39]/75 text-white p-7 flex flex-col gap-10 '>
             <div className='flex flex-col gap-4'>
-              <h3>Sale Assistant</h3>
-              <p>Sale Assistant - job description</p>
-            </div>
-            
-            <hr/>
-            <div className='flex flex-col gap-10'>
-              <div className='flex flex-col gap-4'>
-                <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>Call Us Now</div>
-                <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>40h/week</div>
-                <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>+5 years experience</div>
-                <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>65-70K</div>
+              <div className='relative h-[239px] sm:hidden'>
+                <img className='w-full h-full object-cover rounded-3xl' src="/Webp/AdobeStock_573681778.webp" alt="" width="100%"/>
               </div>
-              <Button className='btn-green text-center'>Apply Now</Button>
+              <div className='border rounded-3xl sm:bg-[url("/Webp/AdobeStock_573681778.webp")] bg-cover bg-center bg-no-repeat'>
+                <div className='rounded-3xl bg-[#333333]/75 text-white p-7 flex flex-col gap-10 sm:flex-row justify-center py-14 px-12 '>
+                <div className='flex flex-col gap-4 sm:max-w-[553px]'>
+                  <h3>Sale Assistant</h3>
+                  <p>Sale Assistant - job description.</p>
+                </div>
+                <div className="relative border-t border-gray-300 sm:border-t-0 sm:border-l sm:w-px">
+                  <hr className="absolute inset-0 sm:relative h-full"/>
+                </div>
+                <div className='flex flex-col gap-10 sm:justify-between'>
+                  <div className='flex flex-col gap-4 sm:gap'>
+                    <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>Call Us Now</div>
+                    <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>40h/week</div>
+                    <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>+5 years experience</div>
+                    <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>65-70K</div>
+                  </div>
+                  <Button className='btn-green text-center'>Apply Now</Button>
+                </div>
+                </div>
+              </div>
             </div>
-          </div>
           )}
+
           {activeAccordion === 'saleAnalytics' && (
-          <div className='border rounded-3xl bg-[#413D39]/75 text-white p-7 flex flex-col gap-10 '>
             <div className='flex flex-col gap-4'>
-              <h3>Sale Analytics</h3>
-              <p>Sale Analytics - job description</p>
-            </div>
-            <hr/>
-            <div className='flex flex-col gap-10'>
-              <div className='flex flex-col gap-4'>
-                <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>Call Us Now</div>
-                <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>40h/week</div>
-                <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>+5 years experience</div>
-                <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>65-70K</div>
+              <div className='relative h-[239px] sm:hidden'>
+                <img className='w-full h-full object-cover rounded-3xl' src="/Webp/AdobeStock_573681778.webp" alt="" width="100%"/>
               </div>
-              <Button className='btn-green text-center'>Apply Now</Button>
+              <div className='border rounded-3xl sm:bg-[url("/Webp/AdobeStock_573681778.webp")] bg-cover bg-center bg-no-repeat'>
+                <div className='rounded-3xl bg-[#333333]/75 text-white p-7 flex flex-col gap-10 sm:flex-row justify-center py-14 px-12 '>
+                <div className='flex flex-col gap-4 sm:max-w-[553px]'>
+                  <h3>Sale Analytics</h3>
+                  <p>Sale Analytics - job description.</p>
+                </div>
+                <div className="relative border-t border-gray-300 sm:border-t-0 sm:border-l sm:w-px">
+                  <hr className="absolute inset-0 sm:relative h-full"/>
+                </div>
+                <div className='flex flex-col gap-10 sm:justify-between'>
+                  <div className='flex flex-col gap-4 sm:gap'>
+                    <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>Call Us Now</div>
+                    <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>40h/week</div>
+                    <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>+5 years experience</div>
+                    <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>65-70K</div>
+                  </div>
+                  <Button className='btn-green text-center'>Apply Now</Button>
+                </div>
+                </div>
+              </div>
             </div>
-          </div>
           )}
+
           {activeAccordion === 'marketingDevelopment' && (
-          <div className='border rounded-3xl bg-[#413D39]/75 text-white p-7 flex flex-col gap-10 '>
             <div className='flex flex-col gap-4'>
-              <h3>Marketing Development</h3>
-              <p>Marketing Development - job description</p>
-            </div>
-            <hr/>
-            <div className='flex flex-col gap-10'>
-              <div className='flex flex-col gap-4'>
-                <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>Call Us Now</div>
-                <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>40h/week</div>
-                <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>+5 years experience</div>
-                <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>65-70K</div>
+              <div className='relative h-[239px] sm:hidden'>
+                <img className='w-full h-full object-cover rounded-3xl' src="/Webp/AdobeStock_573681778.webp" alt="" width="100%"/>
               </div>
-              <Button className='btn-green text-center'>Apply Now</Button>
+              <div className='border rounded-3xl sm:bg-[url("/Webp/AdobeStock_573681778.webp")] bg-cover bg-center bg-no-repeat'>
+                <div className='rounded-3xl bg-[#333333]/75 text-white p-7 flex flex-col gap-10 sm:flex-row justify-center py-14 px-12 '>
+                <div className='flex flex-col gap-4 sm:max-w-[553px]'>
+                  <h3>Marketing Development</h3>
+                  <p>Marketing Development - job description.</p>
+                </div>
+                <div className="relative border-t border-gray-300 sm:border-t-0 sm:border-l sm:w-px">
+                  <hr className="absolute inset-0 sm:relative h-full"/>
+                </div>
+                <div className='flex flex-col gap-10 sm:justify-between'>
+                  <div className='flex flex-col gap-4 sm:gap'>
+                    <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>Call Us Now</div>
+                    <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>40h/week</div>
+                    <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>+5 years experience</div>
+                    <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>65-70K</div>
+                  </div>
+                  <Button className='btn-green text-center'>Apply Now</Button>
+                </div>
+                </div>
+              </div>
             </div>
-          </div>
           )}
-      
-      
       </div>
      
     </main>
