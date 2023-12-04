@@ -32,34 +32,47 @@ export default function CareersPage() {
           <Button className={`btn-gray text-[15px] ${activeAccordion === 'saleAnalytics' ? 'bg-[#333333] text-white' : '' }`} onClick={() => handleAccordion('saleAnalytics')}>Sale Analytics</Button>
           <Button className={`btn-gray text-[15px] ${activeAccordion === 'marketingDevelopment' ? 'bg-[#333333] text-white' : '' }`} onClick={() => handleAccordion('marketingDevelopment')}>Marketing Development</Button>
         </div>
+        {activeAccordion === null && (
         <div className='relative h-[239px]'>
           <img className='w-full h-full object-cover rounded-3xl' src="/Webp/AdobeStock_573681778.webp" alt="" width="100%"/>
         </div>
+        )}
 
         {activeAccordion === 'frontEndDeveloper' && (
-          <div className='border rounded-3xl bg-[#413D39]/75 text-white p-7 flex flex-col gap-10 '>
-            <div className='flex flex-col gap-4'>
-              <h3>Front End Developer</h3>
-              <p>As a Front-End Developer, you will be responsible for creating visually engaging and intuitive interfaces for our web and mobile applications. Working closely with our design and product teams, you will use your expertise in HTML, CSS, and JavaScript to turn mockups and wireframes into responsive and interactive user interfaces. As a member of our dynamic team, you will have the opportunity to work on cutting-edge projects, contribute to the development of innovative solutions, and shape the future of our business.</p>
+          <div className='flex flex-col gap-4'>
+            <div className='relative h-[239px] sm:hidden'>
+              <img className='w-full h-full object-cover rounded-3xl' src="/Webp/AdobeStock_573681778.webp" alt="" width="100%"/>
             </div>
-            <hr/>
-            <div className='flex flex-col gap-10'>
-              <div className='flex flex-col gap-4'>
-                <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>Call Us Now</div>
-                <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>40h/week</div>
-                <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>+5 years experience</div>
-                <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>65-70K</div>
+            <div className='border rounded-3xl sm:bg-[url("/Webp/AdobeStock_573681778.webp")] bg-cover bg-center bg-no-repeat'>
+              <div className='rounded-3xl bg-[#333333]/75 text-white p-7 flex flex-col gap-10 sm:flex-row justify-center py-14 px-12 '>
+              <div className='flex flex-col gap-4 sm:max-w-[553px]'>
+                <h3>Front End Developer</h3>
+                <p>As a Front-End Developer, you will be responsible for creating visually engaging and intuitive interfaces for our web and mobile applications. Working closely with our design and product teams, you will use your expertise in HTML, CSS, and JavaScript to turn mockups and wireframes into responsive and interactive user interfaces. As a member of our dynamic team, you will have the opportunity to work on cutting-edge projects, contribute to the development of innovative solutions, and shape the future of our business.</p>
               </div>
-              <Button className='btn-green text-center'>Apply Now</Button>
+              <div className="relative border-t border-gray-300 sm:border-t-0 sm:border-l sm:w-px">
+                <hr className="absolute inset-0 sm:relative h-full"/>
+              </div>
+              <div className='flex flex-col gap-10 sm:justify-between'>
+                <div className='flex flex-col gap-4 sm:gap'>
+                  <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>Call Us Now</div>
+                  <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>40h/week</div>
+                  <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>+5 years experience</div>
+                  <div className='flex text-[18px] gap-3' href="link"><img className='w-4' src='/SVG/WhiteTick.svg'/>65-70K</div>
+                </div>
+                <Button className='btn-green text-center'>Apply Now</Button>
+              </div>
+              </div>
             </div>
           </div>
           )}
+
           {activeAccordion === 'saleAssistant' && (
           <div className='border rounded-3xl bg-[#413D39]/75 text-white p-7 flex flex-col gap-10 '>
             <div className='flex flex-col gap-4'>
               <h3>Sale Assistant</h3>
               <p>Sale Assistant - job description</p>
             </div>
+            
             <hr/>
             <div className='flex flex-col gap-10'>
               <div className='flex flex-col gap-4'>
