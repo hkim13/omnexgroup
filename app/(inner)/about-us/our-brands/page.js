@@ -26,61 +26,62 @@ export default function OurBrandsPage() {
   return (
     <main>
       {/* Heading + Selections */}
-      <div className='flex flex-col pb-16'>
-        <div className='pb-14'>
-          <h1 className='pb-9 max-w-[216px]'>Discover our Brands</h1>
+      <div className='bg-gray-300 flex flex-col pb-16 sm:flex-row sm:max-w-[975px] sm:justify-between mx-auto'>
+        <div className='pb-14 sm:self-center'>
+          <h1 className='pb-9 max-w-[216px] sm:max-w-[273px]'>Discover our Brands</h1>
           <div className='flex flex-col gap-2'>
             <div className='flex text-[16px] gap-3 sm:text-[18px]' href="link"><img className='w-4' src='/SVG/BlackTick.svg'/>Better Value</div>
             <div className='flex text-[16px] gap-3 sm:text-[18px]' href="link"><img className='w-4' src='/SVG/BlackTick.svg'/>Constant Support</div>
             <div className='flex text-[16px] gap-3 sm:text-[18px]' href="link"><img className='w-4' src='/SVG/BlackTick.svg'/>Maximum Security</div>
           </div>
         </div>
-        <div className='flex flex-col gap-4'>
+        <div className='flex flex-col gap-4 sm:flex-row'>
           {activeAccordion === 'uno' && (
-            <div className='bg-[#006DB7] rounded-3xl h-[402px] flex flex-col px-12 py-[51px] text-white justify-between'>
+            <div className='bg-[#006DB7] rounded-3xl h-[402px] flex flex-col px-12 py-[51px] text-white justify-between sm:max-w-[326px]'>
               <h3>From the US to Central and South America, Asia, Africa and the Dominican Republic.</h3>
               <p>Send money securely to three continents with our fast and reliable service.</p>
               <img className='h-[51px] place-self-start' src="/SVG/UnoSMALLwhite.svg" alt="" />
             </div>
           )}
           {activeAccordion === 'legoi' && (
-            <div className='bg-[#5FA82C] rounded-3xl h-[402px] flex flex-col px-12 py-[51px] text-white justify-between'>
+            <div className='bg-[#5FA82C] rounded-3xl h-[402px] flex flex-col px-12 py-[51px] text-white justify-between sm:max-w-[326px]'>
               <h3>From the United States and Canada to Vietnam.</h3>
               <p>With our secure and fast service, sending money to Vietnam has never been easier.</p>
               <img className='h-[51px] place-self-start' src="/SVG/LeGoiSMALLwhite.svg" alt="" />
           </div>
           )}
           {activeAccordion === 'giromex' && (
-            <div className='bg-[#E20613] rounded-3xl h-[402px] flex flex-col px-12 py-[51px] text-white justify-between'>
+            <div className='bg-[#E20613] rounded-3xl h-[402px] flex flex-col px-12 py-[51px] text-white justify-between sm:max-w-[326px]'>
               <h3>From the US to Mexico</h3>
               <p>Experience hassle-free money transfers to Mexico with our secure and lightning-fast service.</p>
               <img className='h-[51px] place-self-start' src="/SVG/GiromexSMALLwhite.svg" alt="" />
             </div>
           )}
           {activeAccordion === 'sharemoney' && (
-            <div className='bg-[#0066CC] rounded-3xl h-[402px] flex flex-col px-12 py-[51px] text-white justify-between'>
+            <div className='bg-[#0066CC] rounded-3xl h-[402px] flex flex-col px-12 py-[51px] text-white justify-between sm:max-w-[326px]'>
               <h3>Connecting the US with the world</h3>
               <p>Send money worldwide securely and quickly with our digital service accessible via website and app.</p>
               <img className='h-[51px] place-self-start' src="/SVG/SharemoneySMALLwhite.svg" alt="" />
           </div>
           )}
+
           {activeAccordion !== 'uno' && (
-            <button className="btn-uno font-bold text-[22px] px-8 py-4 rounded-full sm:h-[236px]" onClick={() => handleAccordion('uno')}>
+            <button className="btn-uno font-bold text-[22px] px-8 py-4 rounded-full sm:w-[100px] sm:h-[402px] sm:rounded-3xl" onClick={() => handleAccordion('uno')}>
                 <img className='h-[33px]' src="/SVG/UnoSMALLwhite.svg" alt="" />
             </button>
           )}
           {activeAccordion !== 'legoi' && (
-            <button className="btn-legoi font-bold text-[22px] px-8 py-4 rounded-full sm:h-[236px]" onClick={() => handleAccordion('legoi')}>
+            <button className="btn-legoi font-bold text-[22px] px-8 py-4 rounded-full sm:w-[100px] sm:h-[402px] sm:rounded-3xl" onClick={() => handleAccordion('legoi')}>
                 <img className='h-[33px]' src="/SVG/LeGoiSMALLwhite.svg" alt="" />
             </button>
           )}
           {activeAccordion !== 'giromex' && (
-            <button className="btn-giromex font-bold text-[22px] px-8 py-4 rounded-full sm:h-[236px]" onClick={() => handleAccordion('giromex')}>
+            <button className="btn-giromex font-bold text-[22px] px-8 py-4 rounded-full sm:w-[100px] sm:h-[402px] sm:rounded-3xl" onClick={() => handleAccordion('giromex')}>
                 <img className='h-[33px]' src="/SVG/GiromexSMALLwhite.svg" alt="" />
             </button>
           )}
           {activeAccordion !== 'sharemoney' && (
-            <button className="btn-sharemoney font-bold text-[22px] px-8 py-4 rounded-full sm:h-[236px]" onClick={() => handleAccordion('sharemoney')}>
+            <button className="btn-sharemoney font-bold text-[22px] px-8 py-4 rounded-full sm:w-[100px] sm:h-[402px] sm:rounded-3xl" onClick={() => handleAccordion('sharemoney')}>
                 <img className='h-[33px]' src="/SVG/SharemoneySMALLwhite.svg" alt="" />
             </button>
           )}
@@ -88,16 +89,16 @@ export default function OurBrandsPage() {
       </div>
        
       {/* text */}
-      <div className='text-center pb-16'>
+      <div className='flex mx-auto justfy-center text-center pb-16 sm:max-w-[564px] '>
         <h3>Trust Uno, as a leading brand for money transfers to Brazil and the rest of South America, to provide unmatched service and reliability.</h3>
       </div>
 
       {/* About Us */}
-      <div className='flex flex-col gap-5 pb-5'>
-        <div className='h-[237px] sm:h-[402px]'>
-          <img className='w-full h-full object-cover rounded-3xl' src="/Webp/AdobeStock_537237474.webp" alt="" width="100%"/>
+      <div className='flex flex-col gap-5 pb-5 sm:flex-row-reverse max-w-[975px] mx-auto'>
+        <div className='h-[237px] sm:h-[402px] sm:w-[340px]'>
+          <div className='rounded-3xl w-full h-full bg-cover bg-no-repeat bg-[center_right_-60px]' style={{backgroundImage: "url('/Webp/AdobeStock_537237474.webp')",  backgroundSize:"175%"}}/>
         </div>
-        <div className='bg-[#333333]/5 flex flex-col gap-4 border rounded-3xl px-[34px] pt-[44px] pb-[68px]'>
+        <div className='bg-[#333333]/5 flex flex-col gap-4 border rounded-3xl px-[34px] pt-[44px] pb-[68px] sm:w-[609px]'>
           <h3>About Us</h3>
           <p className='leading-8'>Since 2007 Uno has specialized in money transfers to Brazil, Africa and Asia building strong cross border relationships to provide exceptional foreign exchange and service. With over 400 active agents, including the largest presence in New York with more than 160 agents, we are committed to providing our <strong>200,000+ active customers</strong> with convenient and accessible service, earning their loyalty and trust for their money transfer needs.</p>
         </div>
