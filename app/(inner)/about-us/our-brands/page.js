@@ -26,9 +26,9 @@ export default function OurBrandsPage() {
   return (
     <main>
       {/* Heading + Selections */}
-      <div className='bg-gray-300 flex flex-col pb-16 sm:flex-row sm:max-w-[975px] sm:justify-between mx-auto'>
-        <div className='pb-14 sm:self-center'>
-          <h1 className='pb-9 max-w-[216px] sm:max-w-[273px]'>Discover our Brands</h1>
+      <div className='bg-gray-300 flex flex-col pb-16 md:flex-row md:max-w-[975px] md:justify-between mx-auto'>
+        <div className='pb-14 md:self-center'>
+          <h1 className='pb-9 text-[36px] md:text-[46px] max-w-[216px] md:max-w-[273px]'>Discover our Brands</h1>
           <div className='flex flex-col gap-2'>
             <div className='flex text-[16px] gap-3 sm:text-[18px]' href="link"><img className='w-4' src='/SVG/BlackTick.svg'/>Better Value</div>
             <div className='flex text-[16px] gap-3 sm:text-[18px]' href="link"><img className='w-4' src='/SVG/BlackTick.svg'/>Constant Support</div>
@@ -105,73 +105,81 @@ export default function OurBrandsPage() {
       </div>
 
       {/* Our History */}
-      <div className='bg-[#DEF1FF] border border-gray-300 rounded-3xl h-[447px] px-[31px] pt-[59px] '>
-        <h3 className='pb-[64px]'>Our History</h3>
-        <div className='flex flex-row justify-center gap-8'>
-            <div className='flex flex-col gap-4 font-bold'>
-              {activeDate !== '1990' && (
-                <button className='text-[#333333]/30' onClick={() => handleDate('1990')}>1990</button>
-              )}
-              {activeDate === '1990' && (
-                <button className='text-[36px]' onClick={() => handleDate('1990')}>1990</button>
-              )}
-              
-              {activeDate !== '2006' && (
-                <button className='text-[#333333]/30' onClick={() => handleDate('2006')}>2006</button>
-              )}
-              {activeDate === '2006' && (
-                <button className='text-[36px]' onClick={() => handleDate('2006')}>2006</button>
-              )}
-
-              {activeDate !== '2007' && (
-                <button className='text-[#333333]/30' onClick={() => handleDate('2007')}>2007</button>
-              )}
-              {activeDate === '2007' && (
-                <button className='text-[36px]' onClick={() => handleDate('2007')}>2007</button>
-              )}
-
-              {activeDate !== '2014' && (
-                <button className='text-[#333333]/30' onClick={() => handleDate('2014')}>2014</button>
-              )}
-              {activeDate === '2014' && (
-                <button className='text-[36px]' onClick={() => handleDate('2014')}>2014</button>
-              )}
-
-              {activeDate !== '2022' && (
-                <button className='text-[#333333]/30' onClick={() => handleDate('2022')}>2022</button>
-              )}
-              {activeDate === '2022' && (
-                <button className='text-[36px]' onClick={() => handleDate('2022')}>2022</button>
-              )}
+      <div className='bg-[#DEF1FF] border border-gray-300 rounded-3xl h-[447px] px-[31px] pt-[59px] max-w-[975px] mx-auto'>
+        <div className='sm:flex sm:flex-row'>
+          <div className='sm:flex sm:flex-col'>
+            <h3 className='pb-[64px]'>Our History</h3>
+            <div className='hidden sm:flex sm:w-[377px] sm:h-[225px]'>
+              <div className='rounded-3xl w-full h-full bg-cover bg-no-repeat bg-[center_right_-60px]' style={{backgroundImage: "url('/Webp/AdobeStock_537237474.webp')",  backgroundSize:"175%"}}/>
             </div>
-            <div className='w-[185px]'>
-              {activeDate === '1990' && (
-                  <div className='pt-[0%]'>Giromex, Inc. is founded by Juan Carlos Lebrija as money transfer service for sending money to Mexico.</div>
-              )}
-              {activeDate === '2006' && (
-                  <div className='pt-[30%]'>Acquired Le Gói Tiền Le.</div>
-              )}
-              {activeDate === '2007' && (
-                  <div className='pt-[45%]'>Acquired Uno Money Transfers.</div>
-              )}
-              {activeDate === '2014' && (
-                  <div className='pt-[55%]'>Launched Sharemoney Digital Money Transfer service in the United States.</div>
-              )}
-              {activeDate === '2022' && (
-                  <div className='pt-[80%]'>Facilitated more than 3M transactions worldwide.</div>
-              )}
-            </div>
+          </div>
+          <div className='flex flex-row justify-center gap-8'>
+              <div className='flex flex-col gap-4 font-bold'>
+                {activeDate !== '1990' && (
+                  <button className='text-[#333333]/30' onClick={() => handleDate('1990')}>1990</button>
+                )}
+                {activeDate === '1990' && (
+                  <button className='text-[36px]' onClick={() => handleDate('1990')}>1990</button>
+                )}
+                
+                {activeDate !== '2006' && (
+                  <button className='text-[#333333]/30' onClick={() => handleDate('2006')}>2006</button>
+                )}
+                {activeDate === '2006' && (
+                  <button className='text-[36px]' onClick={() => handleDate('2006')}>2006</button>
+                )}
+
+                {activeDate !== '2007' && (
+                  <button className='text-[#333333]/30' onClick={() => handleDate('2007')}>2007</button>
+                )}
+                {activeDate === '2007' && (
+                  <button className='text-[36px]' onClick={() => handleDate('2007')}>2007</button>
+                )}
+
+                {activeDate !== '2014' && (
+                  <button className='text-[#333333]/30' onClick={() => handleDate('2014')}>2014</button>
+                )}
+                {activeDate === '2014' && (
+                  <button className='text-[36px]' onClick={() => handleDate('2014')}>2014</button>
+                )}
+
+                {activeDate !== '2022' && (
+                  <button className='text-[#333333]/30' onClick={() => handleDate('2022')}>2022</button>
+                )}
+                {activeDate === '2022' && (
+                  <button className='text-[36px]' onClick={() => handleDate('2022')}>2022</button>
+                )}
+              </div>
+              <div className='w-[185px]'>
+                {activeDate === '1990' && (
+                    <div className='pt-[0%]'>Giromex, Inc. is founded by Juan Carlos Lebrija as money transfer service for sending money to Mexico.</div>
+                )}
+                {activeDate === '2006' && (
+                    <div className='pt-[30%]'>Acquired Le Gói Tiền Le.</div>
+                )}
+                {activeDate === '2007' && (
+                    <div className='pt-[45%]'>Acquired Uno Money Transfers.</div>
+                )}
+                {activeDate === '2014' && (
+                    <div className='pt-[55%]'>Launched Sharemoney Digital Money Transfer service in the United States.</div>
+                )}
+                {activeDate === '2022' && (
+                    <div className='pt-[80%]'>Facilitated more than 3M transactions worldwide.</div>
+                )}
+              </div>
+          </div>
         </div>
+       
       </div>
 
       {/* Leadership */}
-      <div className='pt-[44px] pb-[30px]'>
+      <div className='pt-[44px] pb-[30px] sm:max-w-[975px] mx-auto'>
         <div className='pb-[50px] px-[30px] flex flex-col gap-4'>
           <h3>Leadership</h3>
           <p>Our global team is committed to providing financial tools and technology to businesses and consumers, with a focus on empowering those who have been traditionally excluded, such as minorities, women-owned businesses and non-Western entities.</p>
         </div>
         
-        <div className=' grid gap-3'>
+        <div className=' grid gap-3 sm:grid-cols-2'>
           <div className='flex flex-row items-center gap-6 border rounded-3xl px-6 h-[136px]'>
             <img className='w-[90px] h-[90px]' src="/Webp/AdobeStock_407334020.webp" alt="" />
             <div className='flex flex-col'>
@@ -225,16 +233,17 @@ export default function OurBrandsPage() {
       </div>
 
       {/* Our Goals */}
-      <div className='flex flex-col justify-center gap-11 bg-[#006DB7] rounded-3xl h-[646px] px-[30px]'>
+      <div className='flex flex-col justify-center gap-11 bg-[#006DB7] rounded-3xl h-[646px] px-[30px] sm:justify-between sm:py-[50px] sm:max-w-[975px] mx-auto'>
         <div>
           <h1 className='text-white'>Our Goals</h1>
         </div>
-        <div className='grid gap-2 '>
-          <div className='bg-white text-[#006DB7] text-[18px] font-bold px-[47px] py-[18px] rounded-3xl'>Better exchange rates</div>
-          <div className='bg-white/25 text-[#FFFFFF] text-[16px] px-[47px] py-[20px] rounded-3xl'>Building and sustaining the trust of our customers</div>
-          <div className='bg-white/25 text-[#FFFFFF] text-[16px] px-[47px] py-[20px] rounded-3xl'>Building complementary financial services</div>
-          <div className='bg-white/25 text-[#FFFFFF] text-[16px] px-[47px] py-[20px] rounded-3xl'>Increasinge the speed of money transfers</div>
-          <div className='bg-white/25 text-[#FFFFFF] text-[16px] px-[47px] py-[20px] rounded-3xl'>Consumer Convenience and ease of use</div>
+        <div className='grid gap-2 sm:grid-cols-3 sm:grid-rows-3'>
+          <div className='bg-white text-[#006DB7] text-[18px] font-bold px-[47px] py-[18px] rounded-3xl sm:col-start-1 sm:row-start-3'>Better exchange rates</div>
+          <div className='bg-white/25 text-[#FFFFFF] text-[16px] px-[47px] py-[20px] rounded-3xl sm:col-start-2 sm:row-start-3'>Building and sustaining the trust of our customers</div>
+          <div className='bg-white/25 text-[#FFFFFF] text-[16px] px-[47px] py-[20px] rounded-3xl sm:col-start-2 sm:row-start-2'>Building complementary financial services</div>
+          <div className='bg-white/25 text-[#FFFFFF] text-[16px] px-[47px] py-[20px] rounded-3xl sm:col-start-3 sm:row-start-3'>Increasinge the speed of money transfers</div>
+          <div className='bg-white/25 text-[#FFFFFF] text-[16px] px-[47px] py-[20px] rounded-3xl sm:col-start-3 sm:row-start-2'>Consumer Convenience and ease of use</div>
+          <div className='bg-white/25 text-[#FFFFFF] text-[16px] px-[47px] py-[20px] rounded-3xl sm:col-start-3 sm:row-start-1'>Providing services to everyone who needs it!</div>
         </div>
       </div>
     </main>
