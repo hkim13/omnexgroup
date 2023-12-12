@@ -43,354 +43,354 @@ const statesData = [
 
     {
         stateName: "Colorado",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://banking.colorado.gov/industry/money-transmitters",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-colorado-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "500141",
+        agencyLabel: "Colorado Division of Banking",
         licenseLabel: "Colorado"
     },
     {
         stateName: "Connecticut",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://portal.ct.gov/dob",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-connecticut-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "13995",
+        agencyLabel: "Connecticut Department of Banking Consumer Credit Division",
         licenseLabel: "Connecticut"
     },
     {
         stateName: "District of Columbia",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://disb.dc.gov/",
         licenseUrl: "",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "MTR899521",
+        agencyLabel: "Department of Insurance, Securities and Banking Bureau",
         licenseLabel: ""
     },
     {
         stateName: "Florida",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://www.flofr.gov/",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-florida-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "FT20900009",
+        agencyLabel: "Florida Office of Financial Regulation",
         licenseLabel: "Florida"
     },
     {
         stateName: "Georgia",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://dbf.georgia.gov/",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-georgia-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "22077",
+        agencyLabel: "Georgia Dept. of Banking & Finance",
         licenseLabel: "Georgia"
     },
     {
         stateName: "Hawaii",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://cca.hawaii.gov/dfi/files/2020/02/DFI-Form-CC-Rev.-12-14-FillableForm.pdf",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-hawaii-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "HIMT123",
+        agencyLabel: "Division of Financial Institutions, Department of Commerce and Consumer Affairs",
         licenseLabel: "Hawaii"
     },
     {
         stateName: "Idaho",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://www.finance.idaho.gov/",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-idaho-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "MTL-85",
+        agencyLabel: "Idaho Department of Finance",
         licenseLabel: "Idaho"
     },
     {
         stateName: "Illinois",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://idfpr.illinois.gov/",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-illinois-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "MT.0000088",
+        agencyLabel: "Illinois Dept. of Financial & Professional Regulation",
         licenseLabel: "Illinois"
     },
     {
         stateName: "Indiana",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://www.in.gov/dfi/",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-indiana-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "43319",
+        agencyLabel: "Indiana Department of Financial Institutions",
         licenseLabel: "Indiana"
     },
     {
         stateName: "Iowa",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://idob.iowa.gov/",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-iowa-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "MS-2004-0251",
+        agencyLabel: "Iowa Division of Banking",
         licenseLabel: "Iowa"
     },
     {
         stateName: "Kansas",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://www.osbckansas.org/",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-kansas-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "MT-0210001",
+        agencyLabel: "Kansas Office of the State Bank Commissioner",
         licenseLabel: "Kansas"
     },
     {
         stateName: "Kentucky",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://kfi.ky.gov/",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-kentucky-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "SC17596",
+        agencyLabel: "Department of Financial Institutions",
         licenseLabel: "Kentucky"
     },
     {
         stateName: "Louisana",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://ofi.la.gov/",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-louisana-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "SOC 244",
+        agencyLabel: "Louisiana Office of Financial Institutions",
         licenseLabel: "Louisana"
     },
     {
         stateName: "Maine",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
-        licenseUrl: "https://www.sharemoney.com/assets/license/send-money-maine-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
-        licenseLabel: "Maine"
+        agencyUrl: "https://www.maine.gov/pfr/consumercredit/index.shtm",
+        licenseUrl: "",
+        licenseNumber: "NMT1910431",
+        agencyLabel: "Maine Bureau of Financial Institutions Consumer Outreach Program",
+        licenseLabel: ""
     },
     {
         stateName: "Maryland",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://www.dllr.state.md.us/finance/",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-maryland-license.pdf",
         licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        agencyLabel: "Maryland Office of the Commissioner of Financial Regulation",
         licenseLabel: "Maryland"
     },
     {
         stateName: "Massachusetts",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://www.mass.gov/orgs/division-of-banks",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-massachusetts-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "FT5188",
+        agencyLabel: "Massachusetts Division of Banks",
         licenseLabel: "Massachusetts"
     },
     {
         stateName: "Michigan",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
-        licenseUrl: "https://www.sharemoney.com/assets/license/send-money-michigan-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
-        licenseLabel: "Michigan"
+        agencyUrl: "https://www.michigan.gov/difs/",
+        licenseUrl: "",
+        licenseNumber: "NMLS ID 899521",
+        agencyLabel: "Michigan Department of Insurance and Financial Services",
+        licenseLabel: ""
     },
     {
         stateName: "Minnesota",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://mn.gov/commerce/",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-minnesota-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "52025",
+        agencyLabel: "Minnesota Dept. of Commerce",
         licenseLabel: "Minnesota"
     },
     {
         stateName: "Mississippi",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
-        licenseUrl: "https://www.sharemoney.com/assets/license/send-money-mississippi-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
-        licenseLabel: "Mississippi"
+        agencyUrl: "https://dbcf.ms.gov/",
+        licenseUrl: "",
+        licenseNumber: "",
+        agencyLabel: "Mississippi Consumer Finance Division",
+        licenseLabel: ""
     },
     {
         stateName: "Missouri",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://finance.mo.gov/",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-missouri-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "MO-19-8497",
+        agencyLabel: "Missouri Division of Finance",
         licenseLabel: "Missouri"
     },
     {
         stateName: "Montana",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
-        licenseUrl: "https://www.sharemoney.com/assets/license/send-money-montana-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
-        licenseLabel: "Montana"
+        agencyUrl: "https://banking.mt.gov/",
+        licenseUrl: "",
+        licenseNumber: "",
+        agencyLabel: "Montana Division of Banking and Financial Institutions",
+        licenseLabel: ""
     },
     {
         stateName: "Nebraska",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://ndbf.nebraska.gov/",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-nebraska-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "965",
+        agencyLabel: "Nebraska Dept. of Banking and Finance",
         licenseLabel: "Nebraska"
     },
     {
         stateName: "Nevada",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://fid.nv.gov/",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-nevada-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "MT10044",
+        agencyLabel: "State of Nevada, Dept. of Business & Industry Financial Institutions",
         licenseLabel: "Nevada"
     },
     {
         stateName: "New Hampshire",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://www.banking.nh.gov/",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-new-hampshire-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "23176-MT",
+        agencyLabel: "New Hampshire Banking Department",
         licenseLabel: "New Hampshire"
     },
     {
         stateName: "New Jersey",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://www.nj.gov/dobi/index.html",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-new-jersey-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "L059382",
+        agencyLabel: "New Jersey Dept. of Banking & Insurance",
         licenseLabel: "New Jersey"
     },
     {
         stateName: "New Mexico",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
-        licenseUrl: "https://www.sharemoney.com/assets/license/send-money-new-mexico-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
-        licenseLabel: "New Mexico"
+        agencyUrl: "https://www.rld.nm.gov/",
+        licenseUrl: "",
+        licenseNumber: "",
+        agencyLabel: "New Mexico Regulation and Licensing Department - Financial Institutions Division",
+        licenseLabel: ""
     },
     {
         stateName: "New York",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://dfs.ny.gov/complaint",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-new-york-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "101464",
+        agencyLabel: "Department of Financial Services, Consumer Assistance Unit",
         licenseLabel: "New York"
     },
     {
         stateName: "North Carolina",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://nccob.nc.gov/",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-north-carolina-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "127130",
+        agencyLabel: "North Carolina Commissioner of Banks",
         licenseLabel: "North Carolina"
     },
     {
         stateName: "North Dakota",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
-        licenseUrl: "https://www.sharemoney.com/assets/license/send-money-north-dakota-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
-        licenseLabel: "North Dakota"
+        agencyUrl: "https://www.nd.gov/dfi/",
+        licenseUrl: "",
+        licenseNumber: "127130",
+        agencyLabel: "North Dakota Department of Financial Institutions - Consumer Division",
+        licenseLabel: ""
     },
     {
         stateName: "Ohio",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://com.ohio.gov/divisions-and-programs/financial-institutions/financial-institutions",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-ohio-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "OHMT31",
+        agencyLabel: "Ohio Department of Commerce Division of Financial Institutions",
         licenseLabel: "Ohio"
     },
     {
         stateName: "Oregon",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://dfr.oregon.gov/Pages/index.aspx",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-oregon-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "MTX30024",
+        agencyLabel: "Oregon Division of Financial Regulation",
         licenseLabel: "Oregon"
     },
     {
         stateName: "Pennsylvania",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://www.dobs.pa.gov/Pages/default.aspx",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-pennsylvania-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "15556",
+        agencyLabel: "Pennsylvania Dept.of Banking and Securities",
         licenseLabel: "Pennsylvania"
     },
     {
         stateName: "Rhode Island",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://dbr.ri.gov/",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-rhode-island-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "20062022MT",
+        agencyLabel: "Rhode Island Dept. of Business Regulation",
         licenseLabel: "Rhode Island"
     },
     {
         stateName: "South Carolina",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
-        licenseUrl: "https://www.sharemoney.com/assets/license/send-money-south-carolina-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
-        licenseLabel: "South Carolina"
+        agencyUrl: "https://www.consumer.sc.gov/",
+        licenseUrl: "",
+        licenseNumber: "",
+        agencyLabel: "South Carolina Department of Consumer Affairs",
+        licenseLabel: ""
     },
     {
         stateName: "South Dakota",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
-        licenseUrl: "https://www.sharemoney.com/assets/license/send-money-south-dakota-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
-        licenseLabel: "South Dakota"
+        agencyUrl: "https://dlr.sd.gov/banking/",
+        licenseUrl: "",
+        licenseNumber: "MT.2181",
+        agencyLabel: "South Dakota Division of Banking",
+        licenseLabel: ""
     },
     {
         stateName: "Tennessee",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://www.tn.gov/tdfi",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-tennessee-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "56",
+        agencyLabel: "Tennessee Dept. of Financial Institutions",
         licenseLabel: "Tennessee"
     },
     {
         stateName: "Texas",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://www.dob.texas.gov/",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-texas-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "2327",
+        agencyLabel: "Texas Department of BankingNon-Depository Supervision Division",
         licenseLabel: "Texas"
     },
     {
         stateName: "Utah",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://dfi.utah.gov/",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-utah-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "96",
+        agencyLabel: "Utah Dept. of Financial Institutions",
         licenseLabel: "Utah"
     },
     {
         stateName: "Vermont",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
-        licenseUrl: "https://www.sharemoney.com/assets/license/send-money-vermont-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
-        licenseLabel: "Vermont"
+        agencyUrl: "https://dfr.vermont.gov/",
+        licenseUrl: "",
+        licenseNumber: "100-152",
+        agencyLabel: "Vermont Department of Financial Regulation Consumer Services",
+        licenseLabel: ""
     },
     {
         stateName: "Virginia",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://scc.virginia.gov/",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-virginia-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "MO-375",
+        agencyLabel: "Virginia Bureau of Financial Institutions",
         licenseLabel: "Virginia"
     },
     {
         stateName: "Washington",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://dfi.wa.gov/",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-washington-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "550-MT-26151",
+        agencyLabel: "Washington State Dept. of Financial Institutions",
         licenseLabel: "Washington"
     },
     {
         stateName: "West Virginia",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
-        licenseUrl: "https://www.sharemoney.com/assets/license/send-money-west-virginia-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
-        licenseLabel: "West Virginia"
+        agencyUrl: "https://dfi.wv.gov/Pages/default.aspx",
+        licenseUrl: "",
+        licenseNumber: "WVMT-899521",
+        agencyLabel: "West Virginia Division of Financial Institutions",
+        licenseLabel: ""
     },
     {
         stateName: "Wisconsin",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://dfi.wi.gov/Pages/FinancialServices/LicensedFinancial/GeneralInformation.aspx",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-wisconsin-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "95",
+        agencyLabel: "State of Wisconsin Department of Financial InstitutionsBureau of Consumer Affairs",
         licenseLabel: "Wisconsin"
     },
     {
         stateName: "Wyoming",
-        agencyUrl: "https://www.nmlsconsumeraccess.org/",
+        agencyUrl: "https://wyomingbankingdivision.wyo.gov/",
         licenseUrl: "https://www.sharemoney.com/assets/license/send-money-wyoming-license.pdf",
-        licenseNumber: "899521",
-        agencyLabel: "National Multi-state Licensing System and Registration",
+        licenseNumber: "MT-7154",
+        agencyLabel: "Wyoming Division of Banking",
         licenseLabel: "Wyoming"
     },
     

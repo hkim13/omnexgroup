@@ -14,12 +14,12 @@ export default function StateLicenses() {
 
   return (
     <main className='text-[18px]'>
-      <div className='flex flex-col gap-10 text-center'>
+      <div className='flex flex-col gap-10 text-center pb-[40px] md:pb-[79px]'>
         <div>
           <h3 className="font-bold pb-4 text-green">Secure Compliance</h3>
           <h1 className='text-[#253D84]'>State Licenses</h1>
         </div>
-        <p>UNO, Giromex, Le Goi Tien Le and Sharemoney are operated under the license of Omnex Group, Inc., a money transfer service.</p>
+        <p className='max-w-[532px] mx-auto'>UNO, Giromex, Le Goi Tien Le and Sharemoney are operated under the license of Omnex Group, Inc., a money transfer service.</p>
       </div>
 
       <div className='grid grid-cols-1 gap-2.5'> 
@@ -42,7 +42,7 @@ export default function StateLicenses() {
                 </div>
               </div>
               {activeState === state.stateName && (
-                <div className='border rounded-2xl grid grid-cols-3 px-[30px] py-[25px] gap-4'>
+                <div className='border rounded-2xl grid grid-cols-3 px-[30px] py-[25px] gap-4 gap-x-12'>
                   <div className='col-span-1'>State</div>
                   <div className='col-span-2 font-bold'>{state.stateName}</div>
                   <div className='col-span-1'>Regulatory Agency</div>
@@ -63,7 +63,9 @@ export default function StateLicenses() {
               <div className='col-span-1 font-bold text-[18px] pl-[30px]'>{state.stateName}</div>      
               <div className='col-span-2'>
                 <a href={state.agencyUrl} className='font-bold' target="_blank" rel="noopener noreferrer">{state.agencyLabel}</a>
-                <br/>License # {state.licenseNumber}
+                {state.licenseNumber && (
+                  <><br/>{state.stateName === 'National' ? 'NMLS License #' : 'License #'} {state.licenseNumber}</>
+                )}
               </div>
               <div className='col-span-1 pl-[30px]'>
                 <a href={state.licenseUrl} className='font-bold' target="_blank" rel="noopener noreferrer">{state.licenseLabel}</a>
