@@ -10,10 +10,13 @@ import teamData from '@/(inner)/about-us/corporate-press/team';
 export default function CorporatePage() {
   const [isPhilosophy, setIsPhilosophy] = useState(true);
   const [activeDate, setActiveDate] = useState('1990');
-  const [activeState, setActiveState] = useState(null);
-  const [isExpanded, setIsExpanded] = useState(false);
-  const toggleExpand = () => {
-    setIsExpanded(!isExpanded);
+  const [expandedStates, setExpandedStates] = useState({});
+
+  const toggleExpand = (name) => {
+    setExpandedStates(prevExpandedStates => ({
+      ...prevExpandedStates,
+      [name]: !prevExpandedStates[name]
+    }));
   };
 
   const navigate = (id) => {
@@ -34,9 +37,7 @@ export default function CorporatePage() {
       setActiveDate(id);
   };
 
-  const handleAccordion = (stateName) => {
-    setActiveState(activeState === stateName ? null : stateName);
-  };
+
 
   
   
@@ -72,7 +73,7 @@ export default function CorporatePage() {
 
       {/* Global Reach */}
       <div id="global-reach">
-        <div className='flex flex-col text-center pb-[40px] md:pb-[79px]'>
+        <div className='flex flex-col text-center md:pb-[79px] my-[57px]'>
           <h3 className="font-bold pb-4 text-green">Local Focus</h3>
           <h1 className='text-[#253D84]'>Global Reach</h1>
         </div>
@@ -81,7 +82,7 @@ export default function CorporatePage() {
           <img className='w-full h-full object-cover rounded-3xl' src="/Webp/WorldMap.webp" alt="" width="100%"/>
         </div>
         
-        <div className='grid grid-cols-1 gap-5 pl-[49px]'>
+        <div className='grid grid-cols-1 gap-5 pl-[49px] mb-[70px]'>
           <div className='flex gap-4'>
             <div className='bg-[#253D84] h-[25px] min-w-[25px] rounded-xl'/>
             <p className='whitespace-nowrap'>Sending Locations</p>
@@ -118,7 +119,7 @@ export default function CorporatePage() {
 
       {/* Key Statistics */}
       <div id="key-statistics">
-        <div className='flex flex-col text-center pb-[40px] md:pb-[79px] '>
+        <div className='flex flex-col text-center pb-[40px] md:pb-[79px] mt-[53px]'>
           <h3 className="font-bold pb-4 text-green">2021</h3>
           <h1 className='text-[#253D84]'>Key Statistics</h1>
         </div>
@@ -151,8 +152,8 @@ export default function CorporatePage() {
         </div>
 
         <div>
-          <p className='text-[#333333]/25 text-right'>2021 statistics as of 12/31/2021</p>
-          <hr/>
+          <p className='text-[#333333]/25 text-right my-[25px]'>2021 statistics as of 12/31/2021</p>
+          <hr className='mb-[36px]'/>
           <div>
             <div className='flex flex-row gap-10 justify-around flex-wrap text-center'>
               <div className='max-w-[105px]'>
@@ -182,7 +183,7 @@ export default function CorporatePage() {
         <div>
           {isPhilosophy ? (
             <div className="philosophy-display">
-              <div className='bg-[#253D84] rounded-2xl h-[579px] px-8 pt-12 pb-8 flex flex-col justify-between'>
+              <div className='bg-[#253D84] rounded-2xl h-[579px] px-8 pt-12 pb-8 flex flex-col justify-between my-[40px]'>
                 <h3 className='text-[#52DB78]'>Philosophy</h3>
                 <h1 className='text-white'>“The engagement of every individual in an organization, regardless of department, is the pre-requisite to ensuring compliance.”</h1>
                 <button className='w-[50px] h-[50px] bg-[#FFFFFF] rounded-full self-end' onClick={toggleDisplay} aria-label="Toggle Display">
@@ -207,7 +208,6 @@ export default function CorporatePage() {
               </div>
             </div>
           )}
-         
         </div>
       </div>
 
@@ -258,7 +258,7 @@ export default function CorporatePage() {
 
       {/* Our History */}
       <div id="our-history">
-        <div className='bg-[#DEF1FF] border border-gray-300 rounded-3xl h-[447px] px-[31px] pt-[59px] max-w-[975px] mx-auto'>
+        <div className='bg-[#DEF1FF] border border-gray-300 rounded-3xl h-[447px] px-[31px] pt-[59px] max-w-[975px] mx-auto my-[40px]'>
           <div className='sm:flex sm:flex-row'>
             <div className='sm:flex sm:flex-col'>
               <h3 className='pb-[64px]'>Our History</h3>
@@ -332,7 +332,7 @@ export default function CorporatePage() {
           <h3 className="font-bold pb-4 text-green">Identify</h3>
           <h1 className='text-[#253D84]'>Our Brands</h1>
         </div>
-        <div className='grid grid-cols-2 justify-center gap-2 sm:gap-6 px-6 lg:px-0 h-[162px] sm:h-[311px] max-w-[960px]'>
+        <div className='grid grid-cols-2 justify-center gap-2 sm:gap-6 h-[162px] sm:h-[311px] max-w-[960px]'>
           <Link className='flex place-content-center border rounded-2xl w-full' href="https://www.unomoneytransfers.com/">
             <img className='w-[117px] sm:w-[255.6px] px-2 sm:px-4' src="/SVG/UnoBIG.svg" alt="Uno" width="100%"/> 
           </Link>
@@ -352,90 +352,140 @@ export default function CorporatePage() {
 
       {/* Our Team */}
       <div id="our-team">
-        <div className='flex flex-col text-center pb-[40px] md:pb-[79px] '>
-          <h3 className="font-bold pb-4 text-green">2021</h3>
-          <h1 className='text-[#253D84]'>Summary</h1>
+        <div className='flex flex-col text-center my-[40px] md:my-[60px] '>
+          <h3 className="font-bold pb-4 text-green">Who We Are</h3>
+          <h1 className='text-[#253D84]'>Our Team</h1>
         </div>
-      
-        {teamData.map((team, index) => (
-        <div key={index}>
-          <div className='w-[339px] cursor-pointer' onClick={() => toggleExpand(team.name)}>
-            <div className={`relative rounded-t-3xl w-full ${activeState ? 'h-[339px]' : 'h-[235px]'} bg-cover bg-no-repeat bg-center transition-all duration-300 ease-in-out`}>
-              <img className='w-full h-full object-cover rounded-t-3xl' src="/Webp/Darren.webp" alt="" />
-              {activeState === team.name && (
-                <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-center p-[42px] rounded-t-3xl">
-                  <div className='text-white space-y-4'>
-                    <div>
-                      <div className='text-[16px] font-bold'>{team.jobdescription1}</div>
-                      <div className='text-[16px]'>{team.joblocation1}</div>
-                    </div>
-                    <div>
-                      <div className='text-[16px] font-bold'>{team.jobdescription2}</div>
-                      <div className='text-[16px]'>{team.joblocation2}</div>
-                    </div>
-                    <div>
-                      <div className='text-[16px] font-bold'>{team.jobdescription3}</div>
-                      <div className='text-[16px]'>{team.joblocation3}</div>
-                    </div>
-                  </div>
-                </div>
-              )}
-            </div> 
-            <div className={`flex flex-row items-center justify-between pl-[42px] pr-[24px] ${isExpanded ? 'bg-[#253D84]' : 'bg-[#253D84]'} h-[105px] rounded-b-3xl transition-all duration-300 ease-in-out`}>
-              <div className='flex flex-col text-white'>
-                <div className='text-[24px] font-semibold'>{team.name}</div>
-                <div className='text-[18px]'>{team.position}</div>
-              </div>
-              <div className='flex items-center justify-center w-[34px] h-[34px] rounded-full bg-white'>
-                <img className='w-[16px] h-[16px]' src={isExpanded ? "/SVG/BlueClose.svg" : "/SVG/BlueOpen.svg"} alt={isExpanded ? "Close" : "Open"} />
-              </div>
-            </div>
-          </div>
-          </div>
-        ))}
         
-
-        <div className='w-[339px] cursor-pointer' onClick={toggleExpand}>
-          <div className={`relative rounded-t-3xl w-full ${isExpanded ? 'h-[339px]' : 'h-[235px]'} bg-cover bg-no-repeat bg-center transition-all duration-300 ease-in-out`}>
-            <img className='w-full h-full object-cover rounded-t-3xl' src="/Webp/Omar.webp" alt="" />
-            {isExpanded && (
-              <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-center p-[42px] rounded-t-3xl">
-                <div className='text-white space-y-4'>
-                  <div>
-                    <div className='text-[16px] font-bold'>AB Political Science</div>
-                    <div className='text-[16px]'>Princeton University</div>
+        <div className='flex flex-col gap-5'>
+          {teamData.map((team, index) => (
+          <div key={index}>
+            <div className='w-[full] max-w-[339px] mx-auto flex flex-col cursor-pointer' onClick={() => toggleExpand(team.name)}>
+              <div className={`relative rounded-t-3xl w-full ${expandedStates[team.name] ? 'h-[339px]' : 'h-[235px]'} bg-cover bg-no-repeat bg-center transition-all duration-300 ease-in-out`}>
+                <img className='w-full h-full object-cover rounded-t-3xl' src={`${team.url}`} alt="" />
+                {expandedStates[team.name] && (
+                  <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-center p-[42px] rounded-t-3xl">
+                    <div className='text-white space-y-4'>
+                      <div>
+                        <div className='text-[16px] font-bold'>{team.jobDescription1}</div>
+                        <div className='text-[16px]'>{team.jobLocation1}</div>
+                      </div>
+                      <div>
+                        <div className='text-[16px] font-bold'>{team.jobDescription2}</div>
+                        <div className='text-[16px]'>{team.jobLocation2}</div>
+                      </div>
+                      <div>
+                        <div className='text-[16px] font-bold'>{team.jobDescription3}</div>
+                        <div className='text-[16px]'>{team.jobLocation1}</div>
+                      </div>
+                    </div>
                   </div>
-                  <div>
-                    <div className='text-[16px] font-bold'>Co-founder and EVP</div>
-                    <div className='text-[16px]'>E Commerce Group</div>
-                  </div>
-                  <div>
-                    <div className='text-[16px] font-bold'>SVP, Payments Division</div>
-                    <div className='text-[16px]'>Western Union</div>
-                  </div>
+                )}
+              </div> 
+              <div className={`flex flex-row items-center justify-between pl-[42px] pr-[24px] ${expandedStates[team.name] ? 'bg-[#253D84]' : 'bg-[#253D84]'} h-[105px] rounded-b-3xl transition-all duration-300 ease-in-out`}>
+                <div className='flex flex-col text-white'>
+                  <div className='text-[24px] font-semibold'>{team.name}</div>
+                  <div className='text-[18px]'>{team.position}</div>
+                </div>
+                <div className='flex items-center justify-center w-[34px] h-[34px] rounded-full bg-white'>
+                  <img className='w-[16px] h-[16px]' src={expandedStates[team.name] ? "/SVG/BlueClose.svg" : "/SVG/BlueOpen.svg"} alt={expandedStates[team.name] ? "Close" : "Open"} />
                 </div>
               </div>
-            )}
-          </div> 
-          <div className={`flex flex-row items-center justify-between pl-[42px] pr-[24px] ${isExpanded ? 'bg-[#253D84]' : 'bg-[#253D84]'} h-[105px] rounded-b-3xl transition-all duration-300 ease-in-out`}>
-            <div className='flex flex-col text-white'>
-              <div className='text-[24px] font-semibold'>Marc Mehl</div>
-              <div className='text-[18px]'>Compliance & Committee</div>
-            </div>
-            <div className='flex items-center justify-center w-[34px] h-[34px] rounded-full bg-white'>
-              <img className='w-[16px] h-[16px]' src={isExpanded ? "/SVG/BlueClose.svg" : "/SVG/BlueOpen.svg"} alt={isExpanded ? "Close" : "Open"} />
             </div>
           </div>
+          ))}
         </div>
       </div>
      
     
 
       {/* Summary */}
-      <div id="summary">
-        <div className='flex flex-col text-center pb-[40px] md:pb-[79px] '>
-          <h3 className="font-bold pb-4 text-green">Who We Are</h3>
-          <h1 className='text-[#253D84]'>Our Team</h1>
+      <div className='space-y-5' id="summary">
+        <div className='flex flex-col text-center my-[40px] md:py-[60px] '>
+          <h3 className="font-bold pb-4 text-green">2021</h3>
+          <h1 className='text-[#253D84]'>Summary</h1>
+        </div >
+
+        <div className='flex flex-col gap-5 md:flex-row'>
+          <div className='bg-[#253D84] rounded-3xl w-full space-y-[39px] p-[39px] pb-[46px] md:max-w-[288px]'>
+            <img className='w-[63px]' src="/SVG/DollarExchange.svg" alt="" width="100%"/>
+            <ul className='text-white space-y-4 list-disc pl-[22px]'>
+              <li>
+                <h3>Cash</h3>
+              </li>
+              <li>
+                <h3>Debit Card</h3>
+              </li>
+            </ul>          
+          </div>
+          <div className='bg-[#DFE7FF] rounded-3xl w-full space-y-[39px] px-[39px] py-[49px]'>
+            <h3>Economic/Reputational Risk Control</h3>
+            <ul className='space-y-4 list-disc text-[16px] pl-[22px]'>
+              <li>Omnex maintains over 10M USD in Surety bonds that ensure payout of transfers even in the unlikely event of business failure.</li>
+              <li>Over 32 years in business providing services, over 50 million money transfer transactions processed with positive reputational scoring.</li>
+            </ul>
+          </div>
+        </div>    
+
+        <div className='flex flex-col gap-5 md:flex-row'>
+          <div className='bg-[#F5F5F5] rounded-3xl w-full space-y-[39px] px-[39px] py-[49px]'>
+            <h3>Compliance Verification</h3>
+            <ul className='space-y-4 list-disc text-[16px] pl-[22px]'>
+              <li>Risk-based regular mystery shopping.</li>
+              <li>Risk-based verification by VCI (Visual Compliance Inspections) annual with retention of photographic evidence fo compliance.</li>
+              <li>Annual online training & testing for individual tellers.</li>
+              <li>Automated disconnection for failure to training or unacceptable testing results.</li>
+              <li>PCI Inspection added to VCI (Visual Compliance Inspections) 2019.</li>
+            </ul>
+          </div>
+          <div className='flex items-center bg-[#D9D9D9]/0 border border-[#333333]/10 rounded-3xl w-full px-[48px] py-[49px] md:px-[25px] md:max-w-[280px]'>
+            <img className='w-full' src="/Webp/Webpage-Illustrations-Ley.webp" alt="" width="100%"/>
+          </div>
+        </div>
+
+        <div>
+          <div className='bg-[#DCF8E4] rounded-3xl w-full space-y-[39px] px-[39px] py-[49px]'>
+            <h3>PCI compliance (including but not limited to)</h3>
+            <ul className='space-y-4 list-disc text-[16px] pl-[22px]'>
+              <li>Change system defaults on initial setup.</li>
+              <li>Allow only secure and required traffic over POS network.</li>
+              <li>Keep the equipment in a secure area perform period checks for signs of tamerping.</li>
+              <li>Ensure personnel are fully trained to operate the POS system.</li>
+              <li>Make sure any connected computer (terminals only at this time) equipment runs AV software and is scanned regularly.</li>
+              <li>Adhere strictly to information retention policy.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className='flex flex-col gap-5 md:flex-row'>
+          <div className='bg-[#333333] text-white rounded-3xl w-full space-y-[39px] px-[39px] py-[49px]'>
+            <h3>Store Management Risk Control</h3>
+            <ul className='space-y-4 list-disc text-[16px] pl-[22px]'>
+              <li>National Background checks for all location owners.</li>
+              <li>National credit bureau and Lexis/Nexis review for reputational, ownership and lien related matters.</li>
+            </ul>
+          </div>
+          <div className='bg-[#253D84] text-white rounded-3xl w-full space-y-[39px] px-[39px] py-[49px]'>
+            <h3>BSA/AML compliance</h3>
+            <div className='space-y-2'>
+              <p className='font-medium'>Ensure Five Pillars:</p>
+              <ul className='list-disc-none text-[16px]'>
+                <li>- BSA/AML program- Compliance Officer</li>
+                <li>- Independent Review</li>
+                <li>- Training</li>
+                <li>- Risk Assessment/ Risk Adjusted Procedures</li>
+              </ul>
+            </div>
+            <div className='space-y-2'>
+              <p className='font-medium'>Transactions Analysis:</p>
+              <ul className='list-disc-none text-[16px]'>
+                <li>- Aggregation/Rule-Based</li>
+                <li>- Post Transaction Review</li>
+                <li>- Regulatory Filings (SAR/CTR filing)</li>
+              </ul>
+            </div>
+            
+          </div>
         </div>
       </div>
 
