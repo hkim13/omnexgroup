@@ -24,9 +24,9 @@ export default function OurBrandsPage() {
 
   
   return (
-    <main>
+    <main className='max-w-[975px] mx-auto'>
       {/* Heading + Selections */}
-      <div className='bg-gray-300 flex flex-col pb-16 md:flex-row md:max-w-[975px] md:justify-between mx-auto'>
+      <div className='flex flex-col pb-16 md:flex-row md:justify-between'>
         <div className='pb-14 md:self-center'>
           <h1 className='pb-9 text-[36px] md:text-[46px] max-w-[216px] md:max-w-[273px]'>Discover our Brands</h1>
           <div className='flex flex-col gap-2'>
@@ -64,10 +64,9 @@ export default function OurBrandsPage() {
               <img className='h-[51px] place-self-start' src="/SVG/SharemoneySMALLwhite.svg" alt="" />
           </div>
           )}
-
           {activeAccordion !== 'uno' && (
-            <button className="btn-uno font-bold text-[22px] px-8 py-4 rounded-full sm:w-[100px] sm:h-[402px] sm:rounded-3xl" onClick={() => handleAccordion('uno')}>
-                <img className='h-[33px]' src="/SVG/UnoSMALLwhite.svg" alt="" />
+            <button className="btn-uno font-bold text-[22px] px-8 py-4 rounded-full sm:w-[100px] sm:h-[402px] sm:rounded-3xl bg-[url('/Webp/AdobeStock_573681778.webp')] bg-cover bg-center bg-no-repeat" onClick={() => handleAccordion('uno')}>
+                <img className='bg-[url("/Webp/AdobeStock_573681778.webp")] bg-cover bg-center bg-no-repeat rounded-full' />
             </button>
           )}
           {activeAccordion !== 'legoi' && (
@@ -89,30 +88,32 @@ export default function OurBrandsPage() {
       </div>
        
       {/* text */}
-      <div className='flex mx-auto justfy-center text-center pb-16 sm:max-w-[564px] '>
+      <div className='flex justfy-center text-center pb-16 sm:max-w-[564px] mx-auto'>
         <h3>Trust Uno, as a leading brand for money transfers to Brazil and the rest of South America, to provide unmatched service and reliability.</h3>
       </div>
 
       {/* About Us */}
-      <div className='flex flex-col gap-5 pb-5 sm:flex-row-reverse max-w-[975px] mx-auto'>
-        <div className='h-[237px] sm:h-[402px] sm:w-[340px]'>
+      <div className='flex flex-col gap-5 lg:flex-row-reverse mb-5'>
+        <div className='h-[237px] lg:h-[402px] w-full'>
           <div className='rounded-3xl w-full h-full bg-cover bg-no-repeat bg-[center_right_-60px]' style={{backgroundImage: "url('/Webp/AdobeStock_537237474.webp')",  backgroundSize:"175%"}}/>
         </div>
-        <div className='bg-[#333333]/5 flex flex-col gap-4 border rounded-3xl px-[34px] pt-[44px] pb-[68px] sm:w-[609px]'>
+        <div className='bg-[#333333]/5 flex flex-col gap-4 border rounded-3xl px-[34px] pt-[44px] pb-[68px] lg:max-w-[609px] lg:h-[402px]'>
           <h3>About Us</h3>
           <p className='leading-8'>Since 2007 Uno has specialized in money transfers to Brazil, Africa and Asia building strong cross border relationships to provide exceptional foreign exchange and service. With over 400 active agents, including the largest presence in New York with more than 160 agents, we are committed to providing our <strong>200,000+ active customers</strong> with convenient and accessible service, earning their loyalty and trust for their money transfer needs.</p>
         </div>
       </div>
 
       {/* Our History */}
-      <div className='bg-[#DEF1FF] border border-gray-300 rounded-3xl h-[447px] px-[31px] pt-[59px] max-w-[975px] mx-auto'>
-        <div className='sm:flex sm:flex-row'>
+      <div className='flex flex-col justify-between bg-[#DEF1FF] border border-gray-300 rounded-3xl h-[447px] px-[31px] py-[59px]'>
+        <h3 className='hidden md:flex'>Our History</h3>
+        <div className=' md:grid md:grid-cols-2'>
           <div className='sm:flex sm:flex-col'>
-            <h3 className='pb-[64px]'>Our History</h3>
-            <div className='hidden sm:flex sm:w-[377px] sm:h-[225px]'>
+            <h3 className='pb-[64px] md:hidden'>Our History</h3>
+            <div className='hidden sm:flex md:max-w-[377px] md:h-[225px]'>
               <div className='rounded-3xl w-full h-full bg-cover bg-no-repeat bg-[center_right_-60px]' style={{backgroundImage: "url('/Webp/AdobeStock_537237474.webp')",  backgroundSize:"175%"}}/>
             </div>
           </div>
+
           <div className='flex flex-row justify-center gap-8'>
               <div className='flex flex-col gap-4 font-bold'>
                 {activeDate !== '1990' && (
@@ -169,8 +170,10 @@ export default function OurBrandsPage() {
               </div>
           </div>
         </div>
-       
       </div>
+     
+       
+     
 
       {/* Leadership */}
       <div className='pt-[44px] pb-[30px] sm:max-w-[975px] mx-auto'>
@@ -233,17 +236,17 @@ export default function OurBrandsPage() {
       </div>
 
       {/* Our Goals */}
-      <div className='flex flex-col justify-center gap-11 bg-[#006DB7] rounded-3xl h-[646px] px-[30px] sm:justify-between sm:py-[50px] sm:max-w-[975px] mx-auto'>
+      <div className='flex flex-col justify-center gap-11 md:gap-0 bg-[#006DB7] rounded-3xl h-[646px] px-[30px] md:py-[50px] md:h-[516px]'>
         <div>
           <h1 className='text-white'>Our Goals</h1>
         </div>
-        <div className='grid gap-2 sm:grid-cols-3 sm:grid-rows-3'>
-          <div className='bg-white text-[#006DB7] text-[18px] font-bold px-[47px] py-[18px] rounded-3xl sm:col-start-1 sm:row-start-3'>Better exchange rates</div>
-          <div className='bg-white/25 text-[#FFFFFF] text-[16px] px-[47px] py-[20px] rounded-3xl sm:col-start-2 sm:row-start-3'>Building and sustaining the trust of our customers</div>
-          <div className='bg-white/25 text-[#FFFFFF] text-[16px] px-[47px] py-[20px] rounded-3xl sm:col-start-2 sm:row-start-2'>Building complementary financial services</div>
-          <div className='bg-white/25 text-[#FFFFFF] text-[16px] px-[47px] py-[20px] rounded-3xl sm:col-start-3 sm:row-start-3'>Increasinge the speed of money transfers</div>
-          <div className='bg-white/25 text-[#FFFFFF] text-[16px] px-[47px] py-[20px] rounded-3xl sm:col-start-3 sm:row-start-2'>Consumer Convenience and ease of use</div>
-          <div className='bg-white/25 text-[#FFFFFF] text-[16px] px-[47px] py-[20px] rounded-3xl sm:col-start-3 sm:row-start-1'>Providing services to everyone who needs it!</div>
+        <div className='grid gap-2 md:grid-cols-3 md:grid-rows-3'>
+          <div className='bg-white text-[#006DB7] text-[18px] font-bold px-[47px] py-[18px] rounded-3xl md:col-start-1 md:row-start-3'>Better exchange rates</div>
+          <div className='bg-white/25 text-[#FFFFFF] text-[16px] px-[47px] py-[20px] rounded-3xl md:col-start-2 md:row-start-3'>Building and sustaining the trust of our customers</div>
+          <div className='bg-white/25 text-[#FFFFFF] text-[16px] px-[47px] py-[20px] rounded-3xl md:col-start-2 md:row-start-2'>Building complementary financial services</div>
+          <div className='bg-white/25 text-[#FFFFFF] text-[16px] px-[47px] py-[20px] rounded-3xl md:col-start-3 md:row-start-3'>Increasinge the speed of money transfers</div>
+          <div className='bg-white/25 text-[#FFFFFF] text-[16px] px-[47px] py-[20px] rounded-3xl md:col-start-3 md:row-start-2'>Consumer Convenience and ease of use</div>
+          <div className='bg-white/25 text-[#FFFFFF] text-[16px] px-[47px] py-[20px] rounded-3xl md:col-start-3 md:row-start-1'>Providing services to everyone who needs it!</div>
         </div>
       </div>
     </main>

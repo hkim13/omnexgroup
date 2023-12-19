@@ -69,6 +69,7 @@ export default function CorporatePage() {
         <div className='bg-[url("/Webp/AdobeStock_573681778.webp")] bg-cover bg-center bg-no-repeat rounded-full'>
           <BigButton className='bg-[#333333]/50 text-white' onClick={() => navigate('our-team')}>Our Team</BigButton>
         </div>
+        <BigButton className={`btn-black`} onClick={() => navigate('summary')}>Summary</BigButton>
       </div>
 
       {/* Global Reach */}
@@ -82,14 +83,14 @@ export default function CorporatePage() {
           <img className='w-full h-full object-cover rounded-3xl' src="/Webp/WorldMap.webp" alt="" width="100%"/>
         </div>
         
-        <div className='grid grid-cols-1 gap-5 pl-[49px] mb-[70px]'>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-5 pl-[49px] mb-[70px]'>
           <div className='flex gap-4'>
             <div className='bg-[#253D84] h-[25px] min-w-[25px] rounded-xl'/>
             <p className='whitespace-nowrap'>Sending Locations</p>
           </div>
           <div className='flex gap-4'>
             <div className='bg-[#D2DEFF] h-[25px] min-w-[25px] rounded-xl'/>
-            <p className='whitespace-nowrap'>Sending and Paying Locations</p>
+            <p className='whitespace-nowrap md:whitespace-normal'>Sending and Paying Locations</p>
           </div>
           <div className='flex gap-4'>
             <div className='bg-[#52DB78] h-[25px] min-w-[25px] rounded-xl'/>
@@ -97,7 +98,7 @@ export default function CorporatePage() {
           </div>
         </div>
 
-        <div className='grid grid-cols-2 gap-3'>
+        <div className='grid grid-cols-2 gap-3 lg:grid-cols-4'>
           <div className='flex flex-col justify-center text-center bg-[#253D84] text-[#FFFFFF] rounded-2xl h-[113px]'>
             <h1>48</h1>
             <p>States</p>
@@ -125,14 +126,23 @@ export default function CorporatePage() {
         </div>
         <div class="relative">
           {/* Key Statistics - Laptop view */}
-          <div class="hidden sm:flex sm:flex-row sm:justify-between sm:items-center sm:bg-[url('/path/to/your/desktop-image.png')] sm:bg-cover">
-            <div class="p-4 text-white">37.3M USD</div>
-            <div class="p-4 text-white">9.2M USD</div>
-            <div class="p-4 text-white">968M USD</div>
+          <div class="hidden h-[516px] rounded-3xl p-5 md:grid md:grid-cols-3 gap-5 md:justify-between md:items-end md:bg-[url('/Webp/AdobeStock_596371844.webp')] md:bg-cover">
+            <div class="bg-[#333333]/70 rounded-2xl text-white p-4 text-center h-[136px]">
+              <div className='font-bold text-[36px]'>37.3M <span className='text-[22px]'>USD</span></div>
+              <p>Revenues</p>
+            </div>
+            <div class="bg-[#333333]/70 rounded-2xl text-white p-4 text-center h-[136px]">
+              <div className='font-bold text-[36px]'>9.2M <span className='text-[22px]'>USD</span></div>
+              <p>Net revenue after all direct costs</p>
+            </div>
+            <div class="bg-[#333333]/70 rounded-2xl text-white p-4 text-center h-[136px]">
+              <div className='font-bold text-[36px]'>968M <span className='text-[22px]'>USD</span></div>
+              <p>Principle moved</p>
+            </div>
           </div>
 
           {/* Key Statistics - Mobile View*/}
-          <div class="flex flex-col gap-3 sm:hidden">
+          <div class="flex flex-col gap-3 md:hidden">
             <div className='relative min-h-max'>
               <img className='w-full h-full object-cover rounded-3xl' src="/Webp/AdobeStock_596371844.webp" alt="" width="100%"/>
             </div>
@@ -173,7 +183,7 @@ export default function CorporatePage() {
                 <p>Agent Locations</p>
               </div>
               <div className='max-w-[105px]'>
-                <h1>6 <span className='text-[24px]'>Years</span></h1>
+                <h1 className='whitespace-nowrap'>6 <span className='text-[24px]'>Years</span></h1>
                 <p>of Consistent Profitability</p>
               </div>
             </div>
@@ -194,13 +204,13 @@ export default function CorporatePage() {
             </div>
           ) : (
             <div className="overview-display">
-              <div className='bg-[#253D84] rounded-2xl h-[579px] px-8 pt-12 pb-8 flex flex-col justify-between'>
+              <div className='bg-[#253D84] rounded-2xl h-[579px] px-8 pt-12 pb-8 flex flex-col justify-between my-[40px]'>
                 <h3 className='text-[#52DB78]'>Overview</h3>
-                <ul className='flex flex-col gap-2'>
-                  <li className='bg-[#FFFFFF]/40 rounded-2xl text-white p-6'>Over thirty-two years of licensure and regulatory history</li>
-                  <li className='bg-[#FFFFFF]/40 rounded-2xl text-white p-6'>23 states have examined our compliance program since 2019 with no actions against our license</li>
-                  <li className='bg-[#FFFFFF]/40 rounded-2xl text-white p-6'>Over $10M in surety bonds</li>
-                  <li className='bg-[#FFFFFF]/40 rounded-2xl text-white p-6'>Experienced long term compliance personnel</li>
+                <ul className='grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-2'>
+                  <li className='bg-[#FFFFFF]/40 rounded-2xl text-white p-6 md:h-[132px] md:col-start-1'>Over thirty-two years of licensure and regulatory history</li>
+                  <li className='bg-[#FFFFFF]/40 rounded-2xl text-white p-6 md:h-[132px] md:row-start-2 '>23 states have examined our compliance program since 2019 with no actions against our license</li>
+                  <li className='bg-[#FFFFFF]/40 rounded-2xl text-white p-6 md:h-[132px] md:col-start-'>Over $10M in surety bonds</li>
+                  <li className='bg-[#FFFFFF]/40 rounded-2xl text-white p-6 md:h-[132px] md:col-start-2'>Experienced long term compliance personnel</li>
                 </ul>
                 <button className='w-[50px] h-[50px] bg-[#FFFFFF] rounded-full self-end' onClick={toggleDisplay} aria-label="Toggle Display">
                   <img src="close-icon.png" alt=""/>
@@ -213,8 +223,8 @@ export default function CorporatePage() {
 
       {/* Compliance */}
       <div id="compliance">
-        <div className='grid grid-cols-1'>
-          <div className='flex flex-col justify-between text-center border border-[#333333] rounded-2xl h-[498px] py-12'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-2'>
+          <div className='flex flex-col justify-between text-center border border-[#333333] rounded-2xl h-[498px] py-12 md:h-[535px] md:col-start-2'>
             <h3>Staff by department</h3>
             <div className='relative min-h-max'>
               <img className='w-full h-full object-cover rounded-3xl' src="/Webp/WorldMap.webp" alt="" width="100%"/>
@@ -222,7 +232,7 @@ export default function CorporatePage() {
             <div className='text-[14px] text-[#333333]/65'>Percentages rounded to nearest whole number.</div>
           </div>
           
-          <div className='flex flex-col justify-between rounded-2xl h-[498px] px-9 py-12'>
+          <div className=' flex flex-col justify-between rounded-2xl h-[498px] px-9 py-12 md:h-[535px] md:row-start-1'>
             <div className='text-[#253D84] text-[80px] font-bold'>30%</div>
             <h3 className='pb-[40px]'>of Omnex Staff are in dedicated compliance roles</h3>
             <div className='flex flex-col gap-5'>
@@ -258,14 +268,16 @@ export default function CorporatePage() {
 
       {/* Our History */}
       <div id="our-history">
-        <div className='bg-[#DEF1FF] border border-gray-300 rounded-3xl h-[447px] px-[31px] pt-[59px] max-w-[975px] mx-auto my-[40px]'>
-          <div className='sm:flex sm:flex-row'>
+        <div className='flex flex-col justify-between bg-[#DEF1FF] border border-gray-300 rounded-3xl h-[447px] px-[31px] py-[59px] max-w-[975px] mx-auto my-[40px]'>
+          <h3 className='hidden md:flex'>Our History</h3>
+          <div className=' md:grid md:grid-cols-2'>
             <div className='sm:flex sm:flex-col'>
-              <h3 className='pb-[64px]'>Our History</h3>
-              <div className='hidden sm:flex sm:w-[377px] sm:h-[225px]'>
+              <h3 className='pb-[64px] md:hidden'>Our History</h3>
+              <div className='hidden sm:flex md:max-w-[377px] md:h-[225px]'>
                 <div className='rounded-3xl w-full h-full bg-cover bg-no-repeat bg-[center_right_-60px]' style={{backgroundImage: "url('/Webp/AdobeStock_537237474.webp')",  backgroundSize:"175%"}}/>
               </div>
             </div>
+
             <div className='flex flex-row justify-center gap-8'>
                 <div className='flex flex-col gap-4 font-bold'>
                   {activeDate !== '1990' && (
@@ -357,14 +369,14 @@ export default function CorporatePage() {
           <h1 className='text-[#253D84]'>Our Team</h1>
         </div>
         
-        <div className='flex flex-col gap-5'>
+        <div className='flex flex-col gap-5 md:flex-row md:flex-wrap justify-center'>
           {teamData.map((team, index) => (
           <div key={index}>
-            <div className='w-[full] max-w-[339px] mx-auto flex flex-col cursor-pointer' onClick={() => toggleExpand(team.name)}>
-              <div className={`relative rounded-t-3xl w-full ${expandedStates[team.name] ? 'h-[339px]' : 'h-[235px]'} bg-cover bg-no-repeat bg-center transition-all duration-300 ease-in-out`}>
+            <div className='w-[full] max-w-[339px] min-w-[305px] mx-auto flex flex-col cursor-pointer' onClick={() => toggleExpand(team.name)}>
+              <div className={`relative rounded-t-3xl w-full ${expandedStates[team.name] ? 'h-[260px]' : 'h-[235px]'} bg-cover bg-no-repeat bg-center transition-all duration-300 ease-in-out`}>
                 <img className='w-full h-full object-cover rounded-t-3xl' src={`${team.url}`} alt="" />
                 {expandedStates[team.name] && (
-                  <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-center p-[42px] rounded-t-3xl">
+                  <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-center pl-[42px] rounded-t-3xl">
                     <div className='text-white space-y-4'>
                       <div>
                         <div className='text-[16px] font-bold'>{team.jobDescription1}</div>
@@ -458,7 +470,7 @@ export default function CorporatePage() {
         </div>
 
         <div className='flex flex-col gap-5 md:flex-row'>
-          <div className='bg-[#333333] text-white rounded-3xl w-full space-y-[39px] px-[39px] py-[49px]'>
+          <div className='bg-[#333333] text-white rounded-3xl w-full space-y-[39px] px-[39px] py-[49px] md:max-w-[374px]'>
             <h3>Store Management Risk Control</h3>
             <ul className='space-y-4 list-disc text-[16px] pl-[22px]'>
               <li>National Background checks for all location owners.</li>
@@ -467,23 +479,26 @@ export default function CorporatePage() {
           </div>
           <div className='bg-[#253D84] text-white rounded-3xl w-full space-y-[39px] px-[39px] py-[49px]'>
             <h3>BSA/AML compliance</h3>
-            <div className='space-y-2'>
-              <p className='font-medium'>Ensure Five Pillars:</p>
-              <ul className='list-disc-none text-[16px]'>
-                <li>- BSA/AML program- Compliance Officer</li>
-                <li>- Independent Review</li>
-                <li>- Training</li>
-                <li>- Risk Assessment/ Risk Adjusted Procedures</li>
-              </ul>
+            <div className='flex flex-col lg:flex-row gap-2'>
+              <div className='space-y-2'>
+                <p className='font-medium'>Ensure Five Pillars:</p>
+                <ul className='list-disc-none text-[16px]'>
+                  <li>- BSA/AML program- Compliance Officer</li>
+                  <li>- Independent Review</li>
+                  <li>- Training</li>
+                  <li>- Risk Assessment/ Risk Adjusted Procedures</li>
+                </ul>
+              </div>
+              <div className='space-y-2'>
+                <p className='font-medium'>Transactions Analysis:</p>
+                <ul className='list-disc-none text-[16px]'>
+                  <li>- Aggregation/Rule-Based</li>
+                  <li>- Post Transaction Review</li>
+                  <li>- Regulatory Filings (SAR/CTR filing)</li>
+                </ul>
+              </div>
             </div>
-            <div className='space-y-2'>
-              <p className='font-medium'>Transactions Analysis:</p>
-              <ul className='list-disc-none text-[16px]'>
-                <li>- Aggregation/Rule-Based</li>
-                <li>- Post Transaction Review</li>
-                <li>- Regulatory Filings (SAR/CTR filing)</li>
-              </ul>
-            </div>
+            
             
           </div>
         </div>
