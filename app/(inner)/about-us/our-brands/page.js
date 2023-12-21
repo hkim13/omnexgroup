@@ -65,7 +65,7 @@ export default function OurBrandsPage() {
           </div>
           )}
           {activeAccordion !== 'uno' && (
-            <button className="btn-uno font-bold text-[22px] px-8 py-4 rounded-full sm:w-[100px] sm:h-[402px] sm:rounded-3xl bg-[url('/Webp/AdobeStock_573681778.webp')] bg-cover bg-center bg-no-repeat" onClick={() => handleAccordion('uno')}>
+            <button className="btn-uno font-bold text-[22px] px-8 py-4 rounded-full sm:w-[100px] sm:h-[402px] sm:rounded-3xl bg-[url('/Webp/AdobeStock_86116290.webp')] bg-cover bg-center bg-no-repeat" onClick={() => handleAccordion('uno')}>
                 <img className='bg-[url("/Webp/AdobeStock_573681778.webp")] bg-cover bg-center bg-no-repeat rounded-full' />
             </button>
           )}

@@ -58,19 +58,39 @@ export default function CorporatePage() {
       </div>
       
       {/* 6 - Buttons */}
-      <div className='flex flex-col gap-4 pt-[57px]'>
-        <BigButton className={`btn-blue`} onClick={() => navigate('global-reach')}>Global Reach</BigButton>
-        <BigButton className={`btn-black`} onClick={() => navigate('key-statistics')}>Key Statistics</BigButton>
-        <div className='bg-[url("/Webp/AdobeStock_573681778.webp")] bg-cover bg-center bg-no-repeat rounded-full'>
-          <BigButton className={`bg-[#333333]/50 text-white`} onClick={() => navigate('compliance')}>Compliance</BigButton>
+      <div class='grid grid-cols-1 md:grid-cols-5 md:grid-rows-4 gap-4 md:h-[285px] font-medium text-[22px] mt-[57px] md:mt-0 md:text-[20px]'>
+
+        <div class='md:col-span-1 md:row-span-3 bg-[#253D84] rounded-full md:rounded-3xl'>
+          <button class='flex text-start pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-[#52DB78]' onClick={() => navigate('global-reach')}>Global Reach</button>
         </div>
-        <BigButton className={`btn-blue`} onClick={() => navigate('our-history')}>Our History</BigButton>
-        <BigButton className={`btn-black`} onClick={() => navigate('our-brands')}>Our Brands</BigButton>
-        <div className='bg-[url("/Webp/AdobeStock_573681778.webp")] bg-cover bg-center bg-no-repeat rounded-full'>
-          <BigButton className='bg-[#333333]/50 text-white' onClick={() => navigate('our-team')}>Our Team</BigButton>
+
+        <div class='md:row-start-4 md:col-span-1 md:row-span-1 bg-[#333333] rounded-full md:rounded-3xl'>
+          <button class='flex text-start items-center pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-white' onClick={() => navigate('key-statistics')}>Key Statistics</button>
         </div>
-        <BigButton className={`btn-black`} onClick={() => navigate('summary')}>Summary</BigButton>
-      </div>
+
+        <div class='md:row-start-2 md:col-start-2 md:col-span-1 md:row-span-3 bg-[url("/Webp/AdobeStock_573681778.webp")] bg-cover bg-center bg-no-repeat rounded-full md:rounded-3xl'>
+          <button class='flex text-start pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-white bg-[#333333]/50' onClick={() => navigate('compliance')}>Compliance</button>
+        </div>
+
+        <div class='md:row-start-2 md:col-start-3 md:col-span-1 md:row-span-1 bg-[#253D84] rounded-full md:rounded-3xl'>
+          <button class='flex text-start items-center pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-[#52DB78]' onClick={() => navigate('our-history')}>Our History</button>
+        </div>
+
+        <div class='md:row-start-3 md:col-start-3 md:col-span-1 md:row-span-2 bg-[#52DB78] rounded-full md:rounded-3xl'>
+          <button class='flex text-start pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-[#253D84]' onClick={() => navigate('our-brands')}>Our Brands</button>
+        </div>
+
+        <div class='md:row-start-2 md:col-start-4 md:col-span-1 md:row-span-3 bg-[url("/Webp/AdobeStock_573681778.webp")] bg-cover bg-center bg-no-repeat rounded-full md:rounded-3xl'>
+          <button class='flex text-start pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-white bg-[#333333]/50' onClick={() => navigate('our-team')}>Our Team</button>
+        </div>
+
+        <div class='md:row-start-1 md:col-start-5 md:col-span-1 md:row-span-4 bg-[#333333] rounded-full md:rounded-3xl'>
+          <button class='flex text-start pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-white' onClick={() => navigate('summary')}>Summary</button>
+        </div>
+
+        </div>
+
+
 
       {/* Global Reach */}
       <div id="global-reach">
@@ -124,33 +144,33 @@ export default function CorporatePage() {
           <h3 className="font-bold pb-4 text-green">2021</h3>
           <h1 className='text-[#253D84]'>Key Statistics</h1>
         </div>
-        <div class="relative">
+        <div className="relative">
           {/* Key Statistics - Laptop view */}
-          <div class="hidden h-[516px] rounded-3xl p-5 md:grid md:grid-cols-3 gap-5 md:justify-between md:items-end md:bg-[url('/Webp/AdobeStock_596371844.webp')] md:bg-cover">
-            <div class="bg-[#333333]/70 rounded-2xl text-white p-4 text-center h-[136px]">
+          <div className="hidden h-[516px] rounded-3xl p-5 md:grid md:grid-cols-3 gap-5 md:justify-between md:items-end md:bg-[url('/Webp/AdobeStock_596371844.webp')] md:bg-cover">
+            <div className="bg-[#333333]/70 rounded-2xl text-white p-4 text-center h-[136px]">
               <div className='font-bold text-[36px]'>37.3M <span className='text-[22px]'>USD</span></div>
               <p>Revenues</p>
             </div>
-            <div class="bg-[#333333]/70 rounded-2xl text-white p-4 text-center h-[136px]">
+            <div className="bg-[#333333]/70 rounded-2xl text-white p-4 text-center h-[136px]">
               <div className='font-bold text-[36px]'>9.2M <span className='text-[22px]'>USD</span></div>
               <p>Net revenue after all direct costs</p>
             </div>
-            <div class="bg-[#333333]/70 rounded-2xl text-white p-4 text-center h-[136px]">
+            <div className="bg-[#333333]/70 rounded-2xl text-white p-4 text-center h-[136px]">
               <div className='font-bold text-[36px]'>968M <span className='text-[22px]'>USD</span></div>
               <p>Principle moved</p>
             </div>
           </div>
 
           {/* Key Statistics - Mobile View*/}
-          <div class="flex flex-col gap-3 md:hidden">
+          <div className="flex flex-col gap-3 md:hidden">
             <div className='relative min-h-max'>
               <img className='w-full h-full object-cover rounded-3xl' src="/Webp/AdobeStock_596371844.webp" alt="" width="100%"/>
             </div>
-            <div class="bg-[#333333]/70 rounded-2xl text-white p-4 text-center">
+            <div className="bg-[#333333]/70 rounded-2xl text-white p-4 text-center">
               <div className='font-bold text-[36px]'>37.3M <span className='text-[22px]'>USD</span></div>
               <p>Revenues</p>
             </div>
-            <div class="bg-[#333333]/70 rounded-2xl text-white p-4 text-center">
+            <div className="bg-[#333333]/70 rounded-2xl text-white p-4 text-center">
               <div className='font-bold text-[36px]'>9.2M <span className='text-[22px]'>USD</span></div>
               <p>Net revenue after all direct costs</p>
             </div>
@@ -271,7 +291,7 @@ export default function CorporatePage() {
         <div className='flex flex-col justify-between bg-[#DEF1FF] border border-gray-300 rounded-3xl h-[447px] px-[31px] py-[59px] max-w-[975px] mx-auto my-[40px]'>
           <h3 className='hidden md:flex'>Our History</h3>
           <div className=' md:grid md:grid-cols-2'>
-            <div className='sm:flex sm:flex-col'>
+            <div className='md:flex sm:flex-col'>
               <h3 className='pb-[64px] md:hidden'>Our History</h3>
               <div className='hidden sm:flex md:max-w-[377px] md:h-[225px]'>
                 <div className='rounded-3xl w-full h-full bg-cover bg-no-repeat bg-[center_right_-60px]' style={{backgroundImage: "url('/Webp/AdobeStock_537237474.webp')",  backgroundSize:"175%"}}/>
