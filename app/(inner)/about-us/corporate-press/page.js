@@ -42,7 +42,7 @@ export default function CorporatePage() {
   
   
   return (
-    <main className='max-w-[974px] mx-auto'>
+    <main className='max-w-[974px] mx-auto px-6 pt-[80px] md:pt-[85px]'>
       {/* Corporate Press */}
       <div className='flex flex-col gap-10 text-center pb-[40px] md:pb-[79px]'>
         <div>
@@ -53,7 +53,7 @@ export default function CorporatePage() {
       </div>
       <div className='flex justify-center'>
         <Button className="btn">
-          <Link href="/about-us/our-brands">Contact Us</Link>
+          <Link href="/contact-us">Contact Us</Link>
         </Button>
       </div>
       

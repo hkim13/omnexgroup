@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function PrivatePolicyPage() {
   return (
-    <main className='max-w-[834px] mx-auto'>
+    <main className='max-w-[834px] mx-auto px-6 pt-[80px] md:pt-[85px]'>
       <div className='flex flex-col gap-10 text-center pb-[40px] md:pb-[79px]'>
         <div>
           <h3 className="font-bold pb-4 text-green">Secure Compliance</h3>

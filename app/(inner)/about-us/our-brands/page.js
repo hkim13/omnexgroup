@@ -24,7 +24,7 @@ export default function OurBrandsPage() {
 
   
   return (
-    <main className='max-w-[975px] mx-auto'>
+    <main className='max-w-[975px] mx-auto px-6 pt-[80px] md:pt-[85px]'>
       {/* Heading + Selections */}
       <div className='flex flex-col pb-16 md:flex-row md:justify-between'>
         <div className='pb-14 md:self-center'>

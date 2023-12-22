@@ -14,7 +14,7 @@ export default function MainLayout({ showLinkBar, children }) {
             {showLinkBar && <LinkBar/>}
               <NavBar/>
           <main className='flex grow'>
-            <div className='w-full max-w-screen-2xl mx-auto p-6'>
+            <div className='w-full max-w-screen-2xl mx-auto'>
               {children}
             </div>
           </main>

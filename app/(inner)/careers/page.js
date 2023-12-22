@@ -16,7 +16,7 @@ export default function CareersPage() {
   };
 
   return (
-    <main>
+    <main className='px-6 pt-[80px] md:pt-[85px]'>
       <div className='pb-8'>
         <Heading
           heading= "Work with Us"

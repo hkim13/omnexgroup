@@ -13,7 +13,7 @@ export default function StateLicenses() {
   };
 
   return (
-    <main className='text-[18px]'>
+    <main className='text-[18px] px-6 pt-[80px] md:pt-[85px]'>
       <div className='flex flex-col gap-10 text-center pb-[40px] md:pb-[79px]'>
         <div>
           <h3 className="font-bold pb-4 text-green">Secure Compliance</h3>

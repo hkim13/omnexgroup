@@ -19,7 +19,7 @@ export default function OurSolutionsPage() {
   };
 
   return (
-    <main>
+    <main className='px-6 pt-[80px] md:pt-[85px]'>
       {/* mobile display */}
       <div className='pb-8 lg:hidden'>
         <Heading
