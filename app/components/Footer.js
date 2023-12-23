@@ -66,13 +66,16 @@ export default function Footer() {
         <div className='text-[#333333] text-xs font-bold text-center px-14 max-w-[528px]'>©2022 Omnex Group Inc. All rights reserved.Omnex Group, Inc. a licensed money transfer companyNMLS No. 899521.</div>
         <div className='flex flex-row text-xs justify-between w-screen max-w-[635px] px-7'>
           <div>
-            <Link href="/licenses" className="text-gray-400 hover:text-black">State Licenses</Link>
+            <Link href="/regulatory/state-licenses" className="text-gray-400 hover:text-black">State Licenses</Link>
           </div>
           <div>
-            <Link href="/privacy" className="text-gray-400 hover:text-black">Privacy Policy</Link>
+            <Link href="/regulatory/privacy-policy" className="text-gray-400 hover:text-black">Privacy Policy</Link>
           </div>
           <div>
-            <Link href="/complaint" className="text-gray-400 hover:text-black">File a Complaint</Link>
+            <Link href="/regulatory/file-a-complaint" className="text-gray-400 hover:text-black">File a Complaint</Link>
+          </div>
+          <div>
+            <Link href="/user-agreement" className="text-gray-400 hover:text-black">User Agreement</Link>
           </div>
         </div>
       </div>

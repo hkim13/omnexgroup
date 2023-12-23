@@ -20,7 +20,7 @@ export default function FileAComplaintPage() {
   };
 
   return (
-    <main className='px-6 pt-[80px] md:pt-[85px]'>
+    <main className='px-6 pt-[80px] md:pt-[85px] max-w-[855px] mx-auto'>
       {/* heading */}
       <div className='flex flex-col gap-10 text-center pb-[40px] md:pb-[79px]'>
         <div>
@@ -72,7 +72,7 @@ export default function FileAComplaintPage() {
                 <p dangerouslySetInnerHTML={{ __html: info.address }}></p>
               )}
             </div>
-            <hr className='my-[50px]'/>
+            <hr className='my-[50px] border-[#CACACA]' />
           </div>
           
         ))}
