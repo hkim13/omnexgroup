@@ -61,7 +61,7 @@ export default function CorporatePage() {
   
   
   return (
-    <main className='max-w-[974px] mx-auto px-6 pt-[80px] md:pt-[85px]'>
+    <main className='max-w-[974px] mx-auto px-6 py-[80px] md:py-[85px]'>
       {/* Corporate Press */}
       <div className='flex flex-col gap-10 text-center pb-[40px] md:pb-[79px]'>
         <div>
@@ -71,27 +71,41 @@ export default function CorporatePage() {
         <p className='max-w-[614px] mx-auto'>Our vision is to provide socially enabled cross-border financial services that help immigrants stay connected in ways that matter.</p>
       </div>
       <div className='flex justify-center'>
-        <Button className="btn">
-          <Link href="/contact-us">Contact Us</Link>
+        <Button className="btn" >
+          <Link href="/contact-us" >Contact Us</Link>
         </Button>
       </div>
 
       {showFixedNavbar && (
         <div className="fixed top-0 left-0 right-0 z-10 bg-white shadow-md">
-          <div className='flex flex-row flex-wrap'>
-            <div>Global Reach</div>
-            <div>Key Statistics</div>
-            <div>Compliance</div>
-            <div>Our History</div>
-            <div>Our Brands</div>
-            <div>Our Team</div>
-            <div>Summary</div>
+          <div className='flex flex-row flex-wrap gap-2 justify-center py-[18px]'>
+            <button className="bg-[#333333]/10 py-[10px] px-4 rounded-full" onClick={() => navigate('global-reach')}>
+              Global Reach
+            </button>
+            <button className="bg-[#333333]/10 py-[10px] px-4 rounded-full" onClick={() => navigate('key-statistics')}>
+              Key Statistics
+            </button>
+            <button className="bg-[#333333]/10 py-[10px] px-4 rounded-full" onClick={() => navigate('compliance')}>
+              Compliance
+            </button>
+            <button className="bg-[#333333]/10 py-[10px] px-4 rounded-full" onClick={() => navigate('our-history')}>
+              Our History
+            </button>
+            <button className="bg-[#333333]/10 py-[10px] px-4 rounded-full" onClick={() => navigate('our-brands')}>
+              Our Brands
+            </button>
+            <button className="bg-[#333333]/10 py-[10px] px-4 rounded-full" onClick={() => navigate('our-team')}>
+              Our Team
+            </button>
+            <button className="bg-[#333333]/10 py-[10px] px-4 rounded-full" onClick={() => navigate('summary')}>
+              Summary
+            </button>
           </div>
         </div>
       )}
       
       {/* 6 - Buttons */}
-      <div id="buttons">
+      <div id="buttons" className="scroll-mt-[100px]">
         <div class='grid grid-cols-1 md:grid-cols-5 md:grid-rows-4 gap-4 md:h-[285px] font-medium text-[22px] mt-[57px] md:mt-0 md:text-[20px]'>
           <div class='md:col-span-1 md:row-span-3 bg-[#253D84] rounded-full md:rounded-3xl'>
             <button class='flex text-start pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-[#52DB78]' onClick={() => navigate('global-reach')}>Global Reach</button>
@@ -126,7 +140,7 @@ export default function CorporatePage() {
 
 
       {/* Global Reach */}
-      <div id="global-reach">
+      <div id="global-reach" className="scroll-mt-[90px]">
         <div className='flex flex-col text-center md:pb-[79px] my-[57px]'>
           <h3 className="font-bold pb-4 text-green">Local Focus</h3>
           <h1 className='text-[#253D84]'>Global Reach</h1>
@@ -172,7 +186,7 @@ export default function CorporatePage() {
       </div>
 
       {/* Key Statistics */}
-      <div id="key-statistics">
+      <div id="key-statistics" className="scroll-mt-[100px]">
         <div className='flex flex-col text-center pb-[40px] md:pb-[79px] mt-[53px]'>
           <h3 className="font-bold pb-4 text-green">2021</h3>
           <h1 className='text-[#253D84]'>Key Statistics</h1>
@@ -275,7 +289,7 @@ export default function CorporatePage() {
       </div>
 
       {/* Compliance */}
-      <div id="compliance">
+      <div id="compliance" className="scroll-mt-[100px]">
         <div className='grid grid-cols-1 md:grid-cols-2 gap-2'>
           <div className='flex flex-col justify-between text-center border border-[#333333] rounded-2xl h-[498px] py-12 md:h-[535px] md:col-start-2'>
             <h3>Staff by department</h3>
@@ -320,7 +334,7 @@ export default function CorporatePage() {
       </div>
 
       {/* Our History */}
-      <div id="our-history">
+      <div id="our-history" className="scroll-mt-[100px]">
         <div className='flex flex-col justify-between bg-[#DEF1FF] border border-gray-300 rounded-3xl h-[447px] px-[31px] py-[59px] max-w-[975px] mx-auto my-[40px]'>
           <h3 className='hidden md:flex'>Our History</h3>
           <div className=' md:grid md:grid-cols-2'>
@@ -392,7 +406,7 @@ export default function CorporatePage() {
       </div>
 
       {/* Our Brands */}
-      <div id="our-brands">
+      <div id="our-brands" className="scroll-mt-[100px]">
         <div className='flex flex-col text-center pb-[40px] md:pb-[79px]'>
           <h3 className="font-bold pb-4 text-green">Identify</h3>
           <h1 className='text-[#253D84]'>Our Brands</h1>
@@ -416,7 +430,7 @@ export default function CorporatePage() {
       
 
       {/* Our Team */}
-      <div id="our-team">
+      <div id="our-team" className="scroll-mt-[100px]">
         <div className='flex flex-col text-center my-[40px] md:my-[60px] '>
           <h3 className="font-bold pb-4 text-green">Who We Are</h3>
           <h1 className='text-[#253D84]'>Our Team</h1>
@@ -465,7 +479,7 @@ export default function CorporatePage() {
     
 
       {/* Summary */}
-      <div className='space-y-5' id="summary">
+      <div className='space-y-5 scroll-mt-[100px]' id="summary" >
         <div className='flex flex-col text-center my-[40px] md:py-[60px] '>
           <h3 className="font-bold pb-4 text-green">2021</h3>
           <h1 className='text-[#253D84]'>Summary</h1>
