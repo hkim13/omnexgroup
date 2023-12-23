@@ -25,6 +25,16 @@ export default function CareersPage() {
         />
       </div>
       
+      {/* temporary - No current positions */}
+      <div className='bg-[#F5F5F5] rounded-3xl max-w-[947px] h-[274px] px-8 py-12 flex items-center text-center mx-auto md:h-[402px]'>
+        <div className='flex flex-col gap-4 md:gap-10'>
+          <h3 className='text-[#253D84]'>Sorry, but we currently do not have any open positions.</h3>
+          <p>However, please check back regularly as opportunities to join our team may arise sooner than you think!</p>
+        </div>
+      </div>
+
+
+      {/* }
       <div className='flex flex-col gap-4'>
         <div className='flex flex-wrap justify-between sm:justify-start gap-2'>
           <Button className={`btn-gray text-[15px] ${activeAccordion === 'frontEndDeveloper' ? 'bg-[#333333] text-white' : '' }`} onClick={() => handleAccordion('frontEndDeveloper')}>Front end Developer</Button>
@@ -150,7 +160,7 @@ export default function CareersPage() {
             </div>
           )}
       </div>
-     
+          */ }
     </main>
   )
 }

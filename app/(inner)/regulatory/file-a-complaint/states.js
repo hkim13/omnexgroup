@@ -393,31 +393,6 @@ const statesData = [
     "additionalInformation": "",
     "address": "Wyoming Division of Banking<br/>Hathaway Building<br/>2300 Capital Ave, 2nd Floor<br/>Cheyenne, WY 82002"
   },  
-
-
-  
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-   
-
-  
-
-
-
-  
   
 ];
 

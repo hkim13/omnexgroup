@@ -239,4 +239,3 @@ export default function UserAgreementPage() {
     </main>
   )
 }
-{/* <a className='font-medium underline break-words' href="customerservice@omnexgroup.com">customerservice@omnexgroup.com</a>  <span className='font-bold'>Right to Refund:</span>   <div className='text-[#253D84] font-bold'>Trademarks</div>*/}
