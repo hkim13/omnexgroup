@@ -12,7 +12,7 @@ export default function PrivatePolicyPage() {
       </div>
       <div>
         <div className='pb-[80px] sm:pb-[127px]'>
-          <p> Thank you for visiting Sharemoney, a service of Omnex Group, Inc. (&quot;Omnex&quot;). We take concerns about security and privacy very seriously. Please read the following Privacy Policy to understand how we may collect, store, and use the Information of visitors to our websites (including via any mobile devices and any mobile applications) and users of our Services (as defined in the <a className='font-medium underline' href="https://www.sharemoney.com/us/en/user-agreement">User Agreement</a>). Federal law gives you the right to limit some but not all sharing of Information; at the end of this policy you will find information regarding how you can direct us not to share certain Information with certain parties.</p>
+          <p>Thank you for visiting a service of Omnex Group, Inc. (&quot;Omnex&quot;). We take concerns about security and privacy very seriously. Please read the following Privacy Policy to understand how we may collect, store, and use the Information of visitors to our websites (including via any mobile devices and any mobile applications) and users of our Services (as defined in the <a className='font-medium underline' href="https://www.sharemoney.com/us/en/user-agreement">User Agreement</a>). Federal law gives you the right to limit some but not all sharing of Information; at the end of this policy you will find information regarding how you can direct us not to share certain Information with certain parties.</p>
         </div>
         <div className='flex flex-col gap-[80px]'>
           

@@ -4,13 +4,32 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Button from '@/components/Button';
 import BigButton from '@/components/BigButton';
-import { useState } from 'react';
 import teamData from '@/(inner)/about-us/corporate-press/team';
+import React, { useState, useEffect } from 'react';
 
 export default function CorporatePage() {
+  const [showFixedNavbar, setShowFixedNavbar] = useState(false);
   const [isPhilosophy, setIsPhilosophy] = useState(true);
   const [activeDate, setActiveDate] = useState('1990');
   const [expandedStates, setExpandedStates] = useState({});
+
+  const checkScrollPosition = () => {
+    const buttonsSection = document.getElementById('buttons');
+    if (buttonsSection) {
+      const rect = buttonsSection.getBoundingClientRect();
+      setShowFixedNavbar(rect.bottom < 0);
+    }
+  };
+
+  useEffect(() => {
+    // Add scroll event listener when component mounts
+    window.addEventListener('scroll', checkScrollPosition);
+
+    // Remove scroll event listener when component unmounts
+    return () => {
+      window.removeEventListener('scroll', checkScrollPosition);
+    };
+  }, []);
 
   const toggleExpand = (name) => {
     setExpandedStates(prevExpandedStates => ({
@@ -56,39 +75,53 @@ export default function CorporatePage() {
           <Link href="/contact-us">Contact Us</Link>
         </Button>
       </div>
+
+      {showFixedNavbar && (
+        <div className="fixed top-0 left-0 right-0 z-10 bg-white shadow-md">
+          <div className='flex flex-row flex-wrap'>
+            <div>Global Reach</div>
+            <div>Key Statistics</div>
+            <div>Compliance</div>
+            <div>Our History</div>
+            <div>Our Brands</div>
+            <div>Our Team</div>
+            <div>Summary</div>
+          </div>
+        </div>
+      )}
       
       {/* 6 - Buttons */}
-      <div class='grid grid-cols-1 md:grid-cols-5 md:grid-rows-4 gap-4 md:h-[285px] font-medium text-[22px] mt-[57px] md:mt-0 md:text-[20px]'>
+      <div id="buttons">
+        <div class='grid grid-cols-1 md:grid-cols-5 md:grid-rows-4 gap-4 md:h-[285px] font-medium text-[22px] mt-[57px] md:mt-0 md:text-[20px]'>
+          <div class='md:col-span-1 md:row-span-3 bg-[#253D84] rounded-full md:rounded-3xl'>
+            <button class='flex text-start pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-[#52DB78]' onClick={() => navigate('global-reach')}>Global Reach</button>
+          </div>
 
-        <div class='md:col-span-1 md:row-span-3 bg-[#253D84] rounded-full md:rounded-3xl'>
-          <button class='flex text-start pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-[#52DB78]' onClick={() => navigate('global-reach')}>Global Reach</button>
-        </div>
+          <div class='md:row-start-4 md:col-span-1 md:row-span-1 bg-[#333333] rounded-full md:rounded-3xl'>
+            <button class='flex text-start items-center pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-white' onClick={() => navigate('key-statistics')}>Key Statistics</button>
+          </div>
 
-        <div class='md:row-start-4 md:col-span-1 md:row-span-1 bg-[#333333] rounded-full md:rounded-3xl'>
-          <button class='flex text-start items-center pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-white' onClick={() => navigate('key-statistics')}>Key Statistics</button>
-        </div>
+          <div class='md:row-start-2 md:col-start-2 md:col-span-1 md:row-span-3 bg-[url("/Webp/AdobeStock_573681778.webp")] bg-cover bg-center bg-no-repeat rounded-full md:rounded-3xl'>
+            <button class='flex text-start pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-white bg-[#333333]/50' onClick={() => navigate('compliance')}>Compliance</button>
+          </div>
 
-        <div class='md:row-start-2 md:col-start-2 md:col-span-1 md:row-span-3 bg-[url("/Webp/AdobeStock_573681778.webp")] bg-cover bg-center bg-no-repeat rounded-full md:rounded-3xl'>
-          <button class='flex text-start pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-white bg-[#333333]/50' onClick={() => navigate('compliance')}>Compliance</button>
-        </div>
+          <div class='md:row-start-2 md:col-start-3 md:col-span-1 md:row-span-1 bg-[#253D84] rounded-full md:rounded-3xl'>
+            <button class='flex text-start items-center pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-[#52DB78]' onClick={() => navigate('our-history')}>Our History</button>
+          </div>
 
-        <div class='md:row-start-2 md:col-start-3 md:col-span-1 md:row-span-1 bg-[#253D84] rounded-full md:rounded-3xl'>
-          <button class='flex text-start items-center pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-[#52DB78]' onClick={() => navigate('our-history')}>Our History</button>
-        </div>
+          <div class='md:row-start-3 md:col-start-3 md:col-span-1 md:row-span-2 bg-[#52DB78] rounded-full md:rounded-3xl'>
+            <button class='flex text-start pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-[#253D84]' onClick={() => navigate('our-brands')}>Our Brands</button>
+          </div>
 
-        <div class='md:row-start-3 md:col-start-3 md:col-span-1 md:row-span-2 bg-[#52DB78] rounded-full md:rounded-3xl'>
-          <button class='flex text-start pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-[#253D84]' onClick={() => navigate('our-brands')}>Our Brands</button>
-        </div>
+          <div class='md:row-start-2 md:col-start-4 md:col-span-1 md:row-span-3 bg-[url("/Webp/AdobeStock_573681778.webp")] bg-cover bg-center bg-no-repeat rounded-full md:rounded-3xl'>
+            <button class='flex text-start pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-white bg-[#333333]/50' onClick={() => navigate('our-team')}>Our Team</button>
+          </div>
 
-        <div class='md:row-start-2 md:col-start-4 md:col-span-1 md:row-span-3 bg-[url("/Webp/AdobeStock_573681778.webp")] bg-cover bg-center bg-no-repeat rounded-full md:rounded-3xl'>
-          <button class='flex text-start pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-white bg-[#333333]/50' onClick={() => navigate('our-team')}>Our Team</button>
+          <div class='md:row-start-1 md:col-start-5 md:col-span-1 md:row-span-4 bg-[#333333] rounded-full md:rounded-3xl'>
+            <button class='flex text-start pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-white' onClick={() => navigate('summary')}>Summary</button>
+          </div>
         </div>
-
-        <div class='md:row-start-1 md:col-start-5 md:col-span-1 md:row-span-4 bg-[#333333] rounded-full md:rounded-3xl'>
-          <button class='flex text-start pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-white' onClick={() => navigate('summary')}>Summary</button>
-        </div>
-
-        </div>
+      </div>
 
 
 
@@ -216,8 +249,8 @@ export default function CorporatePage() {
               <div className='bg-[#253D84] rounded-2xl h-[579px] px-8 pt-12 pb-8 flex flex-col justify-between my-[40px]'>
                 <h3 className='text-[#52DB78]'>Philosophy</h3>
                 <h1 className='text-white'>“The engagement of every individual in an organization, regardless of department, is the pre-requisite to ensuring compliance.”</h1>
-                <button className='w-[50px] h-[50px] bg-[#FFFFFF] rounded-full self-end' onClick={toggleDisplay} aria-label="Toggle Display">
-                  <img src="close-icon.png" alt=""/>
+                <button className='flex items-center justify-center w-[50px] h-[50px] bg-[#FFFFFF] rounded-full self-end' onClick={toggleDisplay} aria-label="Toggle Display">
+                  <img className='w-[20px]' src="/SVG/BlueArrow.svg" alt=""/>
                 </button>
               </div>
               
@@ -232,8 +265,8 @@ export default function CorporatePage() {
                   <li className='bg-[#FFFFFF]/40 rounded-2xl text-white p-6 md:h-[132px] md:col-start-'>Over $10M in surety bonds</li>
                   <li className='bg-[#FFFFFF]/40 rounded-2xl text-white p-6 md:h-[132px] md:col-start-2'>Experienced long term compliance personnel</li>
                 </ul>
-                <button className='w-[50px] h-[50px] bg-[#FFFFFF] rounded-full self-end' onClick={toggleDisplay} aria-label="Toggle Display">
-                  <img src="close-icon.png" alt=""/>
+                <button className='flex items-center justify-center w-[50px] h-[50px] bg-[#FFFFFF] rounded-full self-end' onClick={toggleDisplay} aria-label="Toggle Display">
+                  <img className='w-[20px]' src="/SVG/BlueArrow.svg" alt=""/>
                 </button>
               </div>
             </div>
@@ -246,8 +279,8 @@ export default function CorporatePage() {
         <div className='grid grid-cols-1 md:grid-cols-2 gap-2'>
           <div className='flex flex-col justify-between text-center border border-[#333333] rounded-2xl h-[498px] py-12 md:h-[535px] md:col-start-2'>
             <h3>Staff by department</h3>
-            <div className='relative min-h-max'>
-              <img className='w-full h-full object-cover rounded-3xl' src="/Webp/WorldMap.webp" alt="" width="100%"/>
+            <div className='flex place-self-center min-h-max w-[290px] md:w-[366px]'>
+              <img className='w-full h-full object-cover rounded-3xl' src="/Webp/Diagram.webp" alt="" width="100%"/>
             </div>
             <div className='text-[14px] text-[#333333]/65'>Percentages rounded to nearest whole number.</div>
           </div>

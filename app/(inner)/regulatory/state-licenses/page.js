@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import Heading from '@/components/Heading'
 import { useState } from 'react';
-import statesData from './states';
+import statesData from '@/(inner)/regulatory/state-licenses/states';
 
 export default function StateLicenses() {
   const [activeState, setActiveState] = useState(null);
