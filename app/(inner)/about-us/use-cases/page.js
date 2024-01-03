@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function UseCasesPage() {
   return (
-    <main className='max-w-[974px] mx-auto px-6 pt-[80px] md:pt-[85px]'>
+    <main className='max-w-[974px] mx-auto px-6 pt-[80px] md:pt-[85px] pb-[50px]'>
       <div className='flex flex-col gap-10 text-center pb-[40px] md:pb-[79px]'>
         <div>
           <h3 className="font-bold pb-4 text-green">About Us</h3>

@@ -29,7 +29,7 @@ export default function OurSolutionsPage() {
         />
       </div>
       <div className='sm:flex sm:flex-row gap-4 mx-auto justify-center sm:items-end'>
-        <div className='flex flex-col justify-end lg:justify-between sm:w-[612px]'>
+        <div className='flex flex-col justify-end lg:justify-between sm:w-[612px] lg:h-[600px]'>
           <div className='hidden lg:flex pb-8'>
             <Heading
               heading= "For Businesses"

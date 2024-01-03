@@ -5,13 +5,15 @@ import Link from 'next/link'
 import Button from '@/components/Button';
 import BigButton from '@/components/BigButton';
 import teamData from '@/(inner)/about-us/corporate-press/team';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef  } from 'react';
 
 export default function CorporatePage() {
   const [showFixedNavbar, setShowFixedNavbar] = useState(false);
   const [isPhilosophy, setIsPhilosophy] = useState(true);
   const [activeDate, setActiveDate] = useState('1990');
   const [expandedStates, setExpandedStates] = useState({});
+  const navbarRef = useRef(null);
+  const [navbarHeight, setNavbarHeight] = useState(0);
 
   const checkScrollPosition = () => {
     const buttonsSection = document.getElementById('buttons');
@@ -22,14 +24,31 @@ export default function CorporatePage() {
   };
 
   useEffect(() => {
-    // Add scroll event listener when component mounts
+    console.log('useEffect is running');
+  
+    const handleResize = () => {
+      if (navbarRef.current) {
+        const height = navbarRef.current.offsetHeight;
+        setNavbarHeight(height);
+        console.log(`Navbar height after resize: ${height}px`);
+      }
+    }
+  
+    // This will capture the navbar height on resize as well
+    window.addEventListener('resize', handleResize);
+  
+    // Initial capture of the navbar height
+    handleResize();
+  
     window.addEventListener('scroll', checkScrollPosition);
-
-    // Remove scroll event listener when component unmounts
+  
     return () => {
       window.removeEventListener('scroll', checkScrollPosition);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
+  
+  
 
   const toggleExpand = (name) => {
     setExpandedStates(prevExpandedStates => ({
@@ -61,23 +80,26 @@ export default function CorporatePage() {
   
   
   return (
-    <main className='max-w-[974px] mx-auto px-6 py-[80px] md:py-[85px]'>
+    <main className='flex flex-col gap-12 max-w-[974px] mx-auto px-6 py-[80px] md:pt-[85px] pb-[50px]'>
       {/* Corporate Press */}
-      <div className='flex flex-col gap-10 text-center pb-[40px] md:pb-[79px]'>
-        <div>
-          <h3 className="font-bold pb-4 text-green">About Us</h3>
-          <h1 className='text-[#253D84]'>Corporate Press</h1>
+      <div>
+        <div className='flex flex-col gap-10 text-center pb-[40px] md:pb-[79px]'>
+          <div>
+            <h3 className="font-bold pb-4 text-green">About Us</h3>
+            <h1 className='text-[#253D84]'>Corporate Press</h1>
+          </div>
+          <p className='max-w-[614px] mx-auto'>Our vision is to provide socially enabled cross-border financial services that help immigrants stay connected in ways that matter.</p>
         </div>
-        <p className='max-w-[614px] mx-auto'>Our vision is to provide socially enabled cross-border financial services that help immigrants stay connected in ways that matter.</p>
+        <div className='flex justify-center'>
+          <Button className="btn" >
+            <Link href="/contact-us" >Contact Us</Link>
+          </Button>
+        </div>
       </div>
-      <div className='flex justify-center'>
-        <Button className="btn" >
-          <Link href="/contact-us" >Contact Us</Link>
-        </Button>
-      </div>
+      
 
       {showFixedNavbar && (
-        <div className="fixed top-0 left-0 right-0 z-10 bg-white shadow-md">
+         <div ref={navbarRef} className="fixed top-0 left-0 right-0 z-10 bg-white shadow-md">
           <div className='flex flex-row flex-wrap gap-2 justify-center py-[18px]'>
             <button className="bg-[#333333]/10 py-[10px] px-4 rounded-full" onClick={() => navigate('global-reach')}>
               Global Reach
@@ -105,34 +127,34 @@ export default function CorporatePage() {
       )}
       
       {/* 6 - Buttons */}
-      <div id="buttons" className="scroll-mt-[100px]">
-        <div class='grid grid-cols-1 md:grid-cols-5 md:grid-rows-4 gap-4 md:h-[285px] font-medium text-[22px] mt-[57px] md:mt-0 md:text-[20px]'>
-          <div class='md:col-span-1 md:row-span-3 bg-[#253D84] rounded-full md:rounded-3xl'>
-            <button class='flex text-start pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-[#52DB78]' onClick={() => navigate('global-reach')}>Global Reach</button>
+      <div id="buttons" style={{ scrollMarginTop: navbarHeight }}>
+        <div className='grid grid-cols-1 md:grid-cols-5 md:grid-rows-4 gap-4 md:h-[285px] font-semibold text-[22px] md:text-[16px]'>
+          <div className='md:col-span-1 md:row-span-3 bg-[#253D84] rounded-full md:rounded-3xl'>
+            <button className='flex text-start pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-[#52DB78]' onClick={() => navigate('global-reach')}>Global Reach</button>
           </div>
 
-          <div class='md:row-start-4 md:col-span-1 md:row-span-1 bg-[#333333] rounded-full md:rounded-3xl'>
-            <button class='flex text-start items-center pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-white' onClick={() => navigate('key-statistics')}>Key Statistics</button>
+          <div className='md:row-start-4 md:col-span-1 md:row-span-1 bg-[#333333] rounded-full md:rounded-3xl'>
+            <button className='flex text-start items-center pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-white' onClick={() => navigate('key-statistics')}>Key Statistics</button>
           </div>
 
-          <div class='md:row-start-2 md:col-start-2 md:col-span-1 md:row-span-3 bg-[url("/Webp/AdobeStock_573681778.webp")] bg-cover bg-center bg-no-repeat rounded-full md:rounded-3xl'>
-            <button class='flex text-start pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-white bg-[#333333]/50' onClick={() => navigate('compliance')}>Compliance</button>
+          <div className='md:row-start-2 md:col-start-2 md:col-span-1 md:row-span-3 bg-[url("/Webp/AdobeStock_573681778.webp")] bg-cover bg-center bg-no-repeat rounded-full md:rounded-3xl'>
+            <button className='flex text-start pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-white bg-[#333333]/50' onClick={() => navigate('compliance')}>Compliance</button>
           </div>
 
-          <div class='md:row-start-2 md:col-start-3 md:col-span-1 md:row-span-1 bg-[#253D84] rounded-full md:rounded-3xl'>
-            <button class='flex text-start items-center pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-[#52DB78]' onClick={() => navigate('our-history')}>Our History</button>
+          <div className='md:row-start-2 md:col-start-3 md:col-span-1 md:row-span-1 bg-[#253D84] rounded-full md:rounded-3xl'>
+            <button className='flex text-start items-center pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-[#52DB78]' onClick={() => navigate('our-history')}>Our History</button>
           </div>
 
-          <div class='md:row-start-3 md:col-start-3 md:col-span-1 md:row-span-2 bg-[#52DB78] rounded-full md:rounded-3xl'>
-            <button class='flex text-start pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-[#253D84]' onClick={() => navigate('our-brands')}>Our Brands</button>
+          <div className='md:row-start-3 md:col-start-3 md:col-span-1 md:row-span-2 bg-[#52DB78] rounded-full md:rounded-3xl'>
+            <button className='flex text-start pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-[#253D84]' onClick={() => navigate('our-brands')}>Our Brands</button>
           </div>
 
-          <div class='md:row-start-2 md:col-start-4 md:col-span-1 md:row-span-3 bg-[url("/Webp/AdobeStock_573681778.webp")] bg-cover bg-center bg-no-repeat rounded-full md:rounded-3xl'>
-            <button class='flex text-start pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-white bg-[#333333]/50' onClick={() => navigate('our-team')}>Our Team</button>
+          <div className='md:row-start-2 md:col-start-4 md:col-span-1 md:row-span-3 bg-[url("/Webp/AdobeStock_573681778.webp")] bg-cover bg-center bg-no-repeat rounded-full md:rounded-3xl'>
+            <button className='flex text-start pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-white bg-[#333333]/50' onClick={() => navigate('our-team')}>Our Team</button>
           </div>
 
-          <div class='md:row-start-1 md:col-start-5 md:col-span-1 md:row-span-4 bg-[#333333] rounded-full md:rounded-3xl'>
-            <button class='flex text-start pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-white' onClick={() => navigate('summary')}>Summary</button>
+          <div className='md:row-start-1 md:col-start-5 md:col-span-1 md:row-span-4 bg-[#333333] rounded-full md:rounded-3xl'>
+            <button className='flex text-start pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-white' onClick={() => navigate('summary')}>Summary</button>
           </div>
         </div>
       </div>
@@ -140,8 +162,8 @@ export default function CorporatePage() {
 
 
       {/* Global Reach */}
-      <div id="global-reach" className="scroll-mt-[90px]">
-        <div className='flex flex-col text-center md:pb-[79px] my-[57px]'>
+      <div id="global-reach" style={{ scrollMarginTop: navbarHeight }}>
+        <div className='flex flex-col text-center pb-[40px] md:pb-[79px]'>
           <h3 className="font-bold pb-4 text-green">Local Focus</h3>
           <h1 className='text-[#253D84]'>Global Reach</h1>
         </div>
@@ -186,8 +208,8 @@ export default function CorporatePage() {
       </div>
 
       {/* Key Statistics */}
-      <div id="key-statistics" className="scroll-mt-[100px]">
-        <div className='flex flex-col text-center pb-[40px] md:pb-[79px] mt-[53px]'>
+      <div id="key-statistics" style={{ scrollMarginTop: navbarHeight }}>
+        <div className='flex flex-col text-center pb-[40px] md:pb-[79px]'>
           <h3 className="font-bold pb-4 text-green">2021</h3>
           <h1 className='text-[#253D84]'>Key Statistics</h1>
         </div>
@@ -221,7 +243,7 @@ export default function CorporatePage() {
               <div className='font-bold text-[36px]'>9.2M <span className='text-[22px]'>USD</span></div>
               <p>Net revenue after all direct costs</p>
             </div>
-            <div class="bg-[#333333]/70 rounded-2xl text-white p-4 text-center">
+            <div className="bg-[#333333]/70 rounded-2xl text-white p-4 text-center">
               <div className='font-bold text-[36px]'>968M <span className='text-[22px]'>USD</span></div>
               <p>Principle moved</p>
             </div>
@@ -289,7 +311,7 @@ export default function CorporatePage() {
       </div>
 
       {/* Compliance */}
-      <div id="compliance" className="scroll-mt-[100px]">
+      <div id="compliance" style={{ scrollMarginTop: navbarHeight }}>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-2'>
           <div className='flex flex-col justify-between text-center border border-[#333333] rounded-2xl h-[498px] py-12 md:h-[535px] md:col-start-2'>
             <h3>Staff by department</h3>
@@ -334,8 +356,8 @@ export default function CorporatePage() {
       </div>
 
       {/* Our History */}
-      <div id="our-history" className="scroll-mt-[100px]">
-        <div className='flex flex-col justify-between bg-[#DEF1FF] border border-gray-300 rounded-3xl h-[447px] px-[31px] py-[59px] max-w-[975px] mx-auto my-[40px]'>
+      <div id="our-history" style={{ scrollMarginTop: navbarHeight }}>
+        <div className='flex flex-col justify-between bg-[#DEF1FF] border border-gray-300 rounded-3xl h-[447px] px-[31px] py-[59px] max-w-[975px] mx-auto'>
           <h3 className='hidden md:flex'>Our History</h3>
           <div className=' md:grid md:grid-cols-2'>
             <div className='md:flex sm:flex-col'>
@@ -406,7 +428,7 @@ export default function CorporatePage() {
       </div>
 
       {/* Our Brands */}
-      <div id="our-brands" className="scroll-mt-[100px]">
+      <div id="our-brands" style={{ scrollMarginTop: navbarHeight }}>
         <div className='flex flex-col text-center pb-[40px] md:pb-[79px]'>
           <h3 className="font-bold pb-4 text-green">Identify</h3>
           <h1 className='text-[#253D84]'>Our Brands</h1>
@@ -430,8 +452,8 @@ export default function CorporatePage() {
       
 
       {/* Our Team */}
-      <div id="our-team" className="scroll-mt-[100px]">
-        <div className='flex flex-col text-center my-[40px] md:my-[60px] '>
+      <div id="our-team" style={{ scrollMarginTop: navbarHeight }}>
+        <div className='flex flex-col text-center pb-[40px] md:pb-[79px]'>
           <h3 className="font-bold pb-4 text-green">Who We Are</h3>
           <h1 className='text-[#253D84]'>Our Team</h1>
         </div>
@@ -479,8 +501,8 @@ export default function CorporatePage() {
     
 
       {/* Summary */}
-      <div className='space-y-5 scroll-mt-[100px]' id="summary" >
-        <div className='flex flex-col text-center my-[40px] md:py-[60px] '>
+      <div className='space-y-5' id="summary" style={{ scrollMarginTop: navbarHeight }} >
+        <div className='flex flex-col text-center pb-[40px] md:pb-[79px] '>
           <h3 className="font-bold pb-4 text-green">2021</h3>
           <h1 className='text-[#253D84]'>Summary</h1>
         </div >

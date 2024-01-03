@@ -1,7 +1,7 @@
 const teamData = [
     {
         url: "/Webp/Darren.webp",
-        name: "Daniel Manelski",
+        name: "Darren Manelski",
         position: "CEO & Board Member",
         jobDescription1: "BS Computer Science",
         jobLocation1: "Columbia University",
