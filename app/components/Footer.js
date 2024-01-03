@@ -63,7 +63,7 @@ export default function Footer() {
       </div>
       
       <div className='flex flex-col py-7 gap-9 items-center mx-auto'>
-        <div className='text-[#333333] text-xs font-bold text-center px-14 max-w-[528px]'>©2022 Omnex Group Inc. All rights reserved.Omnex Group, Inc. a licensed money transfer companyNMLS No. 899521.</div>
+        <div className='text-[#333333] text-xs font-bold text-center px-14 max-w-[528px]'>©2023 Omnex Group Inc. All rights reserved. Omnex Group, Inc. a licensed money transfer company NMLS No. 899521.</div>
         <div className='flex flex-row text-xs justify-between w-screen max-w-[635px] px-7'>
           <div>
             <Link href="/regulatory/state-licenses" className="text-gray-400 hover:text-black">State Licenses</Link>
