@@ -34,7 +34,7 @@ export default function NavBar() {
                                 onMouseLeave={() => setShowAboutDropdown(false)}>
                                 <Link href="/about-us/our-brands">About Us</Link>
                                 {showAboutDropdown && (
-                                    <ul className="absolute bg-white shadow-md rounded font-normal">
+                                    <ul className="absolute  bg-white shadow-md text-[#4D4D4D] text-[15px] font-[500] px-[20px] py-[24px] border rounded-2xl space-y-[24px]">
                                         <li><Link href="/about-us/our-brands">Our Brands</Link></li>
                                         <li><Link href="/about-us/corporate-press">Corporate Press</Link></li>
                                         <li><Link href="/about-us/use-cases">Use Cases</Link></li>
@@ -56,9 +56,10 @@ export default function NavBar() {
                                 onMouseLeave={() => setShowRegulatoryDropdown(false)}>
                                 <Link href="/regulatory/state-licenses">Regulatory</Link>
                                 {showRegulatoryDropdown && (
-                                    <ul className="absolute bg-white shadow-md rounded font-normal">
+                                    <ul className="absolute bg-white shadow-md text-[#4D4D4D] text-[15px] font-[500] px-[20px] py-[24px] border rounded-2xl space-y-[24px]">
                                         <li><Link href="/regulatory/state-licenses">State Licenses</Link></li>
                                         <li><Link href="/regulatory/privacy-policy">Privacy Policy</Link></li>
+                                        <li><Link href="/regulatory/user-agreement">User Agreement</Link></li>
                                         <li><Link href="/regulatory/file-a-complaint">File a Complaint</Link></li>
                                     </ul>
                                 )}
