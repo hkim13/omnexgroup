@@ -10,7 +10,7 @@ export default function HomePage() {
   return (
     <>
      <div>
-      <main className='mt-0 lg:mt-14 mx-auto w-auto max-w-max px-6'>
+      <main className='mt-[15px] lg:mt-14 mx-auto w-auto max-w-max px-6'>
         
         {/*First section*/}
         <div className='flex flex-col-reverse lg:flex-row lg:justify-between items-center w-full pb-8 sm:pb-24'>

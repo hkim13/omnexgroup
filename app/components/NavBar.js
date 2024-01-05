@@ -27,7 +27,7 @@ export default function NavBar() {
                     </div>
 
                     {/* About Us, Our Solutions, Careers, Regulatory */}
-                    <ul className='hidden lg:flex text-[15px] font-bold items-center gap-14'>
+                    <ul className='hidden lg:flex text-[15px] font-bold items-center gap-14 text-[#333333]'>
                         <li>
                             <div className="min-w-max" 
                                 onMouseEnter={() => setShowAboutDropdown(true)}
@@ -43,7 +43,7 @@ export default function NavBar() {
                             </div>
                         </li>
                         <li>
-                            <div className="min-w-max">
+                            <div className="min-w-max text-[#333333]">
                                 <Link href="/our-solutions">Our Solutions</Link>
                             </div>
                         </li>
@@ -69,7 +69,7 @@ export default function NavBar() {
 
                 {/* EN, Send Money */}                    
                 <div className='hidden lg:flex lg:flex-1 lg:justify-end gap-3'>
-                    <select className=" bg-white text-black font-bold">
+                    <select className=" bg-white text-[#333333] font-bold">
                         <option>EN</option>
                         <option>ES</option>
                     </select>
@@ -87,7 +87,7 @@ export default function NavBar() {
                  {/* Mobile Menu Contents */}
                  {isMobileMenuOpen && (
                 <div className='absolute bg-white w-full left-0 top-full z-10 shadow-md rounded-b-lg lg:hidden'>
-                    <ul className='text-[15px] font-bold'>
+                    <ul className='text-[15px] font-bold text-[#333333]'>
                         {/* Map through all your nav items */}
                         <li className="p-4 border-gray-300" onClick={closeMobileMenu}>
                             <Link href="/about-us/our-brands">About Us</Link>
@@ -128,12 +128,12 @@ export default function NavBar() {
                     </ul>
                     <div className='flex flex-row justify-between items-center p-4'>
                         <div onClick={closeMobileMenu}>
-                            <Button className="btn-green w-full">
+                            <Button className="btn-green w-full text-[#333333]">
                                 <Link href="https://www.sharemoney.com/us/en/denmark">Send Money</Link> 
                             </Button>
                         </div>
                         <div>
-                            <select className="w-full bg-white text-black font-bold" onChange={closeMobileMenu}>
+                            <select className="w-full bg-white text-[#333333] font-bold" onChange={closeMobileMenu}>
                                 <option>EN</option>
                                 <option>ES</option>
                             </select>
