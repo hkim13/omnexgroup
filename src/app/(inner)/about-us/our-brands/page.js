@@ -30,8 +30,8 @@ export default function OurBrandsPage() {
   return (
     <main className='max-w-[975px] mx-auto px-6 pt-[80px] md:pt-[85px] pb-[68px]'>
       {/* Heading + Selections */}
-      <div className='flex flex-col pb-16 md:flex-row md:justify-between'>
-        <div className='pb-14 md:self-center'>
+      <div className='flex flex-col pb-16 min-[900px]:flex-row min-[900px]:justify-between min-[900px]:gap-2'>
+        <div className='pb-14 min-[900px]:self-center'>
           <h1 className='pb-9 text-[36px] sm:text-[46px] max-w-[216px] md:max-w-[273px]'>Discover our Brands</h1>
           <div className='flex flex-col gap-2'>
             <div className='flex text-[16px] gap-3 sm:text-[18px]' href="link"><img className='w-4' src='/SVG/BlackTick.svg'/>Better Value</div>
@@ -40,17 +40,17 @@ export default function OurBrandsPage() {
           </div>
         </div>
 
-        <div className='flex flex-col gap-4 sm:flex-row'>
+        <div className='flex flex-col mx-auto gap-4 sm:flex-row'>
           {activeAccordion === 'uno' && (
             <div className='bg-[#006DB7] rounded-3xl h-[420px] flex flex-col px-12 pt-[58px] pb-[32px] text-white justify-between sm:max-w-[326px]'>
-              <h3>From the US to Central and South America, Asia, Africa and the Dominican Republic.</h3>
+              <h3 className='text-[20px]'>From the US to Central and South America, Asia, Africa and the Dominican Republic.</h3>
               <p className='font-normal'>Send money securely to three continents with our fast and reliable service.</p>
               <img className='h-[51px] place-self-start' src="/SVG/UnoSMALLwhite.svg" alt="" />
             </div>
           )}
           {activeAccordion === 'legoi' && (
             <div className='bg-[#5FA82C] rounded-3xl h-[420px] flex flex-col px-12 pt-[58px] pb-[32px] text-white justify-between sm:max-w-[326px]'>
-              <h3>From the United States and Canada to Vietnam.</h3>
+              <h3 className='text-[24px]'>From the United States and Canada to Vietnam.</h3>
               <p className='font-normal'>With our secure and fast service, sending money to Vietnam has never been easier.</p>
               <img className='h-[51px] place-self-start' src="/SVG/LeGoiSMALLwhite.svg" alt="" />
           </div>
