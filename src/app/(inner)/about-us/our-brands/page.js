@@ -28,7 +28,7 @@ export default function OurBrandsPage() {
   const currentBrand = brandsData.find(brand => brand.id === activeAccordion) || {};
 
   return (
-    <main className='max-w-[975px] mx-auto px-6 pt-[80px] md:pt-[85px] pb-[68px]'>
+    <main className='max-w-[975px] mx-auto px-6 pt-[50px] md:pt-[70px] pb-[36px] md:pb-[68px]'>
       {/* Heading + Selections */}
       <div className='flex flex-col pb-16 min-[900px]:flex-row min-[900px]:justify-between min-[900px]:gap-2'>
         <div className='pb-14 min-[900px]:self-center'>
