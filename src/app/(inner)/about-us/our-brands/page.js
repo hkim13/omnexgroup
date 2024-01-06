@@ -5,6 +5,7 @@ import BigButton from '@/components/BigButton';
 import Link from 'next/link'
 import { useState } from 'react';
 import brandsData from '@/(inner)/about-us/our-brands/brands';
+import teamData from '@/(inner)/about-us/our-brands/team';
 
 
 export default function OurBrandsPage() {
@@ -27,68 +28,92 @@ export default function OurBrandsPage() {
   const currentBrand = brandsData.find(brand => brand.id === activeAccordion) || {};
 
   return (
-    <main className='max-w-[975px] mx-auto px-6 pt-[80px] md:pt-[85px] pb-[50px]'>
+    <main className='max-w-[975px] mx-auto px-6 pt-[80px] md:pt-[85px] pb-[68px]'>
       {/* Heading + Selections */}
       <div className='flex flex-col pb-16 md:flex-row md:justify-between'>
         <div className='pb-14 md:self-center'>
-          <h1 className='pb-9 text-[36px] md:text-[46px] max-w-[216px] md:max-w-[273px]'>Discover our Brands</h1>
+          <h1 className='pb-9 text-[36px] sm:text-[46px] max-w-[216px] md:max-w-[273px]'>Discover our Brands</h1>
           <div className='flex flex-col gap-2'>
             <div className='flex text-[16px] gap-3 sm:text-[18px]' href="link"><img className='w-4' src='/SVG/BlackTick.svg'/>Better Value</div>
             <div className='flex text-[16px] gap-3 sm:text-[18px]' href="link"><img className='w-4' src='/SVG/BlackTick.svg'/>Constant Support</div>
             <div className='flex text-[16px] gap-3 sm:text-[18px]' href="link"><img className='w-4' src='/SVG/BlackTick.svg'/>Maximum Security</div>
           </div>
         </div>
+
         <div className='flex flex-col gap-4 sm:flex-row'>
           {activeAccordion === 'uno' && (
-            <div className='bg-[#006DB7] rounded-3xl h-[402px] flex flex-col px-12 py-[51px] text-white justify-between sm:max-w-[326px]'>
+            <div className='bg-[#006DB7] rounded-3xl h-[420px] flex flex-col px-12 pt-[58px] pb-[32px] text-white justify-between sm:max-w-[326px]'>
               <h3>From the US to Central and South America, Asia, Africa and the Dominican Republic.</h3>
-              <p>Send money securely to three continents with our fast and reliable service.</p>
+              <p className='font-normal'>Send money securely to three continents with our fast and reliable service.</p>
               <img className='h-[51px] place-self-start' src="/SVG/UnoSMALLwhite.svg" alt="" />
             </div>
           )}
           {activeAccordion === 'legoi' && (
-            <div className='bg-[#5FA82C] rounded-3xl h-[402px] flex flex-col px-12 py-[51px] text-white justify-between sm:max-w-[326px]'>
+            <div className='bg-[#5FA82C] rounded-3xl h-[420px] flex flex-col px-12 pt-[58px] pb-[32px] text-white justify-between sm:max-w-[326px]'>
               <h3>From the United States and Canada to Vietnam.</h3>
-              <p>With our secure and fast service, sending money to Vietnam has never been easier.</p>
+              <p className='font-normal'>With our secure and fast service, sending money to Vietnam has never been easier.</p>
               <img className='h-[51px] place-self-start' src="/SVG/LeGoiSMALLwhite.svg" alt="" />
           </div>
           )}
           {activeAccordion === 'giromex' && (
-            <div className='bg-[#E20613] rounded-3xl h-[402px] flex flex-col px-12 py-[51px] text-white justify-between sm:max-w-[326px]'>
+            <div className='bg-[#E20613] rounded-3xl h-[420px] flex flex-col px-12 pt-[58px] pb-[32px] text-white justify-between sm:max-w-[326px]'>
               <h3>From the US to Mexico</h3>
-              <p>Experience hassle-free money transfers to Mexico with our secure and lightning-fast service.</p>
+              <p className='font-normal'>Experience hassle-free money transfers to Mexico with our secure and lightning-fast service.</p>
               <img className='h-[51px] place-self-start' src="/SVG/GiromexSMALLwhite.svg" alt="" />
             </div>
           )}
           {activeAccordion === 'sharemoney' && (
-            <div className='bg-[#0066CC] rounded-3xl h-[402px] flex flex-col px-12 py-[51px] text-white justify-between sm:max-w-[326px]'>
+            <div className='bg-[#0066CC] rounded-3xl h-[420px] flex flex-col px-12 pt-[58px] pb-[32px] text-white justify-between sm:max-w-[326px]'>
               <h3>Connecting the US with the world</h3>
-              <p>Send money worldwide securely and quickly with our digital service accessible via website and app.</p>
+              <p className='font-normal'>Send money worldwide securely and quickly with our digital service accessible via website and app.</p>
               <img className='h-[51px] place-self-start' src="/SVG/SharemoneySMALLwhite.svg" alt="" />
           </div>
           )}
          
          {activeAccordion !== 'uno' && (
-            <button className="btn-uno font-bold text-[22px] px-8 py-4 rounded-full sm:w-[100px] sm:h-[402px] sm:rounded-3xl" onClick={() => handleAccordion('uno')}>
+            <button className="btn-uno font-bold text-[22px] px-8 py-4 rounded-full sm:hidden" onClick={() => handleAccordion('uno')}>
                 <img className='h-[33px]' src="/SVG/UnoSMALLwhite.svg" alt="" />
             </button>
           )}
-         
+          {activeAccordion !== 'uno' && (
+            <button className="hidden sm:flex w-[100px] min-w-[80px] h-[420px] rounded-3xl" onClick={() => handleAccordion('uno')}>
+                <img className='w-full h-full rounded-3xl' src="/Webp/Uno.webp" alt="" />
+            </button>
+          )}
+
           {activeAccordion !== 'legoi' && (
-            <button className="btn-legoi font-bold text-[22px] px-8 py-4 rounded-full sm:w-[100px] sm:h-[402px] sm:rounded-3xl" onClick={() => handleAccordion('legoi')}>
-                <img className='h-[33px]' src="/SVG/LeGoiSMALLwhite.svg" alt="" />
+            <button className="btn-legoi font-bold text-[22px] px-8 py-4 rounded-full sm:hidden" onClick={() => handleAccordion('legoi')}>
+                <img className='h-[33px]' src="/SVG/UnoSMALLwhite.svg" alt="" />
+            </button>
+          )}
+          {activeAccordion !== 'legoi' && (
+            <button className="hidden sm:flex w-[100px] min-w-[80px] h-[420px] rounded-3xl" onClick={() => handleAccordion('legoi')}>
+                <img className='w-full h-full rounded-3xl' src="/Webp/LeGoiTienLe.webp" alt="" />
+            </button>
+          )}
+         
+         {activeAccordion !== 'giromex' && (
+            <button className="btn-giromex font-bold text-[22px] px-8 py-4 rounded-full sm:hidden" onClick={() => handleAccordion('giromex')}>
+                <img className='h-[33px]' src="/SVG/UnoSMALLwhite.svg" alt="" />
             </button>
           )}
           {activeAccordion !== 'giromex' && (
-            <button className="btn-giromex font-bold text-[22px] px-8 py-4 rounded-full sm:w-[100px] sm:h-[402px] sm:rounded-3xl" onClick={() => handleAccordion('giromex')}>
-                <img className='h-[33px]' src="/SVG/GiromexSMALLwhite.svg" alt="" />
+            <button className="hidden sm:flex w-[100px] min-w-[80px] h-[420px] rounded-3xl" onClick={() => handleAccordion('giromex')}>
+                <img className='w-full h-full rounded-3xl' src="/Webp/Giromex.webp" alt="" />
+            </button>
+          )}
+
+          {activeAccordion !== 'sharemoney' && (
+            <button className="btn-sharemoney font-bold text-[22px] px-8 py-4 rounded-full sm:hidden" onClick={() => handleAccordion('sharemoney')}>
+                <img className='h-[33px]' src="/SVG/UnoSMALLwhite.svg" alt="" />
             </button>
           )}
           {activeAccordion !== 'sharemoney' && (
-            <button className="btn-sharemoney font-bold text-[22px] px-8 py-4 rounded-full sm:w-[100px] sm:h-[402px] sm:rounded-3xl" onClick={() => handleAccordion('sharemoney')}>
-                <img className='h-[33px]' src="/SVG/SharemoneySMALLwhite.svg" alt="" />
+            <button className="hidden sm:flex w-[100px] min-w-[80px] h-[420px] rounded-3xl" onClick={() => handleAccordion('sharemoney')}>
+                <img className='w-full h-full rounded-3xl' src="/Webp/Sharemoney.webp" alt="" />
             </button>
           )}
+          
         </div>
       </div>
 
@@ -111,27 +136,27 @@ export default function OurBrandsPage() {
           )} */}
        
       {/* text */}
-      <div className='flex justfy-center text-center pb-16 sm:max-w-[564px] mx-auto'>
+      <div className='flex justfy-center text-center pb-16 lg:pb-[85px]  sm:max-w-[564px] mx-auto'>
         <h3>Trust Uno, as a leading brand for money transfers to Brazil and the rest of South America, to provide unmatched service and reliability.</h3> 
       </div>
 
       {/* About Us */}
       <div className='flex flex-col gap-5 lg:flex-row-reverse mb-5'>
           <div className='w-full h-[237px] md:h-[325px] lg:h-[402px]'>
-            <div className='rounded-3xl w-full h-full bg-cover bg-no-repeat bg-[center_right_-80px]' style={{backgroundImage: `url('${currentBrand.aboutUsUrl}')`,  backgroundSize:"200%"}}/>
+            <div className='rounded-3xl w-full h-full bg-cover bg-no-repeat bg-center lg:bg-[center_right_-80px]' style={{backgroundImage: `url('${currentBrand.aboutUsUrl}')`}}/>
           </div>
-        <div className='bg-[#333333]/5 flex flex-col gap-4 border rounded-3xl px-[34px] pt-[44px] pb-[68px] lg:max-w-[609px] lg:h-[402px]'>
-          <h3>About Us</h3>
-          <p className='leading-8'>{currentBrand.aboutUs}</p>
+        <div className='bg-[#333333]/5 flex flex-col gap-[30px] rounded-3xl px-[34px] lg:pl-[64px] lg:pr-[55px] pt-[50px] pb-[50px] lg:max-w-[609px] lg:h-[402px]'>
+          <h3 className='text-[#253D84]'>About Us</h3>
+          <p className='leading-8 text-[16px]'>{currentBrand.aboutUs}</p>
         </div>
       </div>
 
       {/* Our History */}
-      <div className='flex flex-col justify-between border border-gray-300 rounded-3xl h-[447px] px-[31px] py-[59px]' style={{ backgroundColor: currentBrand.historyColor}}>
-        <h3 className='hidden md:flex'>Our History</h3>
+      <div className='flex flex-col justify-between rounded-3xl h-[447px] px-[31px] py-[59px]' style={{ backgroundColor: currentBrand.historyColor}}>
+        <h3 className='hidden md:flex text-[#253D84]'>Our History</h3>
         <div className=' md:grid md:grid-cols-2'>
           <div className='sm:flex sm:flex-col'>
-            <h3 className='pb-[64px] md:hidden'>Our History</h3>
+            <h3 className='pb-[64px] md:hidden text-[#253D84]'>Our History</h3>
             <div className='hidden sm:flex md:max-w-[377px] md:h-[225px]'>
               <div className='rounded-3xl w-full h-full bg-cover bg-no-repeat' style={{backgroundImage: `url('${currentBrand.historyUrl}')`,  backgroundSize: currentBrand.size,   backgroundPosition: currentBrand.position}}/>
             </div>
@@ -199,77 +224,50 @@ export default function OurBrandsPage() {
      
 
       {/* Leadership */}
-      <div className='pt-[44px] pb-[30px] sm:max-w-[975px] mx-auto'>
+      <div className='pt-[44px] pb-[54px] sm:max-w-[975px] mx-auto'>
         <div className='pb-[50px] px-[30px] flex flex-col gap-4'>
-          <h3>Leadership</h3>
+          <h3 className='text-[#253D84]'>Leadership</h3>
           <p>Our global team is committed to providing financial tools and technology to businesses and consumers, with a focus on empowering those who have been traditionally excluded, such as minorities, women-owned businesses and non-Western entities.</p>
         </div>
-        
         <div className=' grid gap-3 sm:grid-cols-2'>
-          <div className='flex flex-row items-center gap-6 border rounded-3xl px-6 h-[136px]'>
-            <img className='w-[100px] h-[90px]' src="/Webp/Darren.webp" alt="" />
-            <div className='flex flex-col'>
-              <div className='text-[#253D84] text-[18px] font-bold'>Darren Manelski</div>
-              <div className='text-[16px]'>CEO & Board Member</div>
+          {teamData.map((team, index) => (
+            <div key={index}>
+              <div className='flex flex-row items-center gap-6 border rounded-3xl px-6 h-[136px]'>
+                <img className='w-[100px] h-[90px]' src={`${team.url}`} alt="" />
+                <div className='flex flex-col'>
+                  <div className='text-[#253D84] text-[18px] font-bold'>{team.name}</div>
+                  <div className='text-[16px]'>{team.location}</div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className='flex flex-row items-center gap-6 border rounded-3xl px-6 h-[136px]'>
-            <img className='w-[100px] h-[90px]' src="/Webp/Darren.webp" alt="" />
-            <div className='flex flex-col'>
-              <div className='text-[#253D84] text-[18px] font-bold'>Marc Mehl</div>
-              <div className='text-[16px]'>Compliance (oversight) & Committee</div>
+          ))}
+          <Link href="/careers">
+            <div className='flex flex-row items-center gap-6 border rounded-3xl px-6 h-[136px]'>
+              <div className='bg-[#253D84] w-[100px] h-[90px] rounded-[7px] flex justify-center items-center'>
+                <img className='  w-[30px] h-[30px]' src="/SVG/Plus.svg" alt="" />
+              </div>
+              <div className='flex flex-col'>
+                <div className='text-[#253D84] text-[18px] font-bold'>Join our Team</div>
+                <div className='text-[16px]'>Check our positions and work with us!</div>
+              </div>
             </div>
-          </div>
-          <div className='flex flex-row items-center gap-6 border rounded-3xl px-6 h-[136px]'>
-            <img className='w-[100px] h-[90px]' src="/Webp/Omar.webp" alt="" />
-            <div className='flex flex-col'>
-              <div className='text-[#253D84] text-[18px] font-bold'>Omar Puente</div>
-              <div className='text-[16px]'>Systems/IT</div>
-            </div>
-          </div>
-          <div className='flex flex-row items-center gap-6 border rounded-3xl px-6 h-[136px]'>
-            <img className='w-[100px] h-[90px]' src="/Webp/Darren.webp" alt="" />
-            <div className='flex flex-col'>
-              <div className='text-[#253D84] text-[18px] font-bold'>Parkins Burger</div>
-              <div className='text-[16px]'>CCO</div>
-            </div>
-          </div>
-          <div className='flex flex-row items-center gap-6 border rounded-3xl px-6 h-[136px]'>
-            <img className='w-[100px] h-[90px]' src="/Webp/Darren.webp" alt="" />
-            <div className='flex flex-col'>
-              <div className='text-[#253D84] text-[18px] font-bold'>M. Franklin Boyd</div>
-              <div className='text-[16px]'>General Counsel</div>
-            </div>
-          </div>
-          <div className='flex flex-row items-center gap-6 border rounded-3xl px-6 h-[136px]'>
-            <img className='w-[100px] h-[90px]' src="/Webp/Darren.webp" alt="" />
-            <div className='flex flex-col'>
-              <div className='text-[#253D84] text-[18px] font-bold'>Claudia Mendez</div>
-              <div className='text-[16px]'>America Leader</div>
-            </div>
-          </div>
-          <div className='flex flex-row items-center gap-6 border rounded-3xl px-6 h-[136px]'>
-            <img className='w-[100px] h-[90px]' src="/Webp/Darren.webp" alt="" />
-            <div className='flex flex-col'>
-              <div className='text-[#253D84] text-[18px] font-bold'>Join our Team</div>
-              <div className='text-[16px]'>Check our positions and work with us!</div>
-            </div>
-          </div>
+          </Link>
         </div>
+          
       </div>
 
       {/* Our Goals */}
-      <div className='flex flex-col justify-center gap-11 md:gap-0 rounded-3xl h-[646px] px-[30px] md:py-[50px] md:h-[516px]' style={{ backgroundColor: currentBrand.goalsColor }}>
+      <div className='flex flex-col justify-center gap-11 md:gap-0 rounded-3xl px-[30px] py-[68px]' style={{ backgroundColor: currentBrand.goalsColor }}>
         <div>
           <h1 className='text-white'>Our Goals</h1>
         </div>
         <div className='grid gap-2 md:grid-cols-3 md:grid-rows-3'>
-          <div className='bg-white  text-[18px] font-bold px-[47px] py-[18px] rounded-3xl md:col-start-1 md:row-start-3' style={{ color: currentBrand.goalsColor }}>Better exchange rates</div>
-          <div className='bg-white/25 text-[#FFFFFF] text-[16px] px-[47px] py-[20px] rounded-3xl md:col-start-2 md:row-start-3'>Building and sustaining the trust of our customers</div>
-          <div className='bg-white/25 text-[#FFFFFF] text-[16px] px-[47px] py-[20px] rounded-3xl md:col-start-2 md:row-start-2'>Building complementary financial services</div>
-          <div className='bg-white/25 text-[#FFFFFF] text-[16px] px-[47px] py-[20px] rounded-3xl md:col-start-3 md:row-start-3'>Increasinge the speed of money transfers</div>
-          <div className='bg-white/25 text-[#FFFFFF] text-[16px] px-[47px] py-[20px] rounded-3xl md:col-start-3 md:row-start-2'>Consumer Convenience and ease of use</div>
-          <div className='bg-white/25 text-[#FFFFFF] text-[16px] px-[47px] py-[20px] rounded-3xl md:col-start-3 md:row-start-1'>Providing services to everyone who needs it!</div>
+          <div className='flex items-center bg-white text-[18px] md:text-[24px] font-bold px-[47px] md:px-[25px] py-[18px] rounded-3xl md:col-start-1 md:row-start-3' style={{ color: currentBrand.goalsColor }}>Better exchange rates</div>
+          <div className='flex items-center bg-white/25 text-[#FFFFFF] text-[16px] md:text-[20px] px-[47px] md:px-[25px] py-[20px] rounded-3xl md:col-start-2 md:row-start-3'>Building and sustaining the trust of our customers</div>
+          <div className='flex items-center bg-white/25 text-[#FFFFFF] text-[16px] md:text-[20px] px-[47px] md:px-[25px] py-[20px] rounded-3xl md:col-start-2 md:row-start-2'>Building complementary financial services</div>
+          <div className='flex items-center bg-white/25 text-[#FFFFFF] text-[16px] md:text-[20px] px-[47px] md:px-[25px] py-[20px] rounded-3xl md:col-start-3 md:row-start-3'>Increasinge the speed of money transfers</div>
+          <div className='flex items-center bg-white/25 text-[#FFFFFF] text-[16px] md:text-[20px] px-[47px] md:px-[25px] py-[20px] rounded-3xl md:col-start-3 md:row-start-2'>Consumer Convenience and ease of use</div>
+          <div className='flex items-center bg-white/25 text-[#FFFFFF] text-[16px] md:text-[20px] px-[47px] md:px-[25px] py-[20px] rounded-3xl md:col-start-3 md:row-start-1'>Providing services to everyone who needs it!</div>
         </div>
       </div>
     </main>

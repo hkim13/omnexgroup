@@ -34,7 +34,7 @@ export default function NavBar() {
                                 onMouseLeave={() => setShowAboutDropdown(false)}>
                                 <Link href="/about-us/our-brands">About Us</Link>
                                 {showAboutDropdown && (
-                                    <ul className="absolute  bg-white shadow-md text-[#4D4D4D] text-[15px] font-[500] px-[20px] py-[24px] border rounded-2xl space-y-[24px]">
+                                    <ul className="absolute  bg-white text-[#4D4D4D] text-[15px] font-[500] px-[20px] py-[24px] border border-[#E5E5E5] rounded-2xl space-y-[24px]">
                                         <li><Link href="/about-us/our-brands">Our Brands</Link></li>
                                         <li><Link href="/about-us/corporate-press">Corporate Press</Link></li>
                                         <li><Link href="/about-us/use-cases">Use Cases</Link></li>
@@ -56,7 +56,7 @@ export default function NavBar() {
                                 onMouseLeave={() => setShowRegulatoryDropdown(false)}>
                                 <Link href="/regulatory/state-licenses">Regulatory</Link>
                                 {showRegulatoryDropdown && (
-                                    <ul className="absolute bg-white shadow-md text-[#4D4D4D] text-[15px] font-[500] px-[20px] py-[24px] border rounded-2xl space-y-[24px]">
+                                    <ul className="absolute bg-white text-[#4D4D4D] text-[15px] font-[500] px-[20px] py-[24px] border border-[#E5E5E5] rounded-2xl space-y-[24px]">
                                         <li><Link href="/regulatory/state-licenses">State Licenses</Link></li>
                                         <li><Link href="/regulatory/privacy-policy">Privacy Policy</Link></li>
                                         <li><Link href="/regulatory/user-agreement">User Agreement</Link></li>
@@ -68,18 +68,24 @@ export default function NavBar() {
                     </ul>
                 </div>
 
-                {/* EN, Send Money */}                    
-                <div className='hidden lg:flex lg:flex-1 lg:justify-end gap-3'>
-                    <select className=" bg-white text-[#333333] font-bold">
-                        <option>EN</option>
-                        <option>ES</option>
-                    </select>
+                {/* EN, Send Money */}
+                <div className='hidden lg:flex lg:flex-1 lg:justify-end lg:items-center gap-3'>
+                    <div className="relative inline-block">
+                        <select className="appearance-none bg-white text-[#333333] font-bold pl-3 pr-8 rounded">
+                            <option>EN</option>
+                            <option>ES</option>   
+                        </select>
+                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2">
+                            <img className='w-[9px] h-[4px]' src="/SVG/Arrow-Languages.svg" alt="Language Selector Arrow"/>
+                        </div>
+                    </div>
                     <div className="min-w-max">
                         <Button className="btn-green">
                             <Link href="https://www.sharemoney.com/us/en/denmark">Send Money</Link> 
                         </Button>
                     </div>
                 </div>
+
 
                 {/* Mobile Menu */}                            
                 <div className='lg:hidden' onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
@@ -133,11 +139,14 @@ export default function NavBar() {
                                 <Link href="https://www.sharemoney.com/us/en/denmark">Send Money</Link> 
                             </Button>
                         </div>
-                        <div>
-                            <select className="w-full bg-white text-[#333333] font-bold" onChange={closeMobileMenu}>
+                        <div className="relative inline-block">
+                            <select className="appearance-none bg-white text-[#333333] font-bold pl-3 pr-8 rounded" onChange={closeMobileMenu}>
                                 <option>EN</option>
-                                <option>ES</option>
+                                <option>ES</option>   
                             </select>
+                            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2">
+                                <img className='w-[9px] h-[4px]' src="/SVG/Arrow-Languages.svg" alt="Language Selector Arrow"/>
+                            </div>
                         </div>
                     </div>
                    

@@ -13,7 +13,7 @@ export default function HomePage() {
       <main className='mt-[15px] lg:mt-14 mx-auto w-auto max-w-max px-6'>
         
         {/*First section*/}
-        <div className='flex flex-col-reverse lg:flex-row lg:justify-between items-center w-full pb-8 sm:pb-24'>
+        <div className='flex flex-col-reverse lg:flex-row lg:justify-between items-center w-full pb-[64px] sm:pb-24'>
           
           {/* Text Area */}
           <div className=' flex-1'>
@@ -33,7 +33,9 @@ export default function HomePage() {
             </div>
           </div>
           <div className='pb-10'>
-            <img className='w-full' src="/Webp/Home-4pictures.webp" alt="Sharemoney"/>
+            <Image 
+            width="500"
+            height="100" src="/Webp/Home-4pictures.webp" alt="Sharemoney"/>
           </div>
          {/* Image Area 
           <div className='bg-gray-300 flex self-center  gap-4 pb-14'>
@@ -62,29 +64,29 @@ export default function HomePage() {
             {/* Image card 1 */}
             <div className='border sm:place-self-end rounded-3xl flex auto flex-col max-w-[460px] h-[615px] gap-y-4'>
               <div className='rounded-t-3xl w-full h-60 bg-cover bg-no-repeat bg-[center_right_-100px]' style={{backgroundImage: "url('/Webp/AdobeStock_259671750.webp')",  backgroundSize:"175%"}}/>
-              <div className='flex flex-col gap-y-8 px-7 py-4'>
+              <div className='flex flex-col gap-y-[52px] px-7 py-4'>
                 <div className='text-start'>
                   <h2>For Consumers</h2>
-                  <p>Send money to your friends and family anytime, anywhere through our app, our website, or at one of our retail locations.</p>
+                  <p className='text-[16px]'>Send money to your friends and family anytime, anywhere through our app, our website, or at one of our retail locations.</p>
                 </div>
                 <div className='flex flex-col gap-y-4 text-start text-[#253D84] font-bold'>
-                  <Link className='flex gap-3' href="https://www.sharemoney.com/us/en/denmark">Visit Sharemoney.com <img className='w-4' src='/SVG/GreenArrow.svg'/></Link>
-                  <Link className='flex gap-3' href="link">Download our App <img className='w-4' src='/SVG/GreenArrow.svg'/></Link>
-                  <Link className='flex gap-3' href="link">Call Us Now <img className='w-4' src='/SVG/GreenArrow.svg'/></Link>
+                  <Link className='flex text-[20px] font-medium gap-3' href="https://www.sharemoney.com/us/en/denmark">Visit Sharemoney.com <img className='w-4' src='/SVG/GreenArrow.svg'/></Link>
+                  <Link className='flex text-[20px] font-medium  gap-3' href="https://apps.apple.com/us/app/sharemoney-money-transfers/id1176560273">Download our App <img className='w-4' src='/SVG/GreenArrow.svg'/></Link>
+                  <Link className='flex text-[20px] font-medium  gap-3' href="/contact-us">Contact Us<img className='w-4' src='/SVG/GreenArrow.svg'/></Link>
                 </div>
               </div>
             </div>
             {/* Image card 2 */}
             <div className='border sm:place-self-start rounded-3xl flex flex-col max-w-[460px] h-[615px] gap-y-4'>
               <div className='rounded-t-3xl w-full h-60 bg-cover bg-no-repeat bg-[center_right_-75px]' style={{backgroundImage: "url('/Webp/AdobeStock_263742652.webp')",  backgroundSize:"130%"}}/>
-              <div className='flex flex-col gap-y-8 px-7 py-4'>
+              <div className='flex flex-col gap-y-[52px] px-7 py-4'>
                 <div className='text-start'>
                   <h2>For Businesses</h2>
-                  <p>We enable businesses to integrate our remittance services into their systems, providing easy global access to agents, banks, and correspondents.</p>
+                  <p className='text-[16px]'>We enable businesses to integrate our remittance services into their systems, providing easy global access to agents, banks, and correspondents.</p>
                 </div>
                 <div className='flex flex-col gap-y-4 text-start text-[#253D84] font-bold'>
-                  <Link className='flex gap-3' href="/our-solutions">Explore our Solutions <img className='w-4' src='/SVG/GreenArrow.svg'/></Link>
-                  <Link className='flex gap-3' href="link">Careers <img className='w-4' src='/SVG/GreenArrow.svg'/></Link>
+                  <Link className='flex text-[20px] font-medium  gap-3' href="/our-solutions">Explore our Solutions <img className='w-4' src='/SVG/GreenArrow.svg'/></Link>
+                  <Link className='flex text-[20px] font-medium  gap-3' href="/careers">Careers <img className='w-4' src='/SVG/GreenArrow.svg'/></Link>
                 </div>
               </div>
             </div>
@@ -102,18 +104,18 @@ export default function HomePage() {
           {/* grid logos & Download our Sharemoney App */}
           <div className='flex flex-col items-center gap-y-6 sm:gap-y-10'>
             {/* grid logos */}
-            <div className='grid grid-cols-2 justify-items-center w-screen gap-2 sm:gap-6 px-6 lg:px-0 h-[162px] sm:h-[311px] max-w-[960px]'>
-              <Link className='flex place-content-center border rounded-2xl w-full' href="https://www.unomoneytransfers.com/">
-                <img className='w-[117px] sm:w-[255.6px]' src="/SVG/UnoBIG.svg" alt="Uno" width="100%"/> 
+            <div className='grid grid-cols-1 md:grid-cols-2 justify-items-center w-screen gap-2 sm:gap-6 px-6 lg:px-0 max-w-[960px]'>
+              <Link className='flex items-center place-content-center border rounded-2xl w-full h-[155px]' href="https://www.unomoneytransfers.com/">
+                <img className='h-[79px]' src="/SVG/UnoBIG.svg" alt="Uno" width="100%"/> 
               </Link>
-              <Link className='flex place-content-center border rounded-2xl w-full' href="https://www.giromex.com/">
-                <img className='w-[132px] sm:w-[272.7px]' src="/SVG/GriromexBIG.svg" alt="Giromex" width="100%"/> 
+              <Link className='flex items-center place-content-center border rounded-2xl w-full h-[155px]' href="https://www.giromex.com/">
+                <img className='h-[79px]' src="/SVG/GriromexBIG.svg" alt="Giromex" width="100%"/> 
               </Link>
-              <Link className='flex place-content-center border rounded-2xl w-full' href="https://www.legoitienle.com/">
-                <img className='w-[157px] sm:w-[384.9px] px-2 sm:px-4' src="/SVG/LeGoiBIG.svg" alt="LeGoi" width="100%"/> 
+              <Link className='flex items-center place-content-center border rounded-2xl w-full h-[155px]' href="https://www.legoitienle.com/">
+                <img className='h-[69px] px-2 sm:px-4' src="/SVG/LeGoiBIG.svg" alt="LeGoi" width="100%"/> 
               </Link>
-              <Link className='flex place-content-center border rounded-2xl w-full' href="https://www.sharemoney.com/us/en/denmark">
-                <img className='w-[149px] sm:w-[353.9px] px-2 sm:px-4' src="/SVG/SharemoneyBIG.svg" alt="Sharemoney"/> 
+              <Link className='flex items-center place-content-center border rounded-2xl w-full h-[155px]' href="https://www.sharemoney.com/us/en/denmark">
+                <img className='h-[63px] px-2 sm:px-4' src="/SVG/SharemoneyBIG.svg" alt="Sharemoney"/> 
               </Link>
             </div>
      
@@ -125,14 +127,14 @@ export default function HomePage() {
                   {/* Text */}
                   <div className='pb-6'>
                     <h2 className='text-[#0066CC] text-xl sm:text-[32px] sm:leading-[48px] md:text-[46px] md:leading-[54px] font-bold pb-4'>Download our Sharemoney App</h2>
-                    <p className='text-xs sm:text-lg max-w-[300px]'>Download our app to transfer money anytime and anywhere.</p>
+                    <p className='text-xs min-[460px]:text-base sm:text-lg max-w-[300px]'>Download our app to transfer money anytime and anywhere.</p>
                   </div>
                   {/* Links */}
                   <div className='flex flex-col sm:flex-row gap-2 sm:gap-6 md:pb-10'>
-                    <Link className=' ' href="link">
+                    <Link className=' ' href="https://apps.apple.com/us/app/sharemoney-money-transfers/id1176560273">
                       <img className='w-[125.64px] sm:w-[187.2px]' src="/SVG/AppStore.svg" alt="" width="100%"/> 
                     </Link>
-                    <Link className=' ' href="link">
+                    <Link className=' ' href="https://play.google.com/store/apps/details?id=com.sharemoney.app&hl=en">
                       <img className='w-[125.64px] sm:w-[187.2px]' src="/SVG/GooglePlay.svg" alt="" width="100%"/> 
                     </Link>
                   </div>
@@ -185,7 +187,7 @@ export default function HomePage() {
         </div>
         
         {/*Fifth section: Support: We Are Here for You*/}
-        <div className='pb-10 sm:pb-24'>
+        <div className='pb-[36px] sm:pb-[43px]'>
           {/* Title */}
           <div className='text-center pb-xsm sm:pb-sm'>
             <h3 className='text-green pb-2'>Support</h3>
@@ -229,7 +231,7 @@ export default function HomePage() {
 
             {/* icon2 */}
             <div>
-              <div className='border bg-[#333333] rounded-3xl h-[337px] sm:h-[617px] p-7 sm:p-12 flex flex-col justify-between min-w-[320px]'>
+              <div className='border bg-[#333333] rounded-3xl h-[337px] sm:h-[617px] p-7 pb-[40px] sm:p-12 flex flex-col justify-between min-w-[320px]'>
                 <div>
                   <h1 className='text-green pb-4'>Get Support</h1>
                   <p className='text-[#FFFFFF] max-w-[356px] sm:hidden'>If you need assistance or have any questions, you can easily reach us for support through our various contact channels.</p>
@@ -239,7 +241,7 @@ export default function HomePage() {
                   <div className='absolute sm:w-[80px] sm:h-[80px] md:w-[95px] md:h-[95px] lg:w-[122px] lg:h-[122px] rounded-full bg-cover bg-no-repeat bg-center bg-green' style={{backgroundImage: "url('/SVG/24-Worldmap.svg')", backgroundSize:"70%", top: '10%', right: '10%', transform: 'translate(50%, -50%)'}}/>
                 </div>
                 <Button className="btn-green max-w-min">
-                  <Link href="link">Contact our Support Team</Link>
+                  <Link href="/contact-us">Contact our Support Team</Link>
                 </Button>
               </div>
             </div>

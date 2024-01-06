@@ -130,7 +130,7 @@ export default function CorporatePage() {
             <button className='flex text-start pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-[#52DB78]' onClick={() => navigate('global-reach')}>Global Reach</button>
           </div>
 
-          <div className='md:row-start-2 md:col-start-2 md:col-span-1 md:row-span-3 bg-[url("/Webp/AdobeStock_573681778.webp")] bg-cover bg-center bg-no-repeat rounded-full md:rounded-3xl'>
+          <div className='md:row-start-2 md:col-start-2 md:col-span-1 md:row-span-3 bg-[url("/Webp/AdobeStock_205527827.webp")] bg-cover bg-center bg-no-repeat rounded-full md:rounded-3xl'>
             <button className='flex text-start pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-white bg-[#333333]/50' onClick={() => navigate('compliance')}>Compliance</button>
           </div>
 
@@ -142,7 +142,7 @@ export default function CorporatePage() {
             <button className='flex text-start pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-[#253D84] whitespace-nowrap' onClick={() => navigate('our-brands')}>Our Brands</button>
           </div>
 
-          <div className='md:row-start-2 md:col-start-4 md:col-span-1 md:row-span-3 bg-[url("/Webp/AdobeStock_573681778.webp")] bg-cover bg-center bg-no-repeat rounded-full md:rounded-3xl'>
+          <div className='md:row-start-2 md:col-start-4 md:col-span-1 md:row-span-3 bg-[url("/Webp/AdobeStock_564464309.webp")] bg-cover bg-center bg-no-repeat rounded-full md:rounded-3xl'>
             <button className='flex text-start pl-8 md:px-6 py-6 w-full h-full rounded-full md:rounded-3xl text-white bg-[#333333]/50' onClick={() => navigate('our-team')}>Our Team</button>
           </div>
 
@@ -223,10 +223,10 @@ export default function CorporatePage() {
               <div className='bg-[#253D84] rounded-2xl h-[579px] px-8 pt-12 pb-8 flex flex-col justify-between my-[40px]'>
                 <h3 className='text-[#52DB78]'>Overview</h3>
                 <ul className='grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-2'>
-                  <li className='bg-[#FFFFFF]/40 rounded-2xl text-white p-6 md:h-[132px] md:col-start-1'>Over thirty-two years of licensure and regulatory history</li>
-                  <li className='bg-[#FFFFFF]/40 rounded-2xl text-white p-6 md:h-[132px] md:row-start-2 '>23 states have examined our compliance program since 2019 with no actions against our license</li>
-                  <li className='bg-[#FFFFFF]/40 rounded-2xl text-white p-6 md:h-[132px] md:col-start-'>Over $10M in surety bonds</li>
-                  <li className='bg-[#FFFFFF]/40 rounded-2xl text-white p-6 md:h-[132px] md:col-start-2'>Experienced long term compliance personnel</li>
+                  <li className='bg-[#FFFFFF]/40 rounded-2xl text-white flex items-center p-6 md:h-[132px] md:col-start-1'>Over thirty-two years of licensure and regulatory history</li>
+                  <li className='bg-[#FFFFFF]/40 rounded-2xl text-white flex items-center p-6 md:h-[132px] md:row-start-2 '>23 states have examined our compliance program since 2019 with no actions against our license</li>
+                  <li className='bg-[#FFFFFF]/40 rounded-2xl text-white flex items-center p-6 md:h-[132px] md:col-start-'>Over $10M in surety bonds</li>
+                  <li className='bg-[#FFFFFF]/40 rounded-2xl text-white flex items-center p-6 md:h-[132px] md:col-start-2'>Experienced long term compliance personnel</li>
                 </ul>
                 <button className='flex items-center justify-center w-[50px] h-[50px] bg-[#FFFFFF] rounded-full self-end' onClick={toggleDisplay} aria-label="Toggle Display">
                   <img className='w-[20px]' src="/SVG/BlueArrow.svg" alt=""/>
@@ -280,12 +280,12 @@ export default function CorporatePage() {
         {/* Our History */}
         <div id="our-history" style={{ scrollMarginTop: navbarHeight }}>
           <div className='flex flex-col justify-between bg-[#DFE7FF] border border-gray-300 rounded-3xl h-[447px] px-[31px] py-[59px] max-w-[975px] mx-auto'>
-            <h3 className='hidden md:flex'>Our History</h3>
+            <h3 className='hidden md:flex text-[#253D84]'>Our History</h3>
             <div className=' md:grid md:grid-cols-2'>
               <div className='md:flex sm:flex-col'>
                 <h3 className='pb-[64px] md:hidden'>Our History</h3>
                 <div className='hidden sm:flex md:max-w-[377px] md:h-[225px]'>
-                  <div className='rounded-3xl w-full h-full bg-cover bg-no-repeat bg-[center_right_-60px]' style={{backgroundImage: "url('/Webp/AdobeStock_537237474.webp')",  backgroundSize:"175%"}}/>
+                  <div className='rounded-3xl w-full h-full bg-cover bg-no-repeat bg-[center_left_-60px]' style={{backgroundImage: "url('/Webp/AdobeStock_461344140.webp')",  backgroundSize:"125%"}}/>
                 </div>
               </div>
 
@@ -357,20 +357,20 @@ export default function CorporatePage() {
           <h3 className="font-bold pb-4 text-green">Identify</h3>
           <h1 className='text-[#253D84]'>Our Brands</h1>
         </div>
-        <div className='grid grid-cols-2 justify-center gap-2 sm:gap-6 h-[162px] sm:h-[311px] max-w-[960px]'>
-          <Link className='flex place-content-center border rounded-2xl w-full' href="https://www.unomoneytransfers.com/">
-            <img className='w-[117px] sm:w-[255.6px] px-2 sm:px-4' src="/SVG/UnoBIG.svg" alt="Uno" width="100%"/> 
-          </Link>
-          <Link className='flex place-content-center border rounded-2xl w-full' href="https://www.giromex.com/">
-            <img className='w-[132px] sm:w-[272.7px] px-2 sm:px-4' src="/SVG/GriromexBIG.svg" alt="Giromex" width="100%"/> 
-          </Link>
-          <Link className='flex place-content-center border rounded-2xl w-full' href="https://www.legoitienle.com/">
-            <img className='w-[157px] sm:w-[384.9px] px-2 sm:px-4' src="/SVG/LeGoiBIG.svg" alt="LeGoi" width="100%"/> 
-          </Link>
-          <Link className='flex place-content-center border rounded-2xl w-full' href="https://www.sharemoney.com/us/en/denmark">
-            <img className='w-[149px] sm:w-[353.9px] px-2 sm:px-4' src="/SVG/SharemoneyBIG.svg" alt="Sharemoney"/> 
-          </Link>
-        </div>
+        <div className='grid grid-cols-1 md:grid-cols-2 justify-items-center gap-2 sm:gap-6 px-6 lg:px-0 max-w-[960px]'>
+              <Link className='flex items-center place-content-center border rounded-2xl w-full h-[155px]' href="https://www.unomoneytransfers.com/">
+                <img className='h-[79px]' src="/SVG/UnoBIG.svg" alt="Uno" width="100%"/> 
+              </Link>
+              <Link className='flex items-center place-content-center border rounded-2xl w-full h-[155px]' href="https://www.giromex.com/">
+                <img className='h-[79px]' src="/SVG/GriromexBIG.svg" alt="Giromex" width="100%"/> 
+              </Link>
+              <Link className='flex items-center place-content-center border rounded-2xl w-full h-[155px]' href="https://www.legoitienle.com/">
+                <img className='h-[69px] px-2 sm:px-4' src="/SVG/LeGoiBIG.svg" alt="LeGoi" width="100%"/> 
+              </Link>
+              <Link className='flex items-center place-content-center border rounded-2xl w-full h-[155px]' href="https://www.sharemoney.com/us/en/denmark">
+                <img className='h-[63px] px-2 sm:px-4' src="/SVG/SharemoneyBIG.svg" alt="Sharemoney"/> 
+              </Link>
+            </div>
       </div>
 
       
@@ -382,7 +382,7 @@ export default function CorporatePage() {
           <h1 className='text-[#253D84]'>Our Team</h1>
         </div>
         
-        <div className='grid grid-cols-1 min-[690px]:grid-cols-2 min-[970px]:grid-cols-3 gap-5 items-center mx-auto'>
+        <div className='grid grid-cols-1 min-[690px]:grid-cols-2 min-[970px]:grid-cols-3 gap-5 justify-center items-center mx-auto'>
           {teamData.map((team, index) => (
           <div key={index}>
             <div className=' max-w-[339px] min-w-[305px] mx-auto flex flex-col cursor-pointer' onClick={() => toggleExpand(team.name)}>

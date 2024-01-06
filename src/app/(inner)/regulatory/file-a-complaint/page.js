@@ -33,15 +33,14 @@ export default function FileAComplaintPage() {
       </div>
 
       {/* jump to state dropdown */}
-      <div className='flex flex-col items-center pb-[100px]'>
-        <label htmlFor="state-select" className="block mb-2 text-sm font-medium text-gray-900">Jump to State</label>
+      <div className='flex flex-col items-center pb-[100px] font-bold text-[18px]'>
           <select
             id="state-select"
             value={selectedState}
             onChange={handleStateChange}
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[200px] p-2.5 mb-5"
           >
-          <option value="">Please choose a state</option>
+          <option value="">Jump to State</option>
           {statesData.map((info, index) => (
             <option className='w-[200px]' key={index} value={info.state}>{info.state}</option>
           ))}

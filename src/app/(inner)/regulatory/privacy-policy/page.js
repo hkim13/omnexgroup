@@ -18,7 +18,7 @@ export default function PrivatePolicyPage() {
           
           {/* We Collect Information */}
           <div>
-            <h3 className='pb-[40px]'>We collect information for a number of important reasons, including:</h3>
+            <h3 className='pb-[40px] text-[#253D84]'>We collect information for a number of important reasons, including:</h3>
               <ul className='list-disc pl-[20px]'>
                 <li>To verify your identity</li>
                 <li>To process your orders and collect payment</li>
@@ -36,7 +36,7 @@ export default function PrivatePolicyPage() {
           
           {/* Information that may be collected */}
           <div>
-            <h3 className='pb-[40px]'>Information That May Be Collected</h3>
+            <h3 className='pb-[40px] text-[#253D84]'>Information That May Be Collected</h3>
             <p>We may collect and store the following information about you, which may include non-public personal information, all of which will be referred to as &quot;Information&quot; in this Privacy Policy:</p>
             <ul className='list-disc pl-[50px] pb-[40px]'>
               <li>Information provided by you while using the Services. This may include your name, address, phone number, email address, date of birth, social security number, bank account information and credit/debit card information, an image of your identity document such as a driver&apos;s license, and photos or videos of you;</li>
@@ -51,20 +51,20 @@ export default function PrivatePolicyPage() {
           
           {/* How We Collect Information and Cookies */}
           <div>
-            <h3 className='pb-[40px]'>How We Collect Information and Cookies</h3>
+            <h3 className='pb-[40px] text-[#253D84]'>How We Collect Information and Cookies</h3>
             <p className='pb-[40px]'>We may utilize &quot;cookies&quot; to improve your experience in using the Services by helping us remember your information. Cookies are small data files placed on your computer that remember your preferences each time you visit. If your browser permits, you may decline the use of cookies. Additionally, you can disable or delete similar data used by browser add-ons, such as Flash cookies, by changing the add-on&apos;s settings or visiting the website of its manufacturer. Because cookies allow some of Sharemoney&apos;s essential features to operate properly, we recommend that you leave them turned on; otherwise, the websites may not function properly without cookies enabled.</p>
             <p>Our third-party service providers may use both session ID and cookies to enhance our websites. The use of cookies by our third-party service providers is not covered by this Privacy Policy. You are free to decline these cookies if your browser permits. We do not have access or control over these cookies. Our third party partners may employ clear gifs, images, and scripts that help them better manage content on our site. We may use an analytics tool in order to develop and analyze use of the Services. Analytics companies may access anonymous data (such as your identifier for advertising or device ID) to help us understand how the Services are used. They use this data solely on our behalf. They do not share it except in aggregate form; no data is shared as to any individual user. If you wish to opt-out from analytics, please contact us at <a className="font-medium underline" href="customerservice@sharemoney.com">customerservice@sharemoney.com</a>. From time to time, we may also tie cookies, clear gifs, images and scripts to personally identifiable information for reasons such as analysis, security, content generation or marketing.</p>
           </div>
           
           {/* Information Retention */}
           <div>
-            <h3 className='pb-[40px]'>Information Retention</h3>
+            <h3 className='pb-[40px] text-[#253D84]'>Information Retention</h3>
             <p>We will retain your Information for at least 5 years after our business relationship with you has ended, as required by federal law. If you cancel your account, we will retain your Information as necessary in order to comply with applicable laws, rules and regulations, as may be reasonable to prevent fraud or because of a potential ongoing claim.</p>
           </div>
           
           {/* Sharing Your Information */}
           <div>
-            <h3 className='pb-[40px]'>Sharing Your Information</h3>
+            <h3 className='pb-[40px] text-[#253D84]'>Sharing Your Information</h3>
             <p className='pb-[40px]'>We do not share or sell your Information for any purposes to third parties. However, as with all financial companies, we need to share our users&apos; Information to run our everyday business. We may share your Information with the following categories of third parties, solely for the purposes of improving, delivering or promoting our Services:</p>
             <ul className='list-disc pl-[50px] pb-[40px]'>
               <li>Law enforcement agencies, government officials or regulatory bodies in connection with a subpoena, court order or similar request.</li>
@@ -83,7 +83,7 @@ export default function PrivatePolicyPage() {
           
           {/* Updating Your Information */}
           <div>
-            <h3 className='pb-[40px]'>Updating Your Information</h3>
+            <h3 className='pb-[40px] text-[#253D84]'>Updating Your Information</h3>
             <p>Please log in to your account to modify or update your Information as well as your preferences. If your contact information changes, please update it in your account settings as soon as possible so that we may continue to process your orders and contact you with important notices.
             <br/>For other rights you may have with respect to your Information please see the <a className="font-medium underline" href="https://www.sharemoney.com/us/en/user-agreement">Sharemoney User Agreement</a>.
             </p>
@@ -92,7 +92,7 @@ export default function PrivatePolicyPage() {
           
           {/* Internet Security */}
           <div>
-            <h3 className='pb-[40px]'>Internet Security</h3>
+            <h3 className='pb-[40px] text-[#253D84]'>Internet Security</h3>
             <ul className='list-disc pl-[25px]'>
               <li>We built our websites using SSL (Secure Socket Layer) which encrypts your Information. We also require a username and password for each visit to our website. Although you will &quot;time out&quot; after a certain period of inactivity on the website, you should always remember to sign off when finished using a shared computer.</li>
               <li>We reveal only the last four digits of your Bank Card numbers when confirming an Order. Of course, we transmit the entire Bank Card number to the relevant credit or debit card company for authorization of your Order.</li>
@@ -103,7 +103,7 @@ export default function PrivatePolicyPage() {
           
           {/* Options Regarding Use of Your Information */}
           <div>
-            <h3 className='pb-[40px]'>Options Regarding Use of Your Information</h3>
+            <h3 className='pb-[40px] text-[#253D84]'>Options Regarding Use of Your Information</h3>
             <p className='pb-[40px]'>Federal and state laws allow you to restrict the sharing of your personal information in certain instances. However, these laws also state that you cannot restrict other types of sharing. Because we have chosen to refrain from certain types of data sharing, the only type of sharing of your Information that you may restrict is as follows:</p>
             <ul className='list-disc pl-[50px]'>
               <li>If, after giving us your permission to share your Information with third parties with whom we market our jointly offered products, you later decide that you no longer want us to share such information or to request that we delete any of your personal information, you may contact us by email at <a className="font-medium underline" href="customerservice@sharemoney.com">customerservice@sharemoney.com</a> or by mail at Sharemoney c/o Omnex Group, Inc., attn: Customer Service, 580 Sylvan Ave LL-A, Englewood Cliffs, NJ 07632 U.S.A.</li>
@@ -115,7 +115,7 @@ export default function PrivatePolicyPage() {
           
           {/* Vermont and California Consumers */}
           <div>
-            <h3 className='pb-[40px]'>Vermont and California Consumers</h3>
+            <h3 className='pb-[40px] text-[#253D84]'>Vermont and California Consumers</h3>
             <p className='pb-[40px]'>Sharemoney will disclose Information about consumers with a Vermont or California mailing address only with your written authorization (&quot;consent&quot;), unless otherwise permitted by law. Written authorizations from Vermont consumers may be delivered to us at the address above or by email at <a className="font-medium underline" href="customerservice@sharemoney.com">customerservice@sharemoney.com</a> and must contain your name, address and signature and your consent. You may revoke your consent at any time by calling us at (866) 819-0119 FREE or by writing or emailing us at the addresses provided above. California consumers should contact us at the addresses above for instructions on how to deliver their consent.</p>
             <p className='pb-[40px]'>Users of the Services, regardless of their state of residence, cannot opt-out of certain disclosures including:</p>
             <ul className='list-disc pl-[25px]'>
@@ -129,19 +129,19 @@ export default function PrivatePolicyPage() {
           
           {/* Links to Third Party Websites */}
           <div>
-            <h3 className='pb-[40px]'>Links to Third Party Websites</h3>
+            <h3 className='pb-[40px] text-[#253D84]'>Links to Third Party Websites</h3>
             <p>Our websites may contain links to other websites. We are not affiliated with these other websites and cannot control or be responsible for the content or the privacy practices of these separately owned and operated websites. It is your responsibility to read or request the privacy notices from these other websites prior to engaging with them. Our websites include &quot;social media features&quot;, such as the Facebook &quot;Like&quot; button and widgets, such as the &quot;Share this&quot; button or interactive mini-programs that run on our site. These features may collect your IP address, which page you are visiting on our site, and may set a cookie to enable the feature to function properly. Social media features and widgets are either hosted by a third party or hosted directly on our websites. Your interactions with these features are governed by the privacy policy of the company providing it.</p>
 
           </div>
           
           {/* Future Changes to this Policy */}
           <div>
-            <h3 className='pb-[40px]'>Future Changes to this Policy</h3>
+            <h3 className='pb-[40px] text-[#253D84]'>Future Changes to this Policy</h3>
             <p>We may amend this policy at any time, and shall notify you by posting a revised version on our website. Should we make a material change to the manner in which we collect, use or store your Information, we shall provide prior notice on our website, or by email.</p>
           </div>
           
           {/* Complaints */}
-          <div className='pb-[40px]'>
+          <div className='pb-[40px] text-[#253D84]'>
             <h3 className='pb-[40px]'>Complaints</h3>
             <p>If you have a complaint or need to contact Sharemoney for any reason, please contact Sharemoney Customer Service at (866) 819-0119 FREE or via email at <a className="font-medium underline" href="customerservice@sharemoney.com">customerservice@sharemoney.com</a> or via regular mail to Sharemoney, c/o Customer Service, 580 Sylvan Avenue, Suite M-J, Englewood Cliffs, NJ 07632. <br/>If you are a Texas resident and you still have an unresolved complaint regarding Sharemoney&apos;s money transmission activity, please direct your complaint to: Texas Department of Banking: 2601 North Lamar Boulevard; Austin, Texas 78705; 1-877-276-5554 FREE (toll free); www.dob.texas.gov or email <a >consumer.complaints@dob.texas.gov.</a></p>
           </div>
