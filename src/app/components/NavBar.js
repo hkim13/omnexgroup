@@ -59,7 +59,7 @@ export default function NavBar() {
                                     <ul className="absolute bg-white text-[#4D4D4D] text-[15px] font-[500] px-[20px] py-[24px] border border-[#E5E5E5] rounded-2xl space-y-[24px]">
                                         <li><Link href="/regulatory/state-licenses">State Licenses</Link></li>
                                         <li><Link href="/regulatory/privacy-policy">Privacy Policy</Link></li>
-                                        <li><Link href="/regulatory/user-agreement">User Agreement</Link></li>
+                                        <li><Link href="/user-agreement">User Agreement</Link></li>
                                         <li><Link href="/regulatory/file-a-complaint">File a Complaint</Link></li>
                                     </ul>
                                 )}
