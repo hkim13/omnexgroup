@@ -18,7 +18,7 @@ export default function UserAgreementPage() {
             <h3 className='text-[#253D84]'>Contact Information</h3>
                 <ul className='list-disc pl-[20px]'>
                     <li>Questions, notifications, compliments, complaints and requests for refunds or further information can be sent to Omnex as follows:</li>
-                    <li>On-line: <a className='font-medium underline' href="www.omnexgroup.com">www.omnexgroup.com</a></li>
+                    <li>On-line: <a className='font-medium underline' href="https://www.omnexgroup.com/">www.omnexgroup.com</a></li>
                     <li>Via Email: <a className='font-medium underline break-words' href="mailto:customerservice@omnexgroup.com">customerservice@omnexgroup.com</a></li>
                     <li>By Telephone: (866) 819-0119</li>
                     <li>By Mail: Omnex Group, Inc., Attn: Customer Service, 580 Sylvan Ave LL-A, Englewood Cliffs, NJ 07632, U.S.A</li>
@@ -221,7 +221,7 @@ export default function UserAgreementPage() {
                 <div>
                     <p>Questions, notifications, compliments, complaints and requests for refunds or further information can be sent to us as follows:</p>
                     <ul className='list-disc pl-[20px]'>
-                    <li>On-line: <a className='font-medium underline' href="www.omnexgroup.com">www.omnexgroup.com</a></li>
+                    <li>On-line: <a className='font-medium underline' href="https://www.omnexgroup.com/">www.omnexgroup.com</a></li>
                     <li>Via Email: <a className='font-medium underline break-words' href="mailto:customerservice@omnexgroup.com">customerservice@omnexgroup.com</a></li>
                     <li>By Telephone: (866) 819-0119</li>
                     <li>By Mail: Omnex Group, Inc., Attn: Customer Service, 580 Sylvan Ave LL-A, Englewood Cliffs, NJ 07632, U.S.A</li>
