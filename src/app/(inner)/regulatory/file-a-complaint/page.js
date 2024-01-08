@@ -28,7 +28,7 @@ export default function FileAComplaintPage() {
           <h1 className='text-[#253D84]'>File a Complaint</h1>
         </div>
         <p className='max-w-[839px] mx-auto'>We will work hard to resolve any of your concerns. Please contact us at (866) 201-8718 or through email at customerservice@omnexgroup.com or by mail to Attn: Customer Service, Omnex Group, Inc. 580 Sylvan Avenue, Suite LL-A Englewood Cliffs, NJ 07632.</p>
-        <p className='max-w-[839px] mx-auto'>If you have an unresolved complaint, you may contact your state&apos;s licensing authority or the Consumer Financial Protection Bureau at 855-411-2372 or 855-729-2372 TTY/TDD (<a className='font-medium underline' href="www.consumerfiance.gov">www.consumerfiance.gov</a>).</p>
+        <p className='max-w-[839px] mx-auto'>If you have an unresolved complaint, you may contact your state&apos;s licensing authority or the Consumer Financial Protection Bureau at 855-411-2372 or 855-729-2372 TTY/TDD (<a className='font-medium underline' href="https://www.consumerfinance.gov/">www.consumerfiance.gov</a>).</p>
         <p className='max-w-[839px] mx-auto'>Contact information along state specific notices are provided below:</p>
       </div>
 

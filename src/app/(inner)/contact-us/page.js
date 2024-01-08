@@ -52,10 +52,10 @@ export default function ContactUsPage() {
             <p>Feel free to call us from Monday to Friday from 9 AM - 5 PM or you can always send us a message below.</p>
             <div className='flex flex-row gap-[10px]'>
               <button className="font-medium px-3 py-2 rounded-full min-w-max bg-[#253D84] text-white">
-                <Link href="866-614-1670" className='flex gap-1'><img className='w-4' src='/SVG/Phone.svg'/>866-614-1670</Link>
+                <Link href="tel:866-614-1670" className='flex gap-1'><Image src='/SVG/Phone.svg' alt="" width={16} height={16}/>866-614-1670</Link>
               </button>
               <button className="font-medium px-3 py-2 rounded-full min-w-max text-[#253D84] border-2 border-[#253D84]">
-                <Link href="" className='font-bold'>ext. 8041</Link>
+                <Link href="tel:866-614-1670,,8041" className='font-bold'>ext. 8041</Link>
               </button>
             </div>
             <p>Once you are on the line, type the following numbers to reach the service you want:</p>

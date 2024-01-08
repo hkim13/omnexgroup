@@ -3,6 +3,7 @@
 import Heading from '@/components/Heading'
 import BigButton from '@/components/BigButton';
 import { useState } from 'react';
+import Image from 'next/image'
 
 export default function OurSolutionsPage() {
   const [activeAccordion, setActiveAccordion] = useState('unoKiosk');
@@ -46,7 +47,7 @@ export default function OurSolutionsPage() {
                   <p>Commercial Payments promotes financial inclusion and empower excluded small businesses by providing a secure cost effective solution for vendor payments.</p>
                 </div>
                 <div className='relative h-[237px] lg:h-[262px]'>
-                  <img className='w-full h-full object-cover rounded-3xl' src="/Webp/AdobeStock_407334020.webp" alt="" width="100%"/>
+                  <Image className='w-full h-full object-cover rounded-3xl' src="/Webp/AdobeStock_407334020.webp" alt="" width={357} height={237}/>
                 </div>
               </div>
             )}
@@ -58,7 +59,7 @@ export default function OurSolutionsPage() {
                   <p>Uno Kiosk is a secure and hassle-free solution designed to help migrant workers easily send money to their loved ones, regardless of their physical location and transportation accessibility.</p>
                 </div>
                 <div className='relative h-[237px] lg:h-[279px]'>
-                  <img className='w-full h-full object-cover rounded-3xl' src="/Webp/AdobeStock_579649494.webp" alt="" width="100%"/>
+                  <Image className='w-full h-full object-cover rounded-3xl' src="/Webp/AdobeStock_579649494.webp" alt="" width={357} height={237}/>
                 </div>
               </div>
             )}
@@ -70,7 +71,7 @@ export default function OurSolutionsPage() {
                   <p>Omnex agents have access to our superior online management software designed to help agents efficiently assist their customers in sending money back home.</p>
                 </div>
                 <div className='relative h-[237px] lg:h-[262px]'>
-                  <img className='w-full h-full object-cover rounded-3xl' src="/Webp/AdobeStock_469348689.webp" alt="" width="100%"/>
+                  <Image className='w-full h-full object-cover rounded-3xl' src="/Webp/AdobeStock_469348689.webp" alt="" width={357} height={237}/>
                 </div>
               </div>
             )}
@@ -82,7 +83,7 @@ export default function OurSolutionsPage() {
                   <p>By offering convenient one-click money transfers through mobile phones, you can attract a larger customer base throughout your entire state and grow your business.</p>
                 </div>
                 <div className='relative h-[237px] lg:h-[262px]'>
-                  <img className='w-full h-full object-cover rounded-3xl' src="/Webp/AdobeStock_574823710.webp" alt="" width="100%"/>
+                  <Image className='w-full h-full object-cover rounded-3xl' src="/Webp/AdobeStock_574823710.webp" alt="" width={357} height={237}/>
                 </div>
               </div>
             )}

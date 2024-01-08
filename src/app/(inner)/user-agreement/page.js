@@ -19,7 +19,7 @@ export default function UserAgreementPage() {
                 <ul className='list-disc pl-[20px]'>
                     <li>Questions, notifications, compliments, complaints and requests for refunds or further information can be sent to Omnex as follows:</li>
                     <li>On-line: <a className='font-medium underline' href="www.omnexgroup.com">www.omnexgroup.com</a></li>
-                    <li>Via Email: <a className='font-medium underline break-words' href="customerservice@omnexgroup.com">customerservice@omnexgroup.com</a></li>
+                    <li>Via Email: <a className='font-medium underline break-words' href="mailto:customerservice@omnexgroup.com">customerservice@omnexgroup.com</a></li>
                     <li>By Telephone: (866) 819-0119</li>
                     <li>By Mail: Omnex Group, Inc., Attn: Customer Service, 580 Sylvan Ave LL-A, Englewood Cliffs, NJ 07632, U.S.A</li>
                 </ul>
@@ -164,7 +164,7 @@ export default function UserAgreementPage() {
             <div className='flex flex-col gap-10'>
                 <h3 className='text-[#253D84]'>Security</h3>
                 <p>The security of your information and the integrity of your account is of the upmost importance to us. However, the Internet is a popular forum for scams. Please exercise caution and do not send money to anyone that you do not know personally or reveal any personal information to anyone or business that you have not verified. In particular, you should be cautious of deals or offers that seem too good to be true.</p>
-                <p>If you think your username and password have been lost or stolen, or if someone may use them without your permission, or that you&apos;ve been the victim of fraud please contact us immediately at <a className='font-medium underline break-words' href="security@omnexgroup.com">security@omnexgroup.com</a>. If you are aware of anyone or any entity that is using the Services inappropriately, please e-mail us at <a className='font-medium underline break-words' href="security@omnexgroup.com">security@omnexgroup.com</a>. If you receive any fake (phishing) e-mails purporting to be from an Omnex Group company, or encounter any &quot;mirrored&quot; Omnex sites, please forward them to us or let us know at <a className='font-medium underline break-words' href="security@omnexgroup.com">security@omnexgroup.com</a></p> 
+                <p>If you think your username and password have been lost or stolen, or if someone may use them without your permission, or that you&apos;ve been the victim of fraud please contact us immediately at <a className='font-medium underline break-words' href="mailto:security@omnexgroup.com">security@omnexgroup.com</a>. If you are aware of anyone or any entity that is using the Services inappropriately, please e-mail us at <a className='font-medium underline break-words' href="mailto:security@omnexgroup.com">security@omnexgroup.com</a>. If you receive any fake (phishing) e-mails purporting to be from an Omnex Group company, or encounter any &quot;mirrored&quot; Omnex sites, please forward them to us or let us know at <a className='font-medium underline break-words' href="mailto:security@omnexgroup.com">security@omnexgroup.com</a></p> 
                 <p>We, on occasion and at our own discretion, may send alerts via email or text messages to you with instructions to change your passwords for security purposes. Users who do not change their passwords at our direction will be subject to account termination if, in our sole discretion, the account&apos;s security is at risk.</p>
             </div>
 
@@ -222,7 +222,7 @@ export default function UserAgreementPage() {
                     <p>Questions, notifications, compliments, complaints and requests for refunds or further information can be sent to us as follows:</p>
                     <ul className='list-disc pl-[20px]'>
                     <li>On-line: <a className='font-medium underline' href="www.omnexgroup.com">www.omnexgroup.com</a></li>
-                    <li>Via Email: <a className='font-medium underline break-words' href="customerservice@omnexgroup.com">customerservice@omnexgroup.com</a></li>
+                    <li>Via Email: <a className='font-medium underline break-words' href="mailto:customerservice@omnexgroup.com">customerservice@omnexgroup.com</a></li>
                     <li>By Telephone: (866) 819-0119</li>
                     <li>By Mail: Omnex Group, Inc., Attn: Customer Service, 580 Sylvan Ave LL-A, Englewood Cliffs, NJ 07632, U.S.A</li>
                 </ul>

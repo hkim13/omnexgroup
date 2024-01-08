@@ -19,7 +19,7 @@ export default function StateLicenses() {
           <h3 className="font-bold pb-4 text-green">Secure Compliance</h3>
           <h1 className='text-[#253D84]'>State Licenses</h1>
         </div>
-        <p className='max-w-[532px] mx-auto'>UNO, Giromex, Le Goi Tien Le and Sharemoney are operated under the license of Omnex Group, Inc., a money transfer service.</p>
+        <p className='max-w-[532px] mx-auto'>UNO, Giromex, Le Goi Tien Le and Sharemoney are services of Omnex Group, Inc., a licensed money transfer company.</p>
       </div>
 
       <div className='grid grid-cols-1 gap-2.5'> 

@@ -18,7 +18,7 @@ export default function UseCasesPage() {
             <h1 className='px-[38px] py-[50px]'>In-Person Transactions</h1>
           </div>
           <div className='relative h-[264px] md:h-[346px]'>
-            <img className='w-full h-full object-cover rounded-3xl' src="/Webp/AdobeStock_579649494.webp" alt="" width="100%"/>
+            <Image className='w-full h-full object-cover rounded-3xl' src="/Webp/shutterstock_2248802201.webp" alt="" width={357} height={237}/>
           </div>
         </div>
 
@@ -83,7 +83,7 @@ export default function UseCasesPage() {
             <p>The system generates and provides to the consumer CFPB compliant predisclosure and a state/CFPB compliant receipt.</p>
           </div>
           <div className='relative row-start-1 h-[264px] md:h-full md:row-start-2 md:col-start-2'>
-            <img className='w-full h-full object-cover rounded-3xl' src="/Webp/AdobeStock_579649494.webp" alt="" width="100%"/>
+            <Image className='w-full h-full object-cover rounded-3xl' src="/Webp/AdobeStock_502415678_Preview.webp" alt="" width={357} height={237}/>
           </div>
         </div>
       </div>

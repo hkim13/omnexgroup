@@ -34,9 +34,18 @@ export default function OurBrandsPage() {
         <div className='pb-14 min-[900px]:self-center'>
           <h1 className='pb-9 text-[36px] sm:text-[46px] max-w-[216px] md:max-w-[273px]'>Discover our Brands</h1>
           <div className='flex flex-col gap-2'>
-            <div className='flex text-[16px] gap-3 sm:text-[18px]' href="link"><img className='w-4' src='/SVG/BlackTick.svg'/>Better Value</div>
-            <div className='flex text-[16px] gap-3 sm:text-[18px]' href="link"><img className='w-4' src='/SVG/BlackTick.svg'/>Constant Support</div>
-            <div className='flex text-[16px] gap-3 sm:text-[18px]' href="link"><img className='w-4' src='/SVG/BlackTick.svg'/>Maximum Security</div>
+          <div className='flex text-[16px] gap-3 sm:text-[18px]' href="link">
+            <Image width={16} height={16} src='/SVG/BlackTick.svg' alt='Better Value'/>
+            Better Value
+          </div>
+          <div className='flex text-[16px] gap-3 sm:text-[18px]' href="link">
+            <Image width={16} height={16} src='/SVG/BlackTick.svg' alt='Constant Support'/>
+            Constant Support
+          </div>
+          <div className='flex text-[16px] gap-3 sm:text-[18px]' href="link">
+            <Image width={16} height={16} src='/SVG/BlackTick.svg' alt='Maximum Security'/>
+            Maximum Security
+          </div>
           </div>
         </div>
 
@@ -45,96 +54,78 @@ export default function OurBrandsPage() {
             <div className='bg-[#006DB7] rounded-3xl h-[420px] flex flex-col px-12 pt-[58px] pb-[32px] text-white justify-between sm:max-w-[326px]'>
               <h3 className='text-[20px]'>From the US to Central and South America, Asia, Africa and the Dominican Republic.</h3>
               <p className='font-normal'>Send money securely to three continents with our fast and reliable service.</p>
-              <img className='h-[51px] place-self-start' src="/SVG/UnoSMALLwhite.svg" alt="" />
+               <Image className='place-self-start' src="/SVG/UnoSMALLwhite.svg" alt="Uno" width={132} height={51} />
             </div>
           )}
           {activeAccordion === 'legoi' && (
             <div className='bg-[#5FA82C] rounded-3xl h-[420px] flex flex-col px-12 pt-[58px] pb-[32px] text-white justify-between sm:max-w-[326px]'>
               <h3 className='text-[24px]'>From the United States and Canada to Vietnam.</h3>
               <p className='font-normal'>With our secure and fast service, sending money to Vietnam has never been easier.</p>
-              <img className='h-[51px] place-self-start' src="/SVG/LeGoiSMALLwhite.svg" alt="" />
+              <Image className='place-self-start' src="/SVG/LeGoiSMALLwhite.svg" alt="Le Goi Tien Le" width={272} height={51}/>
           </div>
           )}
           {activeAccordion === 'giromex' && (
             <div className='bg-[#E20613] rounded-3xl h-[420px] flex flex-col px-12 pt-[58px] pb-[32px] text-white justify-between sm:max-w-[326px]'>
               <h3>From the US to Mexico</h3>
               <p className='font-normal'>Experience hassle-free money transfers to Mexico with our secure and lightning-fast service.</p>
-              <img className='h-[51px] place-self-start' src="/SVG/GiromexSMALLwhite.svg" alt="" />
+              <Image className='place-self-start' src="/SVG/GiromexSMALLwhite.svg" alt="" width={184} height={51}/>
             </div>
           )}
           {activeAccordion === 'sharemoney' && (
             <div className='bg-[#0066CC] rounded-3xl h-[420px] flex flex-col px-12 pt-[58px] pb-[32px] text-white justify-between sm:max-w-[326px]'>
               <h3>Connecting the US with the world</h3>
               <p className='font-normal'>Send money worldwide securely and quickly with our digital service accessible via website and app.</p>
-              <img className='h-[51px] place-self-start' src="/SVG/SharemoneySMALLwhite.svg" alt="" />
+              <Image className='h-[51px] place-self-start' src="/SVG/SharemoneySMALLwhite.svg" alt="" width={240} height={51}/>
           </div>
           )}
          
          {activeAccordion !== 'uno' && (
             <button className="btn-uno font-bold text-[22px] px-8 py-4 rounded-full sm:hidden" onClick={() => handleAccordion('uno')}>
-                <img className='h-[33px]' src="/SVG/UnoSMALLwhite.svg" alt="" />
+                <Image src="/SVG/UnoSMALLwhite.svg" alt="Uno" width={85} height={33}/>
             </button>
           )}
           {activeAccordion !== 'uno' && (
             <button className="hidden sm:flex w-[100px] min-w-[80px] h-[420px] rounded-3xl" onClick={() => handleAccordion('uno')}>
-                <img className='w-full h-full rounded-3xl' src="/Webp/Uno.webp" alt="" />
+                <Image className='w-full h-full rounded-3xl' src="/Webp/Uno.webp" alt="Uno" width={100} height={402}/>
             </button>
           )}
 
           {activeAccordion !== 'legoi' && (
             <button className="btn-legoi font-bold text-[22px] px-8 py-4 rounded-full sm:hidden" onClick={() => handleAccordion('legoi')}>
-                <img className='h-[33px]' src="/SVG/UnoSMALLwhite.svg" alt="" />
+                <Image className='h-[33px]' src="/SVG/LeGoiSMALLwhite.svg" alt="Le Goi Tien Le" width={177} height={33}/>
             </button>
           )}
           {activeAccordion !== 'legoi' && (
             <button className="hidden sm:flex w-[100px] min-w-[80px] h-[420px] rounded-3xl" onClick={() => handleAccordion('legoi')}>
-                <img className='w-full h-full rounded-3xl' src="/Webp/LeGoiTienLe.webp" alt="" />
+                <Image className='w-full h-full rounded-3xl' src="/Webp/LeGoiTienLe.webp" alt="Le Goi Tien Le" width={100} height={402}/>
             </button>
           )}
          
          {activeAccordion !== 'giromex' && (
             <button className="btn-giromex font-bold text-[22px] px-8 py-4 rounded-full sm:hidden" onClick={() => handleAccordion('giromex')}>
-                <img className='h-[33px]' src="/SVG/UnoSMALLwhite.svg" alt="" />
+                <Image className='h-[33px]' src="/SVG/GiromexSMALLwhite.svg" alt="Giromex" width={119} height={33}/>
             </button>
           )}
           {activeAccordion !== 'giromex' && (
             <button className="hidden sm:flex w-[100px] min-w-[80px] h-[420px] rounded-3xl" onClick={() => handleAccordion('giromex')}>
-                <img className='w-full h-full rounded-3xl' src="/Webp/Giromex.webp" alt="" />
+                <Image className='w-full h-full rounded-3xl' src="/Webp/Giromex.webp" alt="Giromex" width={100} height={402}/>
             </button>
           )}
 
           {activeAccordion !== 'sharemoney' && (
             <button className="btn-sharemoney font-bold text-[22px] px-8 py-4 rounded-full sm:hidden" onClick={() => handleAccordion('sharemoney')}>
-                <img className='h-[33px]' src="/SVG/UnoSMALLwhite.svg" alt="" />
+                <Image className='h-[33px]' src="/SVG/SharemoneySMALLwhite.svg" alt="Sharemoney" width={153} height={33}/>
             </button>
           )}
           {activeAccordion !== 'sharemoney' && (
             <button className="hidden sm:flex w-[100px] min-w-[80px] h-[420px] rounded-3xl" onClick={() => handleAccordion('sharemoney')}>
-                <img className='w-full h-full rounded-3xl' src="/Webp/Sharemoney.webp" alt="" />
+                <Image className='w-full h-full rounded-3xl' src="/Webp/Sharemoney.webp" alt="Sharemoney" width={100} height={402}/>
             </button>
           )}
           
         </div>
-      </div>
-
-      {/* {activeAccordion !== 'uno' && (
-             
-             <button
-             className="btn-uno font-bold text-[22px] px-8 py-4 flex items-end rounded-full sm:px-2 sm:min-w-[100px] sm:h-[402px] sm:rounded-3xl bg-cover bg-no-repeat bg-gradient-to-t from-gray-400"
-             style={{ backgroundImage: "url('/Webp/AdobeStock_86116290.webp')", backgroundPosition: 'calc(50% - 60px) center' }}
-             onClick={() => handleAccordion('uno')}
-           >
-             <div className="rotate-[-90deg]">
-               <img
-                 src="/SVG/UnoSMALL.svg"
-                 alt="GiroMex Logo"
-                 className="w-[150px] h-[90px]"
-               />
-             </div>
-           </button>
-           
-          )} */}
-       
+      </div> 
+    
       {/* text */}
       <div className='flex justfy-center text-center pb-16 lg:pb-[85px]  sm:max-w-[564px] mx-auto'>
         <h3>Trust Uno, as a leading brand for money transfers to Brazil and the rest of South America, to provide unmatched service and reliability.</h3> 
@@ -233,7 +224,7 @@ export default function OurBrandsPage() {
           {teamData.map((team, index) => (
             <div key={index}>
               <div className='flex flex-row items-center gap-6 border rounded-3xl px-6 h-[136px]'>
-                <img className='w-[100px] h-[90px]' src={`${team.url}`} alt="" />
+                <Image  src={`${team.url}`} alt="" width={100} height={90}/>
                 <div className='flex flex-col'>
                   <div className='text-[#253D84] text-[18px] font-bold'>{team.name}</div>
                   <div className='text-[16px]'>{team.location}</div>
@@ -244,7 +235,7 @@ export default function OurBrandsPage() {
           <Link href="/careers">
             <div className='flex flex-row items-center gap-6 border rounded-3xl px-6 h-[136px]'>
               <div className='bg-[#253D84] w-[100px] h-[90px] rounded-[7px] flex justify-center items-center'>
-                <img className='  w-[30px] h-[30px]' src="/SVG/Plus.svg" alt="" />
+                <Image  src="/SVG/Plus.svg" alt="" width={30} height={30}/>
               </div>
               <div className='flex flex-col'>
                 <div className='text-[#253D84] text-[18px] font-bold'>Join our Team</div>

@@ -70,9 +70,9 @@ export default function HomePage() {
                   <p className='text-[16px]'>Send money to your friends and family anytime, anywhere through our app, our website, or at one of our retail locations.</p>
                 </div>
                 <div className='flex flex-col gap-y-4 text-start text-[#253D84] font-bold'>
-                  <Link className='flex text-[20px] font-medium gap-3' href="https://www.sharemoney.com/us/en/denmark">Visit Sharemoney.com <img className='w-4' src='/SVG/GreenArrow.svg'/></Link>
-                  <Link className='flex text-[20px] font-medium  gap-3' href="https://apps.apple.com/us/app/sharemoney-money-transfers/id1176560273">Download our App <img className='w-4' src='/SVG/GreenArrow.svg'/></Link>
-                  <Link className='flex text-[20px] font-medium  gap-3' href="/contact-us">Contact Us<img className='w-4' src='/SVG/GreenArrow.svg'/></Link>
+                  <Link className='flex text-[20px] font-medium gap-3' href="https://www.sharemoney.com/us/en/denmark">Visit Sharemoney.com <Image src='/SVG/GreenArrow.svg' alt="" width={16} height={16}/></Link>
+                  <Link className='flex text-[20px] font-medium  gap-3' href="https://apps.apple.com/us/app/sharemoney-money-transfers/id1176560273">Download our App <Image src='/SVG/GreenArrow.svg' alt="" width={16} height={16}/></Link>
+                  <Link className='flex text-[20px] font-medium  gap-3' href="/contact-us">Contact Us<Image src='/SVG/GreenArrow.svg' alt="" width={16} height={16}/></Link>
                 </div>
               </div>
             </div>
@@ -85,8 +85,8 @@ export default function HomePage() {
                   <p className='text-[16px]'>We enable businesses to integrate our remittance services into their systems, providing easy global access to agents, banks, and correspondents.</p>
                 </div>
                 <div className='flex flex-col gap-y-4 text-start text-[#253D84] font-bold'>
-                  <Link className='flex text-[20px] font-medium  gap-3' href="/our-solutions">Explore our Solutions <img className='w-4' src='/SVG/GreenArrow.svg'/></Link>
-                  <Link className='flex text-[20px] font-medium  gap-3' href="/careers">Careers <img className='w-4' src='/SVG/GreenArrow.svg'/></Link>
+                  <Link className='flex text-[20px] font-medium  gap-3' href="/our-solutions">Explore our Solutions <Image src='/SVG/GreenArrow.svg' alt="" width={16} height={16}/></Link>
+                  <Link className='flex text-[20px] font-medium  gap-3' href="/careers">Careers <Image src='/SVG/GreenArrow.svg' alt="" width={16} height={16}/></Link>
                 </div>
               </div>
             </div>
@@ -106,22 +106,22 @@ export default function HomePage() {
             {/* grid logos */}
             <div className='grid grid-cols-1 md:grid-cols-2 justify-items-center w-screen gap-2 sm:gap-6 px-6 lg:px-0 max-w-[960px]'>
               <Link className='flex items-center place-content-center border rounded-2xl w-full h-[155px]' href="https://www.unomoneytransfers.com/">
-                <img className='h-[79px]' src="/SVG/UnoBIG.svg" alt="Uno" width="100%"/> 
+                <Image src="/SVG/UnoBIG.svg" alt="Uno" width={242} height={79}/> 
               </Link>
               <Link className='flex items-center place-content-center border rounded-2xl w-full h-[155px]' href="https://www.giromex.com/">
-                <img className='h-[79px]' src="/SVG/GriromexBIG.svg" alt="Giromex" width="100%"/> 
+                <Image src="/SVG/GriromexBIG.svg" alt="Giromex" width={273} height={79}/> 
               </Link>
               <Link className='flex items-center place-content-center border rounded-2xl w-full h-[155px]' href="https://www.legoitienle.com/">
-                <img className='h-[69px] px-2 sm:px-4' src="/SVG/LeGoiBIG.svg" alt="LeGoi" width="100%"/> 
+                <Image className='px-4 sm:px-4' src="/SVG/LeGoiBIG.svg" alt="LeGoi" width={384.9} height={81.3}/> 
               </Link>
               <Link className='flex items-center place-content-center border rounded-2xl w-full h-[155px]' href="https://www.sharemoney.com/us/en/denmark">
-                <img className='h-[63px] px-2 sm:px-4' src="/SVG/SharemoneyBIG.svg" alt="Sharemoney"/> 
+                <Image className='px-6 sm:px-4' src="/SVG/SharemoneyBIG.svg" alt="Sharemoney" width={353.9} height={74.3}/> 
               </Link>
             </div>
      
             {/* Download our Sharemoney App */}
             <div className='bg-[#F7F7F7] rounded-3xl min-w-[330px] min-h-[300px] max-w-[960px] max-h-[500px] px-7 sm:px-12 py-8 sm:py-14'>
-              <div className='flex flex-row justify-between'>  {/* I dont tihnk i have to do grids. I think all you need to do is just use flex and set a min-w-max for the two links after sizebreak or set a min-w for */}
+              <div className='flex flex-row gap-4 justify-between'>  {/* I dont tihnk i have to do grids. I think all you need to do is just use flex and set a min-w-max for the two links after sizebreak or set a min-w for */}
                 {/* Text + Links */}
                 <div className=' flex flex-col justify-between max-w-[50%] gap-4'>
                   {/* Text */}
@@ -132,18 +132,20 @@ export default function HomePage() {
                   {/* Links */}
                   <div className='flex flex-col sm:flex-row gap-2 sm:gap-6 md:pb-10'>
                     <Link className=' ' href="https://apps.apple.com/us/app/sharemoney-money-transfers/id1176560273">
-                      <img className='w-[125.64px] sm:w-[187.2px]' src="/SVG/AppStore.svg" alt="" width="100%"/> 
+                      <Image className='sm:hidden' src="/SVG/AppStore.svg" alt="Download on App Store" width={125.65} height={40.33}/>
+                      <Image className='hidden sm:flex' src="/SVG/AppStore.svg" alt="Download on App Store" width={187.2} height={55.2}/>
                     </Link>
                     <Link className=' ' href="https://play.google.com/store/apps/details?id=com.sharemoney.app&hl=en">
-                      <img className='w-[125.64px] sm:w-[187.2px]' src="/SVG/GooglePlay.svg" alt="" width="100%"/> 
+                      <Image className='sm:hidden' src="/SVG/GooglePlay.svg" alt="Get it on Google Play" width={125.65} height={40.33}/>
+                      <Image className='hidden sm:flex' src="/SVG/GooglePlay.svg" alt="Get it on Google Play" width={187.2} height={55.2}/> 
                     </Link>
                   </div>
                 </div>
 
                 {/* Phone */}
                 <div className='flex place-items-center'>
-                  <img className='w-[140px] sm:hidden' src="/Webp/Mobile-Phone.webp" alt="Phone" />
-                  <img className='w-[654px] hidden sm:block' src="/Webp/Desktop-Phone.webp" alt="Phone" />
+                  <Image className='sm:hidden' src="/Webp/Mobile-Phone.webp" alt="Phone" width={140} height={272}/>
+                  <Image className='hidden sm:block' src="/Webp/Desktop-Phone.webp" alt="Phone" width={654.1} height={436.1}/>
                 </div>
               </div>
             </div>
@@ -165,19 +167,19 @@ export default function HomePage() {
           <div className='mx-auto grid sm:grid-cols-3 gap-4 max-w-[964px]'>
             {/* icon1 */}
             <div className='flex sm:flex-col-reverse sm:text-center items-center sm:place-content-between border rounded-xl p-7 gap-8 sm:max-w-[305px]'>
-              <img className='w-[96px] sm:w-[179.42px]' src="/Webp/Webpage-Illustrations-HELP.webp" alt="" width="100%"/>
+              <Image className='w-[96px] sm:w-[179.42px]' src="/Webp/Webpage-Illustrations-HELP.webp" alt="" width={179.42} height={180}/>
               <p className='text-[#253D84] font-bold text-base sm:text-[22px]'>Helped consumers successfully send over twenty billion home</p>
             </div>
             
             {/* icon2 */}
             <div className='flex sm:flex-col-reverse sm:text-center items-center sm:place-content-between border rounded-xl p-7 gap-8 sm:max-w-[305px]'>
-              <img className='w-[96px] sm:w-[179.42px]' src="/Webp/Webpage-Illustrations-MULTILINGUAL.webp" alt="" width="100%"/>
+              <Image className='w-[96px] sm:w-[179.42px]' src="/Webp/Webpage-Illustrations-MULTILINGUAL.webp" alt="" width={179.42} height={180}/>
               <p className='text-[#253D84] font-bold text-base sm:text-[22px]'>A team of multi-lingual service professionals standing by</p>
             </div>
             
             {/* icon3 */}
             <div className='flex sm:flex-col-reverse sm:text-center items-center sm:place-content-between border rounded-xl p-7 gap-8 sm:max-w-[305px]'>
-              <img className='w-[96px] sm:w-[179.42px]' src="/Webp/Webpage-Illustrations-AWARD.webp" alt="" width="100%"/>
+              <Image className='w-[96px] sm:w-[179.42px]' src="/Webp/Webpage-Illustrations-AWARD.webp" alt="" width={179.42} height={180}/>
               <p className='text-[#253D84] font-bold text-base sm:text-[22px]'>Awarded fastest transfer by the Finder Money Transfer Awards</p>
             </div>
           </div>
@@ -206,21 +208,21 @@ export default function HomePage() {
               {/* This div is now a flex container that will justify its children with space between */}
               <div className='flex flex-col justify-evenly flex-grow pl-4'>
                 <div className='flex flex-row gap-6'>
-                  <img className='w-[32.3px]' src="/SVG/GreenLocationPoint.svg" alt="" width="100%"/>
+                  <Image src="/SVG/GreenLocationPoint.svg" alt="" width={32.3} height={43.5}/>
                   <div className='flex flex-col'>
                     <p className='text-green text-3xl font-bold'>586+</p>
                     <p className='text-[#FFFFFF] text-2xl leading-none'>U.S. Locations</p>
                   </div>
                 </div>
                 <div className='flex flex-row gap-6'>
-                  <img className='w-[32.3px]' src="/SVG/GreenWorldmap.svg" alt="" width="100%"/>
+                  <Image src="/SVG/GreenWorldmap.svg" alt="" width={38.9} height={38.9}/>
                   <div className='flex flex-col'>
                     <p className='text-green text-3xl font-bold'>83</p>
                     <p className='text-[#FFFFFF] text-2xl leading-none'>Countries</p>
                   </div>
                 </div>
                 <div className='flex flex-row gap-6'>
-                  <img className='w-[32.3px]' src="/SVG/GreenDollar.svg" alt="" width="100%"/>
+                  <Image src="/SVG/GreenDollar.svg" alt="" width={40.4} height={40.4}/>
                   <div className='flex flex-col'>
                     <p className='text-green text-3xl font-bold'>20 Billions</p>
                     <p className='text-[#FFFFFF] text-2xl leading-none'>USD Transfer</p>

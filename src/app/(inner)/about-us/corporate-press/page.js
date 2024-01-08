@@ -3,7 +3,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Button from '@/components/Button';
-import BigButton from '@/components/BigButton';
 import teamData from '@/(inner)/about-us/corporate-press/team';
 import React, { useState, useEffect, useRef  } from 'react';
 
@@ -167,7 +166,7 @@ export default function CorporatePage() {
           {/* Global Reach - Mobile View*/}
           <div className="flex flex-col gap-3 md:hidden">
             <div className='relative min-h-max'>
-              <img className='w-full h-full object-cover rounded-3xl' src="/Webp/AdobeStock_596371844.webp" alt="" width="100%"/>
+              <Image className='w-full h-full object-cover rounded-3xl' src="/Webp/AdobeStock_596371844.webp" alt="" width={975} height={211}/>
             </div>
             <div className="bg-[#333333]/70 rounded-2xl text-white p-4 text-center">
               <div className='font-bold text-[36px]'>49</div>
@@ -199,7 +198,7 @@ export default function CorporatePage() {
                 <h3 className='text-[#52DB78]'>Philosophy</h3>
                 <h1 className='text-white'>“The engagement of every individual in an organization, regardless of department, is the pre-requisite to ensuring compliance.”</h1>
                 <button className='flex items-center justify-center w-[50px] h-[50px] bg-[#FFFFFF] rounded-full self-end' onClick={toggleDisplay} aria-label="Toggle Display">
-                  <img className='w-[20px]' src="/SVG/BlueArrow.svg" alt=""/>
+                  <Image className='w-[20px]' src="/SVG/BlueArrow.svg" alt="" width={20} height={20}/>
                 </button>
               </div>
               
@@ -215,7 +214,7 @@ export default function CorporatePage() {
                   <li className='bg-[#FFFFFF]/40 rounded-2xl text-white flex items-center p-6 md:h-[132px] md:col-start-2'>Experienced long term compliance personnel</li>
                 </ul>
                 <button className='flex items-center justify-center w-[50px] h-[50px] bg-[#FFFFFF] rounded-full self-end' onClick={toggleDisplay} aria-label="Toggle Display">
-                  <img className='w-[20px]' src="/SVG/BlueArrow.svg" alt=""/>
+                  <Image className='w-[20px]' src="/SVG/BlueArrow.svg" alt="" width={20} height={20}/>
                 </button>
               </div>
             </div>
@@ -225,8 +224,8 @@ export default function CorporatePage() {
         <div className='grid grid-cols-1 md:grid-cols-2 gap-2'>
           <div className='flex flex-col justify-between text-center border border-[#333333] rounded-2xl h-[498px] py-12 md:h-[535px] md:col-start-2'>
             <h3>Staff by department</h3>
-            <div className='flex place-self-center min-h-max w-[290px] md:w-[366px]'>
-              <img className='w-full h-full object-cover rounded-3xl' src="/Webp/Diagram.webp" alt="" width="100%"/>
+            <div className='flex place-self-center min-h-max'>
+              <Image className='w-full h-full object-cover rounded-3xl' src="/Webp/Diagram.webp" alt="" width={366} height={357}/>
             </div>
             <div className='text-[14px] text-[#333333]/65'>Percentages rounded to nearest whole number.</div>
           </div>
@@ -343,20 +342,20 @@ export default function CorporatePage() {
           <h3 className="font-bold pb-4 text-green">Identify</h3>
           <h1 className='text-[#253D84]'>Our Brands</h1>
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-2 justify-items-center gap-2 sm:gap-6 px-6 lg:px-0 max-w-[960px]'>
-              <Link className='flex items-center place-content-center border rounded-2xl w-full h-[155px]' href="https://www.unomoneytransfers.com/">
-                <img className='h-[79px]' src="/SVG/UnoBIG.svg" alt="Uno" width="100%"/> 
-              </Link>
-              <Link className='flex items-center place-content-center border rounded-2xl w-full h-[155px]' href="https://www.giromex.com/">
-                <img className='h-[79px]' src="/SVG/GriromexBIG.svg" alt="Giromex" width="100%"/> 
-              </Link>
-              <Link className='flex items-center place-content-center border rounded-2xl w-full h-[155px]' href="https://www.legoitienle.com/">
-                <img className='h-[69px] px-2 sm:px-4' src="/SVG/LeGoiBIG.svg" alt="LeGoi" width="100%"/> 
-              </Link>
-              <Link className='flex items-center place-content-center border rounded-2xl w-full h-[155px]' href="https://www.sharemoney.com/us/en/denmark">
-                <img className='h-[63px] px-2 sm:px-4' src="/SVG/SharemoneyBIG.svg" alt="Sharemoney"/> 
-              </Link>
-            </div>
+        <div className='grid grid-cols-1 md:grid-cols-2 justify-items-center gap-2 sm:gap-6 px-6 lg:px-0 max-w-[960px] mx-auto'>
+          <Link className='flex items-center place-content-center border rounded-2xl w-full h-[155px]' href="https://www.unomoneytransfers.com/">
+            <Image src="/SVG/UnoBIG.svg" alt="Uno" width={242} height={79}/> 
+          </Link>
+          <Link className='flex items-center place-content-center border rounded-2xl w-full h-[155px]' href="https://www.giromex.com/">
+            <Image src="/SVG/GriromexBIG.svg" alt="Giromex" width={273} height={79}/> 
+          </Link>
+          <Link className='flex items-center place-content-center border rounded-2xl w-full h-[155px]' href="https://www.legoitienle.com/">
+            <Image className='px-4 sm:px-4' src="/SVG/LeGoiBIG.svg" alt="LeGoi" width={384.9} height={81.3}/> 
+          </Link>
+          <Link className='flex items-center place-content-center border rounded-2xl w-full h-[155px]' href="https://www.sharemoney.com/us/en/denmark">
+            <Image className='px-6 sm:px-4' src="/SVG/SharemoneyBIG.svg" alt="Sharemoney" width={353.9} height={74.3}/> 
+          </Link>
+        </div>
       </div>
 
       
@@ -368,16 +367,16 @@ export default function CorporatePage() {
           <h1 className='text-[#253D84]'>Our Team</h1>
         </div>
         
-        <div className='grid grid-cols-1 min-[690px]:grid-cols-2 min-[970px]:grid-cols-3 gap-5 justify-center items-center mx-auto'>
+        <div className='flex flex-row flex-wrap justify-center mx-auto gap-4 lg:grid lg:grid-cols-3'>
           {teamData.map((team, index) => (
           <div key={index}>
             <div className=' max-w-[339px] min-w-[305px] mx-auto flex flex-col cursor-pointer' onClick={() => toggleExpand(team.name)}>
               <div className={`relative rounded-t-3xl w-full ${expandedStates[team.name] ? 'h-[260px]' : 'h-[235px]'} bg-cover bg-no-repeat bg-center transition-all duration-300 ease-in-out`}>
-                <img className='w-full h-full object-cover rounded-t-3xl' src={`${team.url}`} alt="" />
+                <Image className='w-full h-full object-cover rounded-t-3xl' src={`${team.url}`} alt="" width={305} height={211}/>
                 {expandedStates[team.name] && (
-                  <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-center pl-[42px] rounded-t-3xl">
+                  <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-center rounded-t-3xl">
                     <div className='text-[#FFFFFF]'>
-                      <div className='text-[15px] font-normal'>{team.description}</div>
+                      <div className='text-[15px] font-normal px-[33px]'>{team.description}</div>
                     </div>
                   </div>
                 )}
@@ -388,7 +387,7 @@ export default function CorporatePage() {
                   <div className='text-[18px] font-normal'>{team.location}</div>
                 </div>
                 <div className='flex items-center justify-center w-[34px] h-[34px] rounded-full bg-white'>
-                  <img className='w-[16px] h-[16px]' src={expandedStates[team.name] ? "/SVG/BlueClose.svg" : "/SVG/BlueOpen.svg"} alt={expandedStates[team.name] ? "Close" : "Open"} />
+                  <Image src={expandedStates[team.name] ? "/SVG/BlueClose.svg" : "/SVG/BlueOpen.svg"} alt={expandedStates[team.name] ? "Close" : "Open"} width={16} height={16}/>
                 </div>
               </div>
             </div>
@@ -408,7 +407,7 @@ export default function CorporatePage() {
 
         <div className='flex flex-col gap-5 md:flex-row'>
           <div className='bg-[#253D84] rounded-3xl w-full space-y-[39px] p-[39px] pb-[46px] md:max-w-[288px]'>
-            <img className='w-[63px]' src="/SVG/DollarExchange.svg" alt="" width="100%"/>
+            <Image src="/SVG/DollarExchange.svg" alt="" width={63} height={74}/>
             <ul className='text-white space-y-4 list-disc pl-[22px]'>
               <li>
                 <h3>Cash</h3>
@@ -439,21 +438,26 @@ export default function CorporatePage() {
             </ul>
           </div>
           <div className='flex items-center bg-[#D9D9D9]/0 border border-[#333333]/10 rounded-3xl w-full px-[48px] py-[49px] md:px-[25px] md:max-w-[280px]'>
-            <img className='w-full' src="/Webp/Webpage-Illustrations-Ley.webp" alt="" width="100%"/>
+            <Image className='w-full' src="/Webp/Webpage-Illustrations-Ley.webp" alt="" width={230} height={279}/>
           </div>
         </div>
 
         <div>
-          <div className='bg-[#DCF8E4] rounded-3xl w-full space-y-[39px] px-[39px] py-[49px]'>
-            <h3>PCI compliance (including but not limited to)</h3>
-            <ul className='space-y-4 list-disc text-[16px] pl-[22px]'>
-              <li>Change system defaults on initial setup.</li>
-              <li>Allow only secure and required traffic over POS network.</li>
-              <li>Keep the equipment in a secure area perform period checks for signs of tamerping.</li>
-              <li>Ensure personnel are fully trained to operate the POS system.</li>
-              <li>Make sure any connected computer (terminals only at this time) equipment runs AV software and is scanned regularly.</li>
-              <li>Adhere strictly to information retention policy.</li>
-            </ul>
+          <div className='bg-[#DCF8E4] rounded-3xl w-full space-y-[39px] px-[39px] py-[49px] md:flex md:flex-row items-center gap-8 md:pl-[61px] md:pr-[30px]'>
+            <div>
+              <Image className='hidden md:flex' src="/Webp/Webpage-Illustrations-WebCheck.webp" alt="" width={294} height={298}/>
+            </div>
+            <div className='md:w-[531px]'>
+              <h3>PCI compliance (including but not limited to)</h3>
+              <ul className='space-y-4 list-disc text-[16px] pl-[22px]'>
+                <li>Change system defaults on initial setup.</li>
+                <li>Allow only secure and required traffic over POS network.</li>
+                <li>Keep the equipment in a secure area perform period checks for signs of tamerping.</li>
+                <li>Ensure personnel are fully trained to operate the POS system.</li>
+                <li>Make sure any connected computer (terminals only at this time) equipment runs AV software and is scanned regularly.</li>
+                <li>Adhere strictly to information retention policy.</li>
+              </ul>
+            </div>
           </div>
         </div>
 
